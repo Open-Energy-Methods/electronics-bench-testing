@@ -1,0 +1,68 @@
+{
+  "schema": "EBT-Q0-MET-010",
+  "evidence_class": "UNFILLED_LAB_INSPECTION_REQUIRED",
+  "site_permission_ref": null,
+  "responsible_staff_ref": null,
+  "instruments": [
+    {
+      "id": "MET-001",
+      "role": "isolated DC source",
+      "actual_model": null,
+      "serial": null,
+      "measurement_range_ref": null,
+      "calibration_or_reference_ref": null,
+      "isolation_or_response_ref": null,
+      "inspector": null
+    },
+    {
+      "id": "MET-002",
+      "role": "DMM/resistance",
+      "actual_model": null,
+      "serial": null,
+      "measurement_range_ref": null,
+      "calibration_or_reference_ref": null,
+      "isolation_or_response_ref": null,
+      "inspector": null
+    },
+    {
+      "id": "MET-003",
+      "role": "heater current",
+      "actual_model": null,
+      "serial": null,
+      "measurement_range_ref": null,
+      "calibration_or_reference_ref": null,
+      "isolation_or_response_ref": null,
+      "inspector": null
+    },
+    {
+      "id": "MET-004",
+      "role": "temperature logger/timebase",
+      "actual_model": null,
+      "serial": null,
+      "measurement_range_ref": null,
+      "calibration_or_reference_ref": null,
+      "isolation_or_response_ref": null,
+      "inspector": null
+    },
+    {
+      "id": "MET-005",
+      "role": "contact temperature sensors",
+      "actual_model": null,
+      "serial": null,
+      "measurement_range_ref": null,
+      "calibration_or_reference_ref": null,
+      "isolation_or_response_ref": null,
+      "inspector": null
+    },
+    {
+      "id": "MET-008",
+      "role": "cooling airflow/tachometer",
+      "actual_model": null,
+      "serial": null,
+      "measurement_range_ref": null,
+      "calibration_or_reference_ref": null,
+      "isolation_or_response_ref": null,
+      "inspector": null
+    }
+  ]
+}

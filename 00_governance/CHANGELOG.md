@@ -52,3 +52,8 @@
 - Established 14_q0_integrated_v0.9 as the single Q0 review entry point; reconciled 12-run vs 8-event **alternative** pilot sketches and \`T_plate\` vs \`T_sink\` sensor labels.
 - Defined exact v0.7 EBT-GATE-007 ↔ v0.8 EBT-SPLIT-008 lock/hash/role mapping; added cross-module integrity checks and intentionally incomplete future-acquisition templates.
 - Remaining G1 novelty, G2 machining/power authority, G3 real metrology, Q0 physical pilot and R01 validation remain **HOLD / NOT COMPLETED**.
+
+## Catalog/source & unpowered intake Q0-010 — 2026-11-05 (limited remote stage)
+- Reviewed exact Bourns 10R0F datasheet and 2025 resistor thermal-management application note; distinguished 20 W at 25°C case from 2.8 W without heatsink. Neither is an EBT operating limit.
+- Cross-checked catalog thermal resistance inconsistency for SK 92 100 SA (Farnell, TME, DigiKey); expressly rejected fitting distributor figures as a measured cooling boundary.
+- Added **unfilled** part receiving and instrument inspection records with four guardrail tests. No received parts, real measurements, booked workshop introduction, authorized powered lab or physical test are claimed.

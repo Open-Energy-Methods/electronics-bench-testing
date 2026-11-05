@@ -1,0 +1,72 @@
+{
+  "schema": "EBT-Q0-010",
+  "evidence_class": "UNFILLED_ACTUAL_RECEIPT_REQUIRED",
+  "parts": [
+    {
+      "id": "HSK-001",
+      "part": "Fischer SK 92 100 SA",
+      "nominal_mm": {
+        "length": 100,
+        "width": 100,
+        "height": 40,
+        "base": 10
+      },
+      "manufacturer_dimensional_tolerances": "NOT_PROVIDED",
+      "receipt_ref": null,
+      "observed_marking": null,
+      "lot": null,
+      "photo_sha256": null,
+      "measured_mm": {
+        "length": null,
+        "width": null,
+        "height": null,
+        "base": null
+      },
+      "dimension_instrument_ref": null,
+      "flatness_review_ref": null,
+      "fastening_permission_ref": null,
+      "reviewer": null,
+      "disposition": "NOT_INSPECTED"
+    },
+    {
+      "id": "HEAT-001",
+      "part": "Bourns PWR220T-20-10R0F",
+      "nominal_resistance_ohm": 10,
+      "tolerance_percent": 1,
+      "case_rating_w_at_25c": 20,
+      "free_air_example_w": 2.8,
+      "receipt_ref": null,
+      "observed_marking": null,
+      "lot": null,
+      "photo_sha256": null,
+      "measured_resistance_ohm": null,
+      "measurement_expanded_uncertainty_ohm": null,
+      "measurement_instrument_id": null,
+      "reference_evidence_ref": null,
+      "visual_review_ref": null,
+      "reviewer": null,
+      "disposition": "NOT_INSPECTED"
+    },
+    {
+      "id": "HEAT-002",
+      "part": "Bourns PWR220T-20-10R0F",
+      "nominal_resistance_ohm": 10,
+      "tolerance_percent": 1,
+      "case_rating_w_at_25c": 20,
+      "free_air_example_w": 2.8,
+      "receipt_ref": null,
+      "observed_marking": null,
+      "lot": null,
+      "photo_sha256": null,
+      "measured_resistance_ohm": null,
+      "measurement_expanded_uncertainty_ohm": null,
+      "measurement_instrument_id": null,
+      "reference_evidence_ref": null,
+      "visual_review_ref": null,
+      "reviewer": null,
+      "disposition": "NOT_INSPECTED"
+    }
+  ],
+  "actual_measurement_count": 0,
+  "manufacturer_values_are_not_observations": true
+}

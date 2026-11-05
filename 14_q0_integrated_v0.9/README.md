@@ -38,6 +38,10 @@ SOP, released drawing, installation design or certified instrument record.
    records Student Workshop Canvas invitation and Manufacturing Lab restrictions.
    Neither authorizes Q0 electrical testing; ELAB is still unconfirmed.
 
+## Unpowered physical-intake checkpoint (Q0-010)
+
+The [catalog-anchored physical intake review](docs/EBT-Q0-010_unpowered_intake.md) and the two [unfilled actual-part](inspection/EBT-Q0-010_unfilled_component_receipt.json) and [instrument](inspection/EBT-Q0-010_unfilled_instrument_inventory.json) manifests capture real hardware evidence **only after actual receipt/inspection**. No part measurements or lab permission exist at present. The conditional 20 W case rating is not a Q0 setpoint.
+
 ## Review and execution preparation
 
 - **[Site handover sheet for lab/workshop staff](docs/EBT-Q0-009_site_handover.md)** — unfilled G2 authority and instrumentation checks; **not an operational SOP**.
