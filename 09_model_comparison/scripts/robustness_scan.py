@@ -10,11 +10,16 @@ def run(n=25):
     for mode in ("ideal","bypass","mismatched"):
         improvement=[]
         condition=[]
+        failed_ablation=0
         for seed in range(20261105,20261105+n):
             r=evaluate(seed,mode)
             row=lambda model: next(x for x in r["holdout"] if x["run"]=="HO-FAN-5W" and x["model"]==model)
             improvement.append(row("B2")["package_transient_rmse_C"]-row("B3")["package_transient_rmse_C"])
-            condition.append(r["identifiability_ablation_B2_case_only"]["jacobian_log_condition_number"])
+            ablation=r["identifiability_ablation_B2_case_only"]
+            if ablation["optimizer_success"]:
+                condition.append(ablation["jacobian_log_condition_number"])
+            else:
+                failed_ablation+=1
         output[mode]={
             "seed_start":20261105,
             "n_independent_synthetic_noise_seeds":n,
@@ -22,7 +27,8 @@ def run(n=25):
             "q05_B2_minus_B3_RMSE_C":float(np.quantile(improvement,.05)),
             "q95_B2_minus_B3_RMSE_C":float(np.quantile(improvement,.95)),
             "number_B3_lower_error":int(np.sum(np.asarray(improvement)>0)),
-            "median_package_only_B2_Jacobian_condition":float(np.median(condition))
+            "median_package_only_B2_Jacobian_condition":float(np.median(condition)) if condition else None,
+            "n_caseonly_optimizer_nonconverged":failed_ablation
         }
     return {"evidence_type":"SYNTHETIC_ONLY",
             "warning":"Noise seeds are NOT physical remounts; quantiles are not experimental confidence intervals.",
