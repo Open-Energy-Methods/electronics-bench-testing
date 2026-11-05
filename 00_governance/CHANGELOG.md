@@ -20,3 +20,10 @@
 - Revised proposed manuscript emphasis toward **prospective transient boundary-transfer assessment**, with independently acquired boundary inputs, true remount holdouts, and accessible measured surface temperatures. The master plan v1.0 remains unchanged.
 - Research novelty is **not established**; G1 remains open pending full-text competition review, broader scholarly database screening and external methodological critique.
 - Added offline literature register checks for provenance and source-grade consistency.
+
+## Model work package v0.4 — 2026-11-05
+- Developed runnable B0/B1/B2/B3 synthetic model comparisons and package-only identifiability ablation, retaining unmodified v0.1 baseline.
+- Distinguished natural-cooling training, separate sink-injection boundary qualification and entire held-out cooling/remount scenarios; tested deliberate validation-response corruption.
+- Tested energy balance, exact-ZOH solver, error propagation with covariance, measurement-information asymmetry and boundary transport counterexamples.
+- Exposed 4.84-second synthetic fast mode under-sampling at 20-second measurement interval, and failures caused by parallel heat paths and mismatched boundary geometry.
+- Report remains **synthetic only**. No actual physical tests, calibrated boundaries, qualified junction temperatures or novelty determination.
