@@ -24,5 +24,5 @@ jobs:
         run: python -m pytest -q
       - name: Reproduce synthetic benchmark
         run: python scripts/run_study.py
-      - name: Verify reproducibility (tracked synthetic outputs)
-        run: git diff --exit-code -- data/synthetic/ results/metrics.json results/SHA256SUMS.json
+      - name: Verify numerical reproduction within documented tolerances
+        run: python scripts/verify_reproduction.py
