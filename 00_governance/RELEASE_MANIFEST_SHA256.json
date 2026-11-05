@@ -1,0 +1,332 @@
+{
+  "release": "EBT GitHub import v1.0",
+  "source_original_sha256": "1c3cb87b3fb2e2ef8a5500f9a69d825c63f8506d22fe0216d2457b53d38c9fce",
+  "file_count_excluding_manifest": 65,
+  "files": [
+    {
+      "path": ".github/workflows/ebt-ci.yml",
+      "size_bytes": 903,
+      "sha256": "089cef31b23761065f5aa492f8c56075f51af4975ce9e6aacf3b1fbacc842893"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 226,
+      "sha256": "b8d367b5034ac28ecf98496b7a9a982c87b43fde05296e9b71af90b5aa2012b0"
+    },
+    {
+      "path": "00_governance/CHANGELOG.md",
+      "size_bytes": 645,
+      "sha256": "5f119f09cff2e08b6ccdb92eacf19e10aa7b37f4db3c4c389cb5634cd9974ed6"
+    },
+    {
+      "path": "00_governance/CHANGE_CONTROL.md",
+      "size_bytes": 1505,
+      "sha256": "35f2ab3ec874dba495945f008cb759bacc49a3ee90d70da21202c2f3e48473a9"
+    },
+    {
+      "path": "00_governance/SOURCE_ARCHIVE_PROVENANCE.md",
+      "size_bytes": 658,
+      "sha256": "0bc4bfd5d0c6d7cb6a559bd1f0c296c97ceec5fede2dc42dd9d4c07aca4d63de"
+    },
+    {
+      "path": "01_research/one_page_pitch_draft.md",
+      "size_bytes": 1918,
+      "sha256": "ce59f1f589978eaf02e8a2d38aba0a76078938f7edc779b61635689b61418403"
+    },
+    {
+      "path": "03_campaigns/EBT-Q0/qualification_protocol_draft.md",
+      "size_bytes": 1994,
+      "sha256": "5247ee42e7f5ebf01498996be68494b44fd01cc2cbff5f9b28e9ff8394beb5e0"
+    },
+    {
+      "path": "03_campaigns/EBT-R01/main_test_plan_draft.md",
+      "size_bytes": 2669,
+      "sha256": "48894d9f043b4f6a494ca99fa32f652bb5647e21a7cd245b3939cf069d8bda3b"
+    },
+    {
+      "path": "03_campaigns/EBT-R01/provisional_run_matrix.csv",
+      "size_bytes": 5955,
+      "sha256": "56080df041db341e3cff76be26e9063a2ea81745dc71b45f5f079dc5ed1100d1"
+    },
+    {
+      "path": "05_publication/linked_in_post_outline.md",
+      "size_bytes": 829,
+      "sha256": "c6adb6d8bd7a786751a4e4ef3f2b9ce204d332d962674f257b2590bad9c41cc5"
+    },
+    {
+      "path": "05_publication/release_checklist.md",
+      "size_bytes": 1222,
+      "sha256": "9fee3fd8d6ec19b5cb4754979ff071bc053f682a870ca5273ccd1ec6aa37287f"
+    },
+    {
+      "path": "06_templates/change_request.md",
+      "size_bytes": 509,
+      "sha256": "9fcf285f20ea43375a7104e9b47df30bf74433c14920fbcfa0aaf95d33e52d9c"
+    },
+    {
+      "path": "06_templates/equipment_verification_form.md",
+      "size_bytes": 627,
+      "sha256": "b7a051457078be0cbc16a0d1243924807ae4cbdbc675aeb25aaeb9e3b8b7dd29"
+    },
+    {
+      "path": "06_templates/gate_review.md",
+      "size_bytes": 417,
+      "sha256": "44dbedbc8658cc5449ddca66c7fd6ed5ec4b84abc090de142de7ad3555cfea64"
+    },
+    {
+      "path": "06_templates/run_record_template.md",
+      "size_bytes": 889,
+      "sha256": "572ad1d8aa096d95925da1cb8c3290689f0d93e3167cc283f4572d93162eba45"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/.github/workflows/ci.yml",
+      "size_bytes": 793,
+      "sha256": "38f0e6d302286d034bcd8b1c86b064cc5c28a2c9b869e6677b51c993746b7bea"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/.gitignore",
+      "size_bytes": 75,
+      "sha256": "b3092ed61dca765f0f4156dad7765fadcbbd13388044071cc25169dc2db13bea"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/CITATION.cff",
+      "size_bytes": 418,
+      "sha256": "40b398a4e5aa4cde57ea919cb7cd7fa3f4fae1bf3f851790b5b3e74e39e41488"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/DATA-LICENSE.md",
+      "size_bytes": 437,
+      "sha256": "b5f477f56e3dada0e269b086a9aaedd1b4c26fb6cb56378e5dc653f95f79bcc0"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/LICENSE",
+      "size_bytes": 1078,
+      "sha256": "5f9bdc8914a22807c960b866799b0005af30dedf34b9bba4b5b3ccfb0d3bde05"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/README.md",
+      "size_bytes": 5736,
+      "sha256": "654323141fd30afc993850c9ef69e8898327a8e36d17e105c774158b4feb5bed"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/data/synthetic/SCHEMA.md",
+      "size_bytes": 1159,
+      "sha256": "b7bc0885c115483bc66109d67decf1db1529fdd7578a5f9c226bd4b45585ef8a"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/data/synthetic/baseline_synthetic.csv",
+      "size_bytes": 31591,
+      "sha256": "e3eaaeb3a75828f3c06cf85888fb27d9335ced39fe1ffa45731c1e79a0f51efc"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/data/synthetic/heldout_synthetic.csv",
+      "size_bytes": 34773,
+      "sha256": "5e68622d27fd1810c317ba8cd84de3bfd4641a33efaebde05cb6cca0d1c2440e"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/EBT_R01_Preproposal_Feasibility_v0.1.pdf",
+      "size_bytes": 440277,
+      "sha256": "2c479adcd44eef08bcf35a3900995b566ffbcdd3d81f16062a3990882b8f2cf1"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/experimental_protocol_draft.md",
+      "size_bytes": 5247,
+      "sha256": "895a2a12fbadac7d632b3a23b561a08cdb2554ceb3d19a79cb479aba0615f6f1"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/literature_gap_matrix.md",
+      "size_bytes": 4971,
+      "sha256": "02ee9dd3048adb8df411ca45201e177362af9a84a651c789964c2173719bea15"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/publication_and_data_plan.md",
+      "size_bytes": 2630,
+      "sha256": "0d1a9f64e58cf62f5bc44dde788a397d915c5a42e6b7e633f29b5f38bfe2dc9a"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/readiness_checklist.md",
+      "size_bytes": 2005,
+      "sha256": "a91e2b1f775cd0ce130539ea3778e56554d9ac09ad840947762cdb34c54b3457"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/research_concept.md",
+      "size_bytes": 7674,
+      "sha256": "6294cf8237978e8c959157c387c7ebbb084a0c964cbc1ba28d9df74bf2f5a315"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/docs/standards_applicability.md",
+      "size_bytes": 1976,
+      "sha256": "7f10fb66e637b32c795792aca8f3ab038b048a041e60213a6475ffa746426ee4"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/figures/01_three_node_response.png",
+      "size_bytes": 115307,
+      "sha256": "d0975dab2a8d5e90527f9bedf1a2d7b2f9848f102d38e2bc44d34ec7cc2e61ef"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/figures/02_surface_blind_spot.png",
+      "size_bytes": 105361,
+      "sha256": "fc03a89202fd75aa82caf1ef5fbb879b8fe13f10128663e3d3241039b00fd2b7"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/figures/03_boundary_transfer.png",
+      "size_bytes": 107466,
+      "sha256": "99c2dbade93bac143b1003b7cfbf50b31cc6038e3d731b188e2aab65ec011f31"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/figures/04_case_metrics.png",
+      "size_bytes": 63445,
+      "sha256": "defd7fca29a07984d4cf865c39a3b348f934827bdee4f40f56470c3ca7ffd70c"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/pyproject.toml",
+      "size_bytes": 433,
+      "sha256": "ce49b5df731b1f7944f5e7ac44090ae504f097af079dc7ed55f1c23012ff0a6a"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/requirements.txt",
+      "size_bytes": 74,
+      "sha256": "4a847d4e917188c9c08cb97d92b5cbbfc2dc35a1d5f8bbf5fbd862276f76cfd9"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/results/SHA256SUMS.json",
+      "size_bytes": 318,
+      "sha256": "19a47e48065b3f91d299ed6a90e1a5634b527f886ed9acaf2fffb674e61753f6"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/results/metrics.json",
+      "size_bytes": 1349,
+      "sha256": "2f8255bceeff51a1d5834be477d9d7c59592a3c5b68330d016a13a2c9a9f9bfc"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/scripts/make_report.py",
+      "size_bytes": 21585,
+      "sha256": "6fd24a9b1f3f0949dba8f37e8bfb69edd4e48821fd7d089d616cf64d43cb0282"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/scripts/run_study.py",
+      "size_bytes": 9241,
+      "sha256": "7c9db3b14946daf585e6090f262fc77749485b8a6f331a538e440e31f23c19c2"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/src/ebt/__init__.py",
+      "size_bytes": 79,
+      "sha256": "864afe8c4f87d2b16f6e75ceb00bc4e596bedba9b13bc57362bb4ae0b384fef5"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/src/ebt/model.py",
+      "size_bytes": 3921,
+      "sha256": "67db6a6d7c58ba33a7e58e79d0c5c5e68bdf862f294802a6b4dc10770b8f161d"
+    },
+    {
+      "path": "07_source_baseline/EBT_R01_Feasibility_v0.1/tests/test_model.py",
+      "size_bytes": 1551,
+      "sha256": "b6facb2f842fb826cd815b6f4f244439495d9e9cacb9c61bdfacb5630d616452"
+    },
+    {
+      "path": "08_project_controls/budget_and_procurement.csv",
+      "size_bytes": 817,
+      "sha256": "fa397d0a748dd6a3d45ea89d358fcbd2c6810c38378d3c51aacfc816f4e2fd03"
+    },
+    {
+      "path": "08_project_controls/change_requests.csv",
+      "size_bytes": 146,
+      "sha256": "6beb71a8819319e825d52b49df099d3417a480cd4a293f160a0d7f635e94936c"
+    },
+    {
+      "path": "08_project_controls/decision_log.csv",
+      "size_bytes": 839,
+      "sha256": "83428c40bd1f3584f2b9efc0d53102fb5648bce81a3666141b45998dd6c58f63"
+    },
+    {
+      "path": "08_project_controls/equipment_register.csv",
+      "size_bytes": 811,
+      "sha256": "d1ff62e571388e2375762bda1f52f195f3d94e35fa0ee9171e26f6632fdb7507"
+    },
+    {
+      "path": "08_project_controls/execution_board.csv",
+      "size_bytes": 1385,
+      "sha256": "c2de56c18c73e5eb8148c8e039b3140605bbaeb47fa21acdd55014e4f9553153"
+    },
+    {
+      "path": "08_project_controls/facility_access_tracker.csv",
+      "size_bytes": 819,
+      "sha256": "96ac7beaa2ed227803e973a4e5abf50fe0d743f7f2d971ea4926e4d897589c6f"
+    },
+    {
+      "path": "08_project_controls/literature_register.csv",
+      "size_bytes": 1887,
+      "sha256": "9211a157f5a1d46d3e049600b59ab49b2ab012b8204517949e494b6155800532"
+    },
+    {
+      "path": "08_project_controls/qa_report.json",
+      "size_bytes": 874,
+      "sha256": "39163b7d3357d9525a39eadf233b2d96aa4c73716c67fb7eaf0fd979d6c83ee7"
+    },
+    {
+      "path": "08_project_controls/requirements_register.csv",
+      "size_bytes": 2902,
+      "sha256": "9ca62ca9119bfa858db4e79b4785c658699a7d978745b9dcb2472ebb8870813a"
+    },
+    {
+      "path": "08_project_controls/risk_register.csv",
+      "size_bytes": 2980,
+      "sha256": "c8dd22469ad2d3b64367148c661854774bb33a2089f127506856aec5ce8c64b3"
+    },
+    {
+      "path": "08_project_controls/standards_matrix.csv",
+      "size_bytes": 1201,
+      "sha256": "c0c7c61e470d651f46f4a9201f1a5efcb70906714cfa920a7013b760e5d33614"
+    },
+    {
+      "path": "CITATION.cff",
+      "size_bytes": 440,
+      "sha256": "ddc2abd31fd818fcca033db8f66032db092c44c34ded2393a3754c36a83955fb"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size_bytes": 1021,
+      "sha256": "5420afb94275c90eacbf96007e799a40d6dd27f71648a59489244eb94c3dbbb4"
+    },
+    {
+      "path": "DATA-LICENSE.md",
+      "size_bytes": 437,
+      "sha256": "b5f477f56e3dada0e269b086a9aaedd1b4c26fb6cb56378e5dc653f95f79bcc0"
+    },
+    {
+      "path": "EBT_Master_Programme_Plan_v1.0.docx",
+      "size_bytes": 35418,
+      "sha256": "221a4094535180443ac804c32ff8471d20ea35e01c74d182b7c23572db6e9113"
+    },
+    {
+      "path": "EBT_Master_Programme_Plan_v1.0.md",
+      "size_bytes": 46195,
+      "sha256": "39648b7c48f5452d7631966632aa628bbf0430795dc9b9bebbac2815cdcc68a7"
+    },
+    {
+      "path": "EBT_Master_Programme_Plan_v1.0.pdf",
+      "size_bytes": 348328,
+      "sha256": "5924f6e04bec12b63171715fa5e62d8782fa000b9ece182c430fb152bcbc756d"
+    },
+    {
+      "path": "GITHUB_IMPORT.md",
+      "size_bytes": 1766,
+      "sha256": "5d90569b3014c3e526b726cb2ca53350c19eba559d6c38b8e3f0859968b0e7b5"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1078,
+      "sha256": "5f9bdc8914a22807c960b866799b0005af30dedf34b9bba4b5b3ccfb0d3bde05"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 2117,
+      "sha256": "65e146a1514df2e59e3f4e078703c16fe860a6c4f0e96c92254eaeb716e81d2b"
+    },
+    {
+      "path": "SAFETY_AND_PROVENANCE.md",
+      "size_bytes": 1212,
+      "sha256": "38a7e5729dcc8236ae518e009ae9a40dff7e1c832664f2dd8319d356580a2b40"
+    }
+  ]
+}

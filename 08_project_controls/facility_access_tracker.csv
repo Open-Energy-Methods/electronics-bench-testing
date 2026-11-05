@@ -1,0 +1,7 @@
+﻿facility_id,facility,request,email_status,facility_decision,unresolved_question,next_check_date
+FAC-01,KTH ELAB,Membership/access inquiry,Sent,Awaiting response,Powered bench permitted? reservation/calibration?,2026-11-12
+FAC-02,KTH Student Workshop,Fab/induction inquiry,Sent,Awaiting response,Fixtures only; energized work restricted,2026-11-12
+FAC-03,KTH Manufacturing Lab,Metal workshop inquiry,Sent,Awaiting response,Eligibility/training,2026-11-12
+FAC-04,KTH Prototype Center,Fab exception inquiry,Sent,Awaiting response,Independent project access,2026-11-12
+FAC-05,KTH Central Makerspace,Spring 2027 inquiry,Sent,Awaiting response,Post-graduation access,2026-11-19
+FAC-06,Stockholm Makerspace,Backup paid option,Not yet sent,Not inspected,Powered testing/instruments/calibration/data rights,2026-11-12

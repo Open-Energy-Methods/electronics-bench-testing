@@ -1,0 +1,9 @@
+﻿instrument_id,instrument_type,measurand,role,model_serial,reference_or_calibration,inspection_status,required_gate
+MET-001,Lab power supply,DC voltage/current,Source,TBD,TBD,Uninspected,G2
+MET-002,DMM #1,Voltage/current/resistance,Electrical measurement,TBD,TBD,Uninspected,G2
+MET-003,Current shunt/probe,Current waveform,Electrical measurement,TBD,TBD,Uninspected,G2
+MET-004,Temperature logger,Case/sink/ambient,Thermal measurement,TBD,TBD,Uninspected,G2
+MET-005,Contact sensors,Temperature,Thermal measurement,TBD,TBD,Uninspected,G2
+MET-006,Oscilloscope,Time-varying V/I,Optional switching stage,TBD,TBD,Uninspected,G2
+MET-007,Thermal camera,IR surface map,Supplementary,TBD,TBD,Uninspected,G2
+MET-008,Tachometer / airflow monitor,Cooling boundary,Boundary characterization,TBD,TBD,Uninspected,G2

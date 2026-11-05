@@ -1,0 +1,7 @@
+﻿standard_id,reference,proposed_use,applicability,current_claim,official_or_context_url,review_gate
+STD-01,ISO/IEC 17025:2017,Lab practices/traceability and document control,Informative,Not accredited,https://www.iso.org/standard/66912.html,G0
+STD-02,JCGM 100:2008 + Amd1:2026; JCGM101:2008,Uncertainty evaluation,Core methodological reference,Budget not yet created,https://www.bipm.org/en/committees/jc/jcgm/publications,G3
+STD-03,ASME V&V 20-2009 (R2021),Specified-point heat-transfer model V&V,Methodological,No physical validation performed,https://www.asme.org/codes-standards/find-codes-standards/standard-for-verification-and-validation-in-computational-fluid-dynamics-and-heat-transfer,G5
+STD-04,JEDEC JESD51 family / JESD51-14,Thermal package metrics and methods,Conditional,Not JEDEC compliant; full standard not obtained,https://doi.org/10.1109/STHERM.2011.5767204,G1/G3
+STD-05,IEC 61010-1:2010 + AMD1:2016,Electrical test/lab equipment safety,Equipment applicability context,No certification claimed,https://webstore.iec.ch/en/publication/4279,G2
+STD-06,IPC-2152,Current carrying design of PCB traces,Conditional on PCB design,Not applied,https://www.ipc.org/TOC/IPC-2152.pdf,G3

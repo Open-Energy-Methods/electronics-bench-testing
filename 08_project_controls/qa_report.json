@@ -1,0 +1,28 @@
+{
+  "baseline_version": "1.0",
+  "created_date": "2026-11-05",
+  "master_pdf_pages": 13,
+  "master_guide_word_count": 5850,
+  "existing_feasibility_tests": ".......                                                                  [100%]\n7 passed in 0.19s",
+  "physical_measurements_present": false,
+  "kth_or_external_lab_authorization_confirmed": false,
+  "rows": {
+    "requirements_register": 20,
+    "risk_register": 16,
+    "standards_matrix": 6,
+    "literature_register": 7,
+    "equipment_register": 8,
+    "execution_board": 10,
+    "facility_access_tracker": 6,
+    "decision_log": 5,
+    "change_requests": 0
+  },
+  "provisional_matrix_runs": 54,
+  "checks": [
+    "unique run IDs",
+    "unapproved physical runs marked NOT AUTHORIZED",
+    "research evidence labeled synthetic",
+    "prior v0.1 code 7/7 tests passed",
+    "master PDF from DOCX rendered"
+  ]
+}

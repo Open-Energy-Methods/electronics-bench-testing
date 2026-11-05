@@ -1,0 +1,38 @@
+{
+  "disclaimer": "ALL RESPONSES AND OBSERVATIONS ARE SYNTHETIC. NO PHYSICAL VALIDATION.",
+  "seed": 20261105,
+  "sensor_noise_std_C": 0.15,
+  "power_W": 5.0,
+  "pulse_end_s": 750.0,
+  "time_step_s": 5.0,
+  "calibration_case": "baseline natural cooling; one 5 W pulse; package-only noisy sensor",
+  "validation_cases": [
+    "3 W natural cooling",
+    "5 W forced convection r_sa=0.9 K/W",
+    "5 W altered interface r_ps=1.0 K/W"
+  ],
+  "true_parameters": {
+    "r_jp": 0.75,
+    "r_ps": 0.45,
+    "r_sa": 3.0,
+    "c_j": 0.6,
+    "c_p": 9.0,
+    "c_s": 70.0,
+    "t_amb": 24.0
+  },
+  "alternate_hidden_r_jp_K_per_W": 1.5,
+  "lumped_fitted_R_K_per_W": 3.3681853302106797,
+  "lumped_fitted_C_J_per_K": 61.355301505546265,
+  "boundary_aware_R_K_per_W": 1.2681853302106796,
+  "train_rmse_C": 0.46612636377951433,
+  "same_boundary_3W_rmse_C": 0.3130906806683505,
+  "forced_fixed_rmse_C": 6.787969892123779,
+  "forced_boundary_aware_rmse_C": 0.5676919343649905,
+  "interface_unmodelled_rmse_C": 2.1574744495999334,
+  "max_alternate_case_diff_C": 0.10416687721151874,
+  "max_alternate_junction_diff_C": 3.74741259315541,
+  "max_alternate_sink_diff_C": 0.026044541732346715,
+  "case_Rjp_log_sensitivity_max_C": 0.09690017468440004,
+  "junction_Rjp_log_sensitivity_max_C": 3.7474823680422986,
+  "energy_balance_relative_residual": 1.6372176664376366e-06
+}

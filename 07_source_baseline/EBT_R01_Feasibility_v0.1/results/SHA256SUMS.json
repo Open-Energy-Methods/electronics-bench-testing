@@ -1,0 +1,5 @@
+{
+  "data/synthetic/baseline_synthetic.csv": "e3eaaeb3a75828f3c06cf85888fb27d9335ced39fe1ffa45731c1e79a0f51efc",
+  "data/synthetic/heldout_synthetic.csv": "5e68622d27fd1810c317ba8cd84de3bfd4641a33efaebde05cb6cca0d1c2440e",
+  "results/metrics.json": "2f8255bceeff51a1d5834be477d9d7c59592a3c5b68330d016a13a2c9a9f9bfc"
+}
