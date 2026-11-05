@@ -10,6 +10,7 @@ import argparse
 import csv
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -62,9 +63,15 @@ def verify_lock_mapping(gate, plan):
         return ["EXPECTED_R01_SPLIT_NOT_Q0_PILOT"]
     g = gate.get("r01_confirmatory", {})
     try:
-        lhs = utc_datetime(g.get("prereg_lock_utc"))
+        gate_value = g.get("prereg_lock_utc")
+        if not isinstance(gate_value, str):
+            raise DataError("missing gate lock")
+        lhs = datetime.fromisoformat(gate_value.replace("Z", "+00:00"))
+        if lhs.tzinfo is None or lhs.utcoffset() is None:
+            raise DataError("gate lock requires timezone")
+        # v0.7 accepts offset-aware timestamps; v0.8 canonical split requires Z/UTC.
         rhs = utc_datetime(plan.get("lock_utc"))
-        if lhs != rhs:
+        if lhs.astimezone(timezone.utc) != rhs.astimezone(timezone.utc):
             issues.append("LOCK_INSTANT_MISMATCH")
     except (DataError, TypeError, KeyError):
         issues.append("GATE_PREREG_LOCK_MISSING_OR_INVALID")

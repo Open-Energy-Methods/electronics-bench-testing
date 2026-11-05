@@ -55,13 +55,13 @@ class ConsolidatedQ0Tests(unittest.TestCase):
         """In-memory shape test; not a real registration or evidence record."""
         gate=read_json(GATE_PATH)
         g=gate["r01_confirmatory"]
-        g["prereg_lock_utc"]="2026-11-05T12:00:00Z"
+        g["prereg_lock_utc"]="2026-11-05T13:00:00+01:00"
         g["prereg_document_sha256"]="a"*64
         g["qualification_ids"]=["QUAL-001","QUAL-002"]
         g["calibration_ids"]=["CAL-001"]
         g["reserved_holdout_ids"]=["HOLD-001"]
         plan={"schema_version":"EBT-SPLIT-008","study_kind":"R01",
-              "lock_utc":"2026-11-05T13:00:00+01:00",
+              "lock_utc":"2026-11-05T12:00:00Z",
               "protocol_sha256":"a"*64,
               "external_lock_ref":"https://example.org/unverified-external-lock",
               "role_run_ids":{"QUAL":["QUAL-002","QUAL-001"],
@@ -72,6 +72,12 @@ class ConsolidatedQ0Tests(unittest.TestCase):
         gate,plan=self.make_test_records()
         self.assertEqual(verify_lock_mapping(gate,plan),[])
         self.assertEqual(evaluate(gate)["status_by_stage"]["powered_q0"]["status"],"BLOCKED")
+
+    def test_split_lock_rejects_non_utc_offset(self):
+        gate,plan=self.make_test_records()
+        plan["lock_utc"]="2026-11-05T13:00:00+01:00"
+        self.assertTrue(any("timestamp must be explicit UTC" in x
+                            for x in verify_lock_mapping(gate,plan)))
 
     def test_cross_record_time_and_hash_mismatch(self):
         gate,plan=self.make_test_records()

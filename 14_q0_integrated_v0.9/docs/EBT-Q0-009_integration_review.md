@@ -35,3 +35,14 @@ certification.
 **Decision: ACCEPT SOFTWARE/DOCUMENTATION INTEGRATION subject to combined CI.
 Maintain G2/G3 HOLD.** This decision cannot be interpreted as fabrication
 approval, energized authorization, data qualification or novelty clearance.
+
+
+## Integration CI correction — timestamp normalization
+
+The first combined CI run exposed three failing integration tests caused
+by using a Stockholm `+01:00` timestamp in the **v0.8 split**. This is
+not an accepted `EBT-SPLIT-008` format. The corrected contract keeps
+that split's strict UTC `Z/+00:00` requirement; it converts a valid
+timezone-aware **v0.7 gate** instant to UTC for equality comparison.
+A negative test now confirms a local-offset split is rejected. The
+original failed CI run is retained in GitHub Actions for auditability.

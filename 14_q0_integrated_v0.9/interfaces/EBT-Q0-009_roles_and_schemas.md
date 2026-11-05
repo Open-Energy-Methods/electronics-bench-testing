@@ -57,3 +57,13 @@ readiness validator does **not** authenticate permissions. Likewise the
 v0.8 data validator cannot verify laboratory truth. A structurally
 complete record still awaits safety review and independent methodology
 signoff. This integration only catches structural inconsistencies.
+
+
+### Exact timezone contract
+
+The canonical v0.8 `EBT-SPLIT-008.lock_utc` **must be UTC**
+(`Z` or `+00:00`), and its checker rejects local offsets such as
+`+01:00`. v0.7's gate checker historically accepts timezone-aware
+values, including local offsets; the v0.9 compatibility audit normalizes
+the **gate value** to UTC before comparing instants. For new records,
+prefer UTC `Z` in both to avoid ambiguous cross-references.
