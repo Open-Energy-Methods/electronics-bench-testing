@@ -13,6 +13,13 @@ Start with:
 
 **Release sequence:** governed plan → pilot authorization and metrology → preregistered experimental protocol → data → holdout analysis → report and open archive → paper pitch/review.
 
+### Current research literature assessment (2026-11-05)
+
+- [EBT-LIT-003 critical full-text assessment v0.3](01_research/EBT-LIT-003_critical_full_text_assessment_v0.3.md) — original full-text reviews where legally retrievable; access-graded records for restricted competitors.
+- [14-source evidence matrix](08_project_controls/fulltext_evidence_matrix_v0.3.csv) and [reproducible access/search audit](08_project_controls/literature_search_log_v0.3.csv).
+- [EBT-R01 manuscript positioning decision](01_research/EBT-R01_paper_positioning_decision_v0.3.md) — prospective cross-boundary transient temperature validation is a **candidate** contribution, not confirmed novelty.
+- **Gate G1 remains open:** the exact methods of several competing papers are access-limited; a formal database-based search is still outstanding. Nothing is authorized for physical testing by this document.
+
 ### Verify existing feasibility code
 
 ```
