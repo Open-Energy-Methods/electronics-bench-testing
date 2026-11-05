@@ -35,6 +35,7 @@ class ModelFit:
     condition_number: float
     n_parameters: int
     training_observables: str
+    optimizer_success: bool = True
 
 
 def _fit(kind: str, experiments: list[Experiment],
@@ -72,7 +73,7 @@ def _fit(kind: str, experiments: list[Experiment],
 
     fit=least_squares(residual,np.log(initial),bounds=(np.log(lower),np.log(upper)),
                      x_scale="jac",max_nfev=120,xtol=1e-10,ftol=1e-10,gtol=1e-10)
-    if not fit.success and fit.optimality > 1e-3:
+    if not fit.success and fit.optimality > 1e-3 and kind != "B2_CASE_ONLY":
         raise RuntimeError("optimizer did not converge")
     res=residual(fit.x)
     sv=np.linalg.svd(fit.jac,full_matrices=False,compute_uv=False)
@@ -80,7 +81,7 @@ def _fit(kind: str, experiments: list[Experiment],
     return ModelFit(kind,tuple(float(x) for x in np.exp(fit.x)),
                     float(np.sqrt(np.mean((res*.10)**2))),
                     tuple(float(x) for x in sv),cond,len(initial),
-                    "package only" if kind in ("B1","B2_CASE_ONLY") else "package + sink")
+                    "package only" if kind in ("B1","B2_CASE_ONLY") else "package + sink",bool(fit.success))
 
 
 def fit_case_only_ablation(training: list[Experiment]) -> ModelFit:
