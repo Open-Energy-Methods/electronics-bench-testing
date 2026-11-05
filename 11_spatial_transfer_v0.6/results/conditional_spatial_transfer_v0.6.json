@@ -1,0 +1,109 @@
+{
+  "evidence_class": "SYNTHETIC_ASSUMPTION_DRIVEN_PREDESIGN",
+  "revision": "v0.6",
+  "normalized_power_w": 1,
+  "power_is_not_authorized_setpoint": true,
+  "assumed_plate_m": [
+    0.1,
+    0.1,
+    0.004
+  ],
+  "assumed_k_w_mk": 180,
+  "cells_per_side": 41,
+  "not_modelled": [
+    "real fin profile",
+    "TIM",
+    "contact mechanics",
+    "true convection field",
+    "case/junction dynamics",
+    "electrical heat bypass mechanism"
+  ],
+  "sensor_positions_m": {
+    "A_near_plate": [
+      -0.025,
+      -0.017
+    ],
+    "B_near_plate": [
+      0.025,
+      -0.017
+    ],
+    "far_plate": [
+      0,
+      0.032
+    ]
+  },
+  "scenarios": [
+    {
+      "scenario": "symmetric_effective_loss",
+      "assumed_g_left_right_w_m2k": [
+        60,
+        60
+      ],
+      "assumed_plate_fraction": 1,
+      "assumed_heat_footprint_m": [
+        0.0101,
+        0.0146
+      ],
+      "r_app_A_to_A_k_w": 1.8618748423833826,
+      "r_app_B_to_B_k_w": 1.8618748423834213,
+      "r_app_B_to_A_k_w": 1.538296378881817,
+      "co_moving_relative_difference": 2.0750998067892405e-14,
+      "fixed_A_sensor_source_swap_relative_difference": 0.17379173730461575,
+      "maximum_energy_relative_residual": 2.616795669041494e-13
+    },
+    {
+      "scenario": "asymmetric_effective_loss",
+      "assumed_g_left_right_w_m2k": [
+        40,
+        100
+      ],
+      "assumed_plate_fraction": 1,
+      "assumed_heat_footprint_m": [
+        0.0101,
+        0.0146
+      ],
+      "r_app_A_to_A_k_w": 1.731046396077843,
+      "r_app_B_to_B_k_w": 1.5259942827752313,
+      "r_app_B_to_A_k_w": 1.3050477884411789,
+      "co_moving_relative_difference": 0.12591314234049927,
+      "fixed_A_sensor_source_swap_relative_difference": 0.2460931195153868,
+      "maximum_energy_relative_residual": 1.8740564655672642e-13
+    },
+    {
+      "scenario": "asymmetric_with_20pct_plate_bypass",
+      "assumed_g_left_right_w_m2k": [
+        40,
+        100
+      ],
+      "assumed_plate_fraction": 0.8,
+      "assumed_heat_footprint_m": [
+        0.0101,
+        0.0146
+      ],
+      "r_app_A_to_A_k_w": 1.3848371168622746,
+      "r_app_B_to_B_k_w": 1.2207954262201848,
+      "r_app_B_to_A_k_w": 1.0440382307529434,
+      "co_moving_relative_difference": 0.1259131423404996,
+      "fixed_A_sensor_source_swap_relative_difference": 0.24609311951538662,
+      "maximum_energy_relative_residual": 1.874889132835733e-13
+    },
+    {
+      "scenario": "asymmetric_narrower_heat_footprint",
+      "assumed_g_left_right_w_m2k": [
+        40,
+        100
+      ],
+      "assumed_plate_fraction": 1,
+      "assumed_heat_footprint_m": [
+        0.006,
+        0.006
+      ],
+      "r_app_A_to_A_k_w": 1.7266339459917006,
+      "r_app_B_to_B_k_w": 1.5215044319308055,
+      "r_app_B_to_A_k_w": 1.3050372571011977,
+      "co_moving_relative_difference": 0.12630589598962524,
+      "fixed_A_sensor_source_swap_relative_difference": 0.24417259365786234,
+      "maximum_energy_relative_residual": 1.8696155734687636e-13
+    }
+  ]
+}

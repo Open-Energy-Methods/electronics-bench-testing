@@ -59,4 +59,22 @@ class SpatialTests(unittest.TestCase):
         self.assertGreater(d["scenarios"][0]["fixed_A_sensor_source_swap_relative_difference"],.01)
         self.assertGreater(d["scenarios"][1]["co_moving_relative_difference"],.01)
 
+
+    def test_committed_results_are_reproducible(self):
+        import json
+        from pathlib import Path
+        stored=json.loads((Path(__file__).resolve().parents[1]/
+                           "results/conditional_spatial_transfer_v0.6.json").read_text(encoding="utf-8"))
+        recomputed=make_results()
+        self.assertEqual(stored["evidence_class"],recomputed["evidence_class"])
+        self.assertEqual(stored["not_modelled"],recomputed["not_modelled"])
+        self.assertEqual(len(stored["scenarios"]),len(recomputed["scenarios"]))
+        for saved,actual in zip(stored["scenarios"],recomputed["scenarios"]):
+            self.assertEqual(saved["scenario"],actual["scenario"])
+            for k in ("r_app_A_to_A_k_w","r_app_B_to_B_k_w","r_app_B_to_A_k_w",
+                      "co_moving_relative_difference",
+                      "fixed_A_sensor_source_swap_relative_difference",
+                      "maximum_energy_relative_residual"):
+                self.assertAlmostEqual(saved[k],actual[k],delta=1e-7)
+
 if __name__=="__main__":unittest.main()
