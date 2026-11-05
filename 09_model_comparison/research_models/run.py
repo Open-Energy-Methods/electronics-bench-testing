@@ -32,6 +32,7 @@ def evaluate(seed:int=20261105,mode:str="ideal")->dict:
                          for k,v in qualified.items()},
         "identifiability_ablation_B2_case_only":{
             "parameters":ablation.parameters,
+            "optimizer_success":ablation.optimizer_success,
             "training_rmse_c":ablation.train_rmse_c,
             "jacobian_log_condition_number":ablation.condition_number,
             "log_jacobian_singular_values":ablation.jacobian_singular_values,
