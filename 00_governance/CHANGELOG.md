@@ -13,3 +13,10 @@
 - Prepared preliminary 12-row Q0 pilot planning design (P1/P2 remain undefined) with three automated checks and CI workflow.
 - Added targeted prior-art differentiation matrix; no full systematic review or novel-paper claim yet.
 - Updated facility-access tracker with Mykola Ivchenko's Student Workshop eligibility response; Canvas/induction and energized ELAB permission remain pending.
+
+## Research work package v0.3 — 2026-11-05
+- Completed source-graded **critical full-text literature pass**: five primary full-text research articles and the KTH doctoral-thesis summary; eight additional abstract/record-only sources with explicit access blockers.
+- Added EBT-LIT-003 critical review, 14-record evidence matrix, dated search/access audit and guarded research-gap decision.
+- Revised proposed manuscript emphasis toward **prospective transient boundary-transfer assessment**, with independently acquired boundary inputs, true remount holdouts, and accessible measured surface temperatures. The master plan v1.0 remains unchanged.
+- Research novelty is **not established**; G1 remains open pending full-text competition review, broader scholarly database screening and external methodological critique.
+- Added offline literature register checks for provenance and source-grade consistency.
