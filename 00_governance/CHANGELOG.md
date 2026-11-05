@@ -27,3 +27,11 @@
 - Tested energy balance, exact-ZOH solver, error propagation with covariance, measurement-information asymmetry and boundary transport counterexamples.
 - Exposed 4.84-second synthetic fast mode under-sampling at 20-second measurement interval, and failures caused by parallel heat paths and mismatched boundary geometry.
 - Report remains **synthetic only**. No actual physical tests, calibrated boundaries, qualified junction temperatures or novelty determination.
+
+## Engineering work package v0.5 — 2026-11-05
+- Produced unpowered preliminary mechanical plan/section and editable design-coordinate DXF, with manufacturer-versus-assumed dimensions explicitly separated; **not manufacturing released**.
+- Produced the heater-selector/current-measurement preliminary electrical topology, connection-level net ledger, detailed grounding and protection blockers, and channel/uncertainty requirements; **not an approved circuit**.
+- Quoted exact Bourns PWR220T-20-10R0F (x2) and Fischer SK 92 100 SA (x1) from Swedish distributor snapshots; **346.58 SEK ex VAT covers only these three pieces**; the other 14 BOM lines remain unpriced or site-dependent.
+- Archived v0.4 synthetic JSON/PNG output snapshots with hashes; baseline v0.1 remains unchanged. Preserved whole-repository boilerplate/representative-data audit and created current source hierarchy. Historic v1.0 manifest and QA report are retained as snapshots, not current summaries.
+- Added six offline integrity tests to GitHub Actions, covering data classification, no false calibration claims, circuit net coverage, vector geometry and partial BOM arithmetic.
+- Formal G1 novelty, G2 energized facility authorization, G3 physical experiment and hardware manufacturing release remain blocked.

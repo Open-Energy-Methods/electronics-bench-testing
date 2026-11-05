@@ -1,0 +1,19 @@
+net_id,member_1,member_2,meaning,status
+PSU_P,PSU.P+,S0.IN,Isolated low voltage positive supply,DESIGN_NOT_AUTHORIZED
+P_SW,S0.OUT,F1.IN,Accessible independent interrupter then protection,DESIGN_NOT_AUTHORIZED
+P_FUSED,F1.OUT,S1.COM,DC protected source-selection feed,DESIGN_NOT_AUTHORIZED
+H1_POS,S1.A,H1.P+,Break before make source A,DESIGN_NOT_AUTHORIZED
+H2_POS,S1.B,H2.P+,Break before make source B,DESIGN_NOT_AUTHORIZED
+H_RET,H1.P-,ISENSE.FORCE_PLUS,Return branch from H1 to common shunt node,DESIGN_NOT_AUTHORIZED
+H_RET,H2.P-,ISENSE.FORCE_PLUS,Return branch from H2 to common shunt node,DESIGN_NOT_AUTHORIZED
+PSU_N,ISENSE.FORCE_MINUS,PSU.P-,Approved low side return,DESIGN_NOT_AUTHORIZED
+V_H1_PLUS,H1.P+,AIN_H1.V+,Differential Kelvin at heater H1 terminal,DESIGN_NOT_AUTHORIZED
+V_H1_MINUS,H1.P-,AIN_H1.V-,Differential Kelvin at heater H1 terminal,DESIGN_NOT_AUTHORIZED
+V_H2_PLUS,H2.P+,AIN_H2.V+,Differential Kelvin at heater H2 terminal,DESIGN_NOT_AUTHORIZED
+V_H2_MINUS,H2.P-,AIN_H2.V-,Differential Kelvin at heater H2 terminal,DESIGN_NOT_AUTHORIZED
+I_PLUS,ISENSE.SENSE_PLUS,AIN_I.V+,Qualified shunt voltage sense or current-transducer representation,DESIGN_NOT_AUTHORIZED
+I_MINUS,ISENSE.SENSE_MINUS,AIN_I.V-,Qualified shunt voltage sense or current-transducer representation,DESIGN_NOT_AUTHORIZED
+FAN_P,FAN_PSU.P+,FAN_CTL.P+,Separate supply and fan controller to be qualified,DESIGN_NOT_AUTHORIZED
+FAN_OUT,FAN_CTL.OUT,FAN.P+,Actual fan connector and ratings unknown,DESIGN_NOT_AUTHORIZED
+FAN_N,FAN.P-,FAN_PSU.P-,Independent fan return and tach common approval pending,DESIGN_NOT_AUTHORIZED
+FAN_TACH,FAN.TACH,AIN_TACH,Independent tachometer if supported,DESIGN_NOT_AUTHORIZED

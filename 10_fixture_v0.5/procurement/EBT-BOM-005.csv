@@ -1,0 +1,17 @@
+item_id,category,description,manufacturer_part,qty,unit,unit_price_sek_exvat,extended_price_sek_exvat,price_basis,status,source_url,purchase_gate
+BOM-001,Heat source,Two identical nominal 10 ohm 1 percent power resistors,Bourns PWR220T-20-10R0F,2,pcs,38.82,77.64,Farnell Sweden 1+ price ex VAT 2026-11-05,QUOTE_CHECKED_NOT_ORDERED,https://se.farnell.com/en-SE/c/passive-components/resistors-fixed-value/through-hole-resistors?brand=bourns&resistance=10ohm,Site-approved load and manufacturer mount
+BOM-002,Heat sink,Black anodized extruded 100x100x40mm nominal envelope,Fischer SK 92 100 SA,1,pcs,268.94,268.94,Farnell Sweden 1+ price ex VAT 2026-11-05,QUOTE_CHECKED_NOT_ORDERED,https://se.farnell.com/fischer-elektronik/sk-92-100-sa/heat-sink-100mm-1-4-c-w/dp/4621580,Actual fin profile and interface suitability review
+BOM-003,Mechanical,Aluminium adapter plate 100x100x4 mm ASSUMED NO MANUFACTURING SPEC,Material grade TBD,1,pcs,,,UNQUOTED,DESIGN_ASSUMPTION_NOT_ORDERED,,Confirmed mating surface heat bypass and manufacturer cross section
+BOM-004,Mechanical,Fasteners clips washers and electrical insulators,M3 concept; exact source TBD,2,sets,,,UNQUOTED,UNSELECTED,,Rated mechanical torque and insulation clearance review
+BOM-005,Interface,Qualified thermal interface material for each mount,TIM TBD,1,kit,,,UNQUOTED,UNSELECTED,,Contact resistance and thickness control plan
+BOM-006,Temperature,Verified contact thermometry with mounting accessory,Sensor IDs TBD,5,channels,,,NO CALIBRATION OR PRICE,UNINSPECTED_SITE_EQUIPMENT,,Site inventory reference evidence and real sensor lag
+BOM-007,Electrical,Current-limited isolated DC laboratory supply with approved off,Model serial TBD,1,unit,,,SITE_EQUIPMENT_PREFERRED,UNINSPECTED_SITE_EQUIPMENT,,Energized facility authorization required
+BOM-008,Electrical,Terminal voltage differential measurements with defined isolation,Model serial TBD,2,channels,,,SITE_EQUIPMENT_PREFERRED,UNINSPECTED_SITE_EQUIPMENT,,Instrument common mode and source reference review
+BOM-009,Electrical,Current measurement or four-wire precision shunt with suitable dissipative rating,Part TBD,1,unit,,,NO QUOTE,UNSELECTED,,Shunt calibration and placement
+BOM-010,DAQ,Temperature logger with cold junction compensation or RTD input,NI 9213 candidate if available not confirmed,1,unit,,,BORROW_IF_VERIFIED,UNINSPECTED_SITE_EQUIPMENT,https://www.ni.com/en-us/shop/model/ni-9213.html,Qualified channel rate and cold-junction accuracy
+BOM-011,Mechanical,Independent accessible power disconnect and properly rated fuse,BOM not rated,1,set,,,NO QUOTE,UNSELECTED,,Complete electrical schematic and site sign-off
+BOM-012,Mechanical,Break-before-make centre-off DC-rated selector,Switch TBD,1,pcs,,,NO QUOTE,UNSELECTED,,Verified DC contact rating interlock and failure review
+BOM-013,Air flow,Guarded low voltage cooling fan with separate approved supply,Fan model TBD,1,unit,,,NO QUOTE,UNSELECTED,,Controlled airflow geometry and fan status
+BOM-014,Air flow,Tachometer or airflow measurement channel,Tach model TBD,1,unit,,,SITE_EQUIPMENT_PREFERRED,UNINSPECTED_SITE_EQUIPMENT,,Airflow repeatability and boundary qualification
+BOM-015,Mechanical,Fixture standoffs cable routing strain relief and thermal guarding,Design TBD,1,kit,,,UNQUOTED,UNSELECTED,,Physical hazard and lead heat bypass review
+BOM-016,Metrology,Reference temperatures and electrical verification procedure,Lab reference instrument IDs TBD,1,service,,,FACILITY_REFERENCE_UNVERIFIED,UNINSPECTED_SITE_EQUIPMENT,,Valid references before reporting uncertainties
