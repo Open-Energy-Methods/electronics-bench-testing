@@ -35,3 +35,10 @@
 - Archived v0.4 synthetic JSON/PNG output snapshots with hashes; baseline v0.1 remains unchanged. Preserved whole-repository boilerplate/representative-data audit and created current source hierarchy. Historic v1.0 manifest and QA report are retained as snapshots, not current summaries.
 - Added six offline integrity tests to GitHub Actions, covering data classification, no false calibration claims, circuit net coverage, vector geometry and partial BOM arithmetic.
 - Formal G1 novelty, G2 energized facility authorization, G3 physical experiment and hardware manufacturing release remain blocked.
+
+## Spatial model work package v0.6 — 2026-11-05 (draft review)
+
+- Added assumed 2-D steady spatial plate sensitivity on proposed heater/sensor coordinates; does not model or validate actual Fischer finned sink.
+- Under illustrative uniform loss, co-moving near sensors yield equal apparent resistance while a single fixed sensor shifts by ~17.4% as heater site changes. Under assumed left/right loss asymmetry, co-moving sites differ ~12.6%; fixed sensor change ~24.6%.
+- Demonstrated that hypothetical source-to-plate heat bypass changes normalized apparent resistance without changing the loss field. These are synthetic **counterexamples**, not measured thermal performance.
+- Added seven computational tests and a reproducible scenario runner. G1/G2/G3, laboratory power permission, real geometry, calibration and physical transfer testing all remain OPEN.

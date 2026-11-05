@@ -50,3 +50,7 @@ The [critical methods report](09_model_comparison/docs/EBT-R01_model_comparison_
 - [EBT v0.5 preliminary engineering package](10_fixture_v0.5/README.md) contains editable mechanical DXF, SVG plan/section, a documented electrical topology and net ledger, metrology channel definitions, experimental boundary-transfer tests and sourced **partial** BOM.
 - **Design status: PDR / HOLD** — no released manufacturing toolpath, approved schematic, safe operating powers, KTH energized authorization, tested device or calibrated measurements. Two heaters and a catalog heatsink have independently listed **indicative** prices; all other costs depend on actual procurement or facility equipment.
 - [Checked v0.4 synthetic output snapshots](09_model_comparison/GENERATED_OUTPUT_PROVENANCE.md) are now tracked with SHA-256; numerical verification is not physical validation.
+
+### Spatial boundary-transfer assessment v0.6 — SYNTHETIC PRE-DESIGN
+
+The [v0.6 finite-volume spatial sensitivity analysis](11_spatial_transfer_v0.6/README.md) tests the preliminary ±25 mm heater/sensor layout for source-position, sensor-position and unknown heat-bypass confounding. It uses assumed plate material and effective cooling fields, **not actual heatsink measurements**. Seven numerical checks guard conservation, symmetry and grid behaviour. The v0.5 manufacturing/energized hold remains fully in force.
