@@ -25,6 +25,9 @@ def metadata(run_id="QUAL-001",role="QUAL",assembly="ASSEMBLY-001",
       evidence_class=evidence,assembly_id=assembly,mount_event_id=event,
       heater_id="HEATER-001",site_id="SITE-A",
       fixture_revision="CONCEPT-008",temperature_surface="T_PLATE",
+      cooling_state="NAT", cooling_reference_ref="DEMO-NO-COOLING-EVIDENCE",
+      heater_part_ref="DEMO-CANDIDATE", heating_envelope_ref="DEMO-UNAPPROVED",
+      electrical_wiring_ref="DEMO-WIRING",
       sensor_map_ref="DEMO-SENSOR-MAP",reference_evidence_ref="DEMO-REFERENCES",
       timebase_ref="DEMO-TIMEBASE",facility_permission_ref="DEMO-NO-PERMISSION",
       protocol_ref="DEMO-NON-AUTHORIZED",acquired_utc=ACQUIRED,
@@ -58,6 +61,8 @@ class DataChecks(unittest.TestCase):
         if evidence=="PHYSICAL_UNVERIFIED":
             # Test-only invented references; validator does not assess their authenticity.
             for k in ("sensor_map_ref","reference_evidence_ref","timebase_ref",
+                      "cooling_reference_ref","heater_part_ref",
+                      "heating_envelope_ref","electrical_wiring_ref",
                       "facility_permission_ref","protocol_ref"):
                 meta[k]="REF-TEST-SHAPE-NOT-REAL"
             meta.pop("synthetic_disclosure")
@@ -139,6 +144,34 @@ class DataChecks(unittest.TestCase):
         m=metadata(evidence="PHYSICAL_UNVERIFIED")
         with self.assertRaises(DataError):
             check_metadata(m)
+
+    def test_cooling_state_and_electrical_chain_are_required(self):
+        m=metadata()
+        m["cooling_state"]="UNCONTROLLED"
+        with self.assertRaisesRegex(DataError,"cooling_state"):
+            check_metadata(m)
+        m=metadata()
+        m["heating_envelope_ref"]="TBD"
+        with self.assertRaisesRegex(DataError,"heating_envelope_ref"):
+            check_metadata(m)
+        m=metadata()
+        m.pop("electrical_wiring_ref")
+        with self.assertRaisesRegex(DataError,"missing metadata"):
+            check_metadata(m)
+
+    def test_abort_requires_deviation_log_and_preserves_raw(self):
+        raw=(RAW_HEADER+"0,0,0,24,24,24,RUN\n"+
+             "1,1,0.1,,24.2,24,ABORT\n")
+        run=self.make_run(raw=raw,sealed=False)
+        with self.assertRaisesRegex(DataError,"deviation_log_ref"):
+            seal_run(run)
+        m=load_json(run/"metadata.json")
+        m["deviation_log_ref"]="DEMO-ABORT-REASON-RETAINED"
+        save_json(run/"metadata.json",m)
+        info=seal_run(run)
+        self.assertEqual(info["aborted_samples"],1)
+        self.assertEqual(info["analysis_status"],"REVIEW_REQUIRED")
+        self.assertTrue(any("missing t_case_c" in s for s in info["quality_issues"]))
 
     def test_duplicate_and_overlapping_plan_ids(self):
         p=plan({"QUAL":["QUAL-001"],"CAL":["QUAL-001"],"HOLD":["HOLD-001"]})

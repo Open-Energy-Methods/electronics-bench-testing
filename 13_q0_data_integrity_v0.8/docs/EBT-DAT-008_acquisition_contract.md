@@ -4,10 +4,10 @@
 
 ## Data provenance states
 
-- \`SYNTHETIC_DEMO\`: generated CSV exercises parsing, integrity and negative tests.
+- `SYNTHETIC_DEMO`: generated CSV exercises parsing, integrity and negative tests.
   No real temperature observations, no permitted operating conditions and no
   claim of an independently measured thermal boundary.
-- \`PHYSICAL_UNVERIFIED\`: operator-entered physical observations whose
+- `PHYSICAL_UNVERIFIED`: operator-entered physical observations whose
   claimed instrument, location, permission and provenance references
   **still require a human reviewer**. This is not a declaration of accuracy.
 - There is deliberately **no automatic PHYSICAL_VALIDATED state**.
@@ -16,17 +16,17 @@
 ## Records and roles
 
 Run directory name and metadata run_id must match. An independent
-\`mount_event_id\` is unique across the campaign; \`assembly_id\` identifies
-a documented full assembly. Each run declares \`site_id\`, \`heater_id\`,
-\`temperature_surface\` (exactly T_PLATE or T_SINK), fixture revision,
+`mount_event_id` is unique across the campaign; `assembly_id` identifies
+a documented full assembly. Each run declares `site_id`, `heater_id`,
+`temperature_surface` (exactly T_PLATE or T_SINK), fixture revision,
 sensor map, reference evidence, facility permission, protocol, timebase,
 acquisition UTC and review state. The raw CSV's surface column must not
 be inferred to refer to a sink when it measured an added adapter plate.
 
-\`QUAL\` supplies prospective boundary information from separate experiments.
-\`CAL\` supplies designated model-fitting measurements.
-\`HOLD\` reserves full independent assemblies/remounts for evaluation only.
-\`Q0_PILOT\` provides exploratory metrology/mounting evidence and must never
+`QUAL` supplies prospective boundary information from separate experiments.
+`CAL` supplies designated model-fitting measurements.
+`HOLD` reserves full independent assemblies/remounts for evaluation only.
+`Q0_PILOT` provides exploratory metrology/mounting evidence and must never
 be silently promoted to R01 confirmatory HOLD.
 
 ## Seal and preregistration integrity
@@ -57,3 +57,13 @@ covariance estimation, synchronized DAQ acquisition, signal-processing
 filters, sample-size calculation or model fitting. Those require verified
 equipment and real Q0 results. DO NOT overstate a passed parser test as
 thermal research validation.
+
+## Additional mandatory experimental configuration references
+
+Each run now declares `cooling_state` (NAT, FAN or OTHER_DOCUMENTED) and
+`cooling_reference_ref` with actual airflow/fan/setup provenance once physical
+data are acquired. `heater_part_ref`, `heating_envelope_ref` and
+`electrical_wiring_ref` identify the inspected device and site-reviewed
+electrical envelope. These are **references**, not invented numeric ratings.
+An ABORT or QUALITY_FLAG record requires `deviation_log_ref`; even an abort
+with missing thermometry is retained and cannot silently become accepted data.

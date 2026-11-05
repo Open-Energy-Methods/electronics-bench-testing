@@ -21,7 +21,9 @@ CLASSES = {"SYNTHETIC_DEMO", "PHYSICAL_UNVERIFIED"}
 METADATA_FIELDS = (
     "schema_version", "run_id", "role", "evidence_class",
     "assembly_id", "mount_event_id", "heater_id", "site_id",
-    "fixture_revision", "temperature_surface", "sensor_map_ref",
+    "fixture_revision", "temperature_surface", "cooling_state",
+    "cooling_reference_ref", "heater_part_ref", "heating_envelope_ref",
+    "electrical_wiring_ref", "sensor_map_ref",
     "reference_evidence_ref", "timebase_ref", "facility_permission_ref",
     "protocol_ref", "acquired_utc", "review_status")
 ID = re.compile(r"^[A-Z][A-Z0-9_-]{2,63}$")
@@ -76,14 +78,20 @@ def check_metadata(meta):
     require(meta["evidence_class"] in CLASSES, "unknown evidence class")
     require(meta["temperature_surface"] in {"T_PLATE", "T_SINK"},
             "surface sensor must be unambiguously T_PLATE or T_SINK")
+    require(meta["cooling_state"] in {"NAT", "FAN", "OTHER_DOCUMENTED"},
+            "cooling_state must be NAT, FAN or OTHER_DOCUMENTED")
     require(meta["review_status"] == "NOT_VALIDATED",
             "automated Q0 ingestion never awards validated status")
     utc_datetime(meta["acquired_utc"])
     for k in ("fixture_revision", "sensor_map_ref", "reference_evidence_ref",
+              "cooling_reference_ref", "heater_part_ref",
+              "heating_envelope_ref", "electrical_wiring_ref",
               "timebase_ref", "facility_permission_ref", "protocol_ref"):
         require(nonplaceholder(meta[k]), f"missing/placeholder {k}")
     if meta["evidence_class"] == "PHYSICAL_UNVERIFIED":
         for k in ("sensor_map_ref", "reference_evidence_ref", "timebase_ref",
+                  "cooling_reference_ref", "heater_part_ref",
+                  "heating_envelope_ref", "electrical_wiring_ref",
                   "facility_permission_ref", "protocol_ref"):
             require(not meta[k].upper().startswith(("DEMO", "EXAMPLE", "SYNTHETIC", "TBD")),
                     f"physical metadata may not use demo reference: {k}")
@@ -149,6 +157,11 @@ def inspect_run(path, *, sealed=True):
     require(root.name == meta["run_id"], "run directory and metadata ID mismatch")
     raw_bytes = raw_path.read_bytes()
     qc = inspect_raw(raw_bytes)
+    if qc["aborted_samples"] > 0 or any(
+        "QUALITY_FLAG" in issue for issue in qc["quality_issues"]
+    ):
+        require(nonplaceholder(meta.get("deviation_log_ref")),
+                "aborts/QUALITY_FLAG rows need deviation_log_ref")
     info = {"run_id": meta["run_id"], "role": meta["role"],
             "evidence_class": meta["evidence_class"],
             "raw_sha256": sha256(raw_bytes),
