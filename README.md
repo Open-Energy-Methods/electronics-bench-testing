@@ -50,3 +50,10 @@ The [critical methods report](09_model_comparison/docs/EBT-R01_model_comparison_
 - [EBT v0.5 preliminary engineering package](10_fixture_v0.5/README.md) contains editable mechanical DXF, SVG plan/section, a documented electrical topology and net ledger, metrology channel definitions, experimental boundary-transfer tests and sourced **partial** BOM.
 - **Design status: PDR / HOLD** — no released manufacturing toolpath, approved schematic, safe operating powers, KTH energized authorization, tested device or calibrated measurements. Two heaters and a catalog heatsink have independently listed **indicative** prices; all other costs depend on actual procurement or facility equipment.
 - [Checked v0.4 synthetic output snapshots](09_model_comparison/GENERATED_OUTPUT_PROVENANCE.md) are now tracked with SHA-256; numerical verification is not physical validation.
+
+### Physical readiness and manufacturer-family geometry v0.7 — REVIEW PACKAGE
+
+- [Physical readiness v0.7](12_physical_readiness_v0.7/README.md) adds **10 mm nominal Fischer SK 92 series base thickness** from a manufacturer-family profile, subject to real-part inspection; this does not authorize drilling or certify mount geometry.
+- The added 4 mm adapter is now a documented alternative rather than an assumed requirement; direct-to-sink is preferred for **engineering review**, not fabrication.
+- [G2 evidence inspection register](12_physical_readiness_v0.7/facility/EBT-G2-007_inspection_register.csv), [Q0 source/site crossover protocol](12_physical_readiness_v0.7/protocol/EBT-Q0-007_crossover_and_holdout.md), and [offline gate checker](12_physical_readiness_v0.7/validate_g2.py) refuse to promote absent authorization or synthetic work to physical evidence.
+- The Stage G2 and G3 human approval gates remain open. Draft numerical spatial investigation [PR #11](https://github.com/Open-Energy-Methods/electronics-bench-testing/pull/11) is separate and not yet part of main.

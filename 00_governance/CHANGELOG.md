@@ -35,3 +35,10 @@
 - Archived v0.4 synthetic JSON/PNG output snapshots with hashes; baseline v0.1 remains unchanged. Preserved whole-repository boilerplate/representative-data audit and created current source hierarchy. Historic v1.0 manifest and QA report are retained as snapshots, not current summaries.
 - Added six offline integrity tests to GitHub Actions, covering data classification, no false calibration claims, circuit net coverage, vector geometry and partial BOM arithmetic.
 - Formal G1 novelty, G2 energized facility authorization, G3 physical experiment and hardware manufacturing release remain blocked.
+
+## Physical-readiness work package v0.7 — 2026-11-05 (review-only PR)
+
+- Added Fischer SK 92 manufacturer-family nominal **10 mm extrusion base thickness** evidence (including grade caveat), making one v0.5 unknown more concrete. No received-part inspection or fabrication-ready fastener geometry.
+- Proposed direct mounting on an approved sink base as the first architecture for **technical review**; retained adapter as separately assessed configuration with assumed 97.2 J/K fully-lumped heat capacity under generic unvalidated aluminium properties.
+- Added 23-site-item actual inspection register, explicit Q0 source/position crossover with separate QUAL/CAL/HOLD identities, and structural evidence validator. Blank template returns BLOCKED; populated references remain HUMAN_REVIEW_REQUIRED, never authorizing powered work.
+- Added computational/data integrity tests and GitHub verification. Zero physical measurements, no workshop induction completed, no test-power envelope, no signed machining, and no electrically authorized lab.
