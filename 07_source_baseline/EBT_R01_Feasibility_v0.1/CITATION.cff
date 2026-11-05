@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "This is a synthetic pre-experiment feasibility package, not a peer-reviewed paper or a measured electronics dataset."
+title: "Open Electrothermal Bench: EBT-R01 Synthetic Research Feasibility Benchmark"
+type: software
+version: 0.1.0
+date-released: 2026-11-05
+authors:
+  - family-names: Sivaprasadan
+    given-names: Abhijith
+    orcid: "https://orcid.org/0000-0003-0299-5745"
+license: MIT

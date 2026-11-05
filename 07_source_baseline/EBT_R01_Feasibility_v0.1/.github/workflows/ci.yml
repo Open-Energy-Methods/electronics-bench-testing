@@ -1,0 +1,24 @@
+name: EBT-R01 reproducibility checks
+on:
+  push:
+  pull_request:
+jobs:
+  numerical-verification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install declared dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install -e .
+      - name: Verify passive thermal model and analytic limits
+        run: python -m pytest -q
+      - name: Recompute synthetic study outputs
+        run: python scripts/run_study.py
+      - name: Compare tracked outputs and scripts
+        run: |
+          git diff --exit-code -- data/synthetic/ results/metrics.json results/SHA256SUMS.json

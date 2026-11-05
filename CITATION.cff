@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: 'If using this planning baseline, cite the exact repository version. The empirical research paper and DOI are pending.'
+title: 'Electronics Bench Testing: controlled master programme and EBT-R01 research feasibility baseline'
+type: software
+version: 1.0.0
+authors:
+  - family-names: Sivaprasadan
+    given-names: Abhijith
+    orcid: 'https://orcid.org/0000-0003-0299-5745'
+date-released: 2026-11-05
+license: MIT

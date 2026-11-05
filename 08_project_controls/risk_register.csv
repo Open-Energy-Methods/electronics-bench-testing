@@ -1,0 +1,17 @@
+﻿risk_id,risk,likelihood_1_5,impact_1_5,initial_mitigation,trigger,contingency,workpackage_owner,status
+R-01,Facility rejects powered experiments,4,5,Get explicit lab authorization; qualified backup facility,No permission before planned pilot,Computational-only route and seek alternate approved site,WP0,Open
+R-02,Instrumentation uncertainty too large,4,4,Build metrology capability and pilot first,Observed effect below uncertainty floor,Narrow estimand / improve sensors or references,WP3,Open
+R-03,Overclaim of junction measurements,4,5,Case/sink terminology; validate optional junction-sensitive method,No TSEP path,Report internal state as inferred only,WP7,Open
+R-04,Literature shows proposed novelty already established,4,4,Full-text gap review and benchmark alternative,Direct overlap confirmed,Shift to benchmark/methods/technical report,WP1,Open
+R-05,Replication too small for claimed effects,4,4,Pilot variance; power/precision design,Confidence intervals too broad,Focus main factorial/extend access or narrow claim,WP4,Open
+R-06,Uncontrolled TIM / mounting variability,4,4,"Fixture drawing, torque log, remount IDs",Large between-mount variance,Treat assembly as experiment factor,WP2,Open
+R-07,"Burns, short circuit or overheat",3,5,"Protected low voltage, site review, stopping and monitoring",Trip/odor/excess temperature,Stop; incident review; redesign,WP2,Open
+R-08,Facility access ends before critical tests,4,4,Front-load permitted measurements and archive data,Access expiry confirmed,Priority pilot/holdouts; approved paid backup,WP0,Open
+R-09,KTH photos / calibration records cannot be published,4,3,Ask written release permission; redact,Facility rejects publication,Use self-owned diagrams/metadata without restricted documents,WP9,Open
+R-10,Unclear KTH institutional role/authorship,3,4,Written collaboration/affiliation terms,Researcher asks to coauthor,Agree contribution-based authorship before collaboration,WP8,Open
+R-11,Data loss or corrupted raw traces,3,5,Dual backup + SHA256 + manifest,Checksum mismatch,Quarantine; re-run approved experiment,WP5,Open
+R-12,Synthetic data presented as empirical in promotion,3,5,Separate folders; title/metadata disclaimers,Ambiguous plotted source,"Correct release, preserve record",WP9,Open
+R-13,Physical source losses not captured by V times I,3,4,Measure across actual dissipative element and proper bandwidth,Unexplained energy discrepancy,Revise electrical metrology,WP3,Open
+R-14,Experiment takes too long to stabilize,4,3,Measure time constants in pilot,Per-run time exceeds available sessions,Optimize DOE without validity compromise,WP4,Open
+R-15,Fan/ambient variables confounded with treatment,4,4,"Measure ambient, fan/flow and block design",Boundary drift beyond tolerance,Repeat or narrow transfer claim,WP5,Open
+R-16,Open-source licensing conflict,3,3,"Separate license for code/data/hardware, rights review",Third party components/files included,Omit or seek rights,WP9,Open

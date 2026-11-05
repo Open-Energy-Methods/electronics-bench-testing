@@ -1,0 +1,9 @@
+﻿item_id,category,description,indicative_cost,currency,rationale,commitment_status
+B-01,Facility access,KTH ELAB,TBD,SEK,First priority,Not committed
+B-02,Facility backup,Stockholm Makerspace starter,750,SEK,User-provided Nov 2026 quote; only if approved,Not committed
+B-03,MOSFET/DUT,Part to select,TBD,SEK,Data sheet + safe SOA review,Not committed
+B-04,Resistive reference,Power resistor/fixture,TBD,SEK,Pilot,Not committed
+B-05,Thermal sensors,Contact sensors/logger supplies,TBD,SEK,After inspection,Not committed
+B-06,Protection and wiring,"Fuse, switch, connectors, guard",TBD,SEK,Safety design,Not committed
+B-07,Fixture,Heatsink/TIM/fasteners,TBD,SEK,CAD and machining estimate,Not committed
+B-08,External calibration,Reference service if required,TBD,SEK,Measurement capability gap,Not committed

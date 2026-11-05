@@ -1,0 +1,6 @@
+﻿decision_id,date,question,decision,conditions,document
+D-001,2026-11-05,Programme is thesis-equivalent independent research with EBT-R01 flagship,Adopted baseline for review,Retain prior synthetic study; do not reopen without CR,EBT-PMP-001 1.0
+D-002,2026-11-05,Model transfer and observability research axis,Provisional scientific direction,Novelty and experimental viability subject to G1/Q0,EBT-PMP-001 1.0
+D-003,2026-11-05,No powered experiments absent specific facility approval,Hard safety constraint,Site-specific controls and G2 required,EBT-Q0-TP-001
+D-004,2026-11-05,"54-run design is a planning envelope, not executable",Provisional DOE,Recalculate from pilot at G3,EBT-R01-TP-001
+D-005,2026-11-05,Open archive and journal submission are separate gates,Adopted publication rule,DOI cannot imply peer review,EBT-PUB-001
