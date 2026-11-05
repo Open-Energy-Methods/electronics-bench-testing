@@ -37,3 +37,9 @@ The seven physics/unit tests passed in the authoring environment on 2026-11-05. 
 Submit new proposals through `08_project_controls/change_requests.csv` and `06_templates/change_request.md`. Minor adjustments should not reopen the research question. A scientific pivot is permitted, but requires explicit versioning and an impact assessment.
 
 **Independence:** authored as an independent technical study. Facility access, staff approval, coauthorship and journal acceptance are not implied.
+
+### EBT-R01 model and independent boundary qualification (synthetic v0.4)
+
+The [executable model comparison](09_model_comparison/README.md) contains B0 static, B1 one-RC, B2 fixed-boundary two-node and B3 independently boundary-qualified two-node models, a package-only observability ablation, synthetic qualification, stress scenarios, uncertainty formulas and tests.
+
+The [critical methods report](09_model_comparison/docs/EBT-R01_model_comparison_and_boundary_qualification_v0.4.md) documents the transferability failure under mismatched heating/fixture geometries, and why a locally measured apparent sink resistance is not automatically a convection coefficient. No physical experiments, KTH authorization or scientific novelty are claimed.
