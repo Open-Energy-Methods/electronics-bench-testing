@@ -1,0 +1,4 @@
+candidate_id,role,manufacturer,family,nominal_option,package,manufacturer_source,status,qualification_blocker
+H-01,Reference heater,Bourns,PWR220T-20,10 ohm 1 percent provisional,TO-220,https://www.bourns.com/docs/product-datasheets/pwr220t-20.pdf,Preferred screen candidate,Verify exact part availability case derating mount and approval
+H-02,Reference heater,Vishay,LTO 30,10 ohm provisional,TO-220,https://www.vishay.com/docs/50049/lto30.pdf,Alternative,Verify correct suffix mount material torque dimensions and supply
+D-01,Power MOSFET,Undecided,To be selected,No device selected,Undecided,,Blocked at G3,Document DC or pulsed SOA linear stability electrical drive and junction sensing

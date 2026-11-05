@@ -26,3 +26,15 @@ jobs:
         run: python scripts/run_study.py
       - name: Verify numerical reproduction within documented tolerances
         run: python scripts/verify_reproduction.py
+
+  pilot-planning-verification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify pilot matrix design (no powered testing)
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Rebuild pilot planning matrix
+        run: python scripts/make_pilot_plan.py --out /tmp/ebt_q0_pilot_plan.csv
