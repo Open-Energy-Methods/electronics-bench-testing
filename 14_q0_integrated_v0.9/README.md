@@ -42,6 +42,10 @@ SOP, released drawing, installation design or certified instrument record.
 
 The [G0–G6 future workplan and controlled R01/publication path](../15_execution_v1.1/README.md) specifies dependencies, acceptance evidence, statistical and publication decisions. The Q0-009 authority and v0.8 raw schema still govern actual hardware and future acquisition; this is a **planning companion**, not a revised laboratory SOP.
 
+## G2 workshop access actions (EBT-G2-012, 5 November 2026)
+
+The actual signed-in [EECS Student Workshop Canvas instructions](facility/EBT-G2-012_workshop_onboarding.md) require **Find Appointment** on [the course calendar](https://canvas.kth.se/calendar?include_contexts=course_32080), general safety introduction, post-introduction quiz, signed acknowledgement, and **separate machine-specific risk assessment and practical training** for the named machines. The course is visible but no booking, induction or task-specific machine approval has been verified. A [short EBT project brief](facility/EBT-G2-012_project_brief.md) and [unfilled staff-permission evidence record](facility/EBT-G2-012_access_record_UNFILLED.json) are prepared for the visit. This is mechanical-only onboarding, never an electrical test permit.
+
 ## Unpowered physical-intake checkpoint (Q0-010)
 
 The [catalog-anchored physical intake review](docs/EBT-Q0-010_unpowered_intake.md) and the two [unfilled actual-part](inspection/EBT-Q0-010_unfilled_component_receipt.json) and [instrument](inspection/EBT-Q0-010_unfilled_instrument_inventory.json) manifests capture real hardware evidence **only after actual receipt/inspection**. No part measurements or lab permission exist at present. The conditional 20 W case rating is not a Q0 setpoint.

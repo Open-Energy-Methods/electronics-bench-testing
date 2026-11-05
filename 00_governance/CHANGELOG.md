@@ -65,3 +65,8 @@
 - No R01 power limits, sample sizes, real calibration, physical measurement, G2/G3 sign-off, publication DOI or KTH institutional endorsement are claimed.
 
 - Reinforced mount-event identity: assembly_id ↔ mount_event_id is one-to-one within a campaign, with *multiple acquisition runs per unchanged mount allowed*. A changed mount-event ID with old assembly ID is rejected. Structural checks do not prove that a human actually remounted the fixture.
+
+## EBT-G2-012 — official workshop onboarding checkpoint (2026-11-05)
+- Read actual signed-in EECS Student Workshop Canvas front page; course 32080 is accessible and specifies project-based participation, Find Appointment booking, general safety induction, post-induction quiz, signed acknowledgement, machine-specific official risk assessment, and practical introduction.
+- The course lists general introductions Nov 5 17:00–18:00 and Nov 6 16:00–17:00; **listings are not seat availability, booking or evidence of attendance**.
+- Prepared one-page independent EBT *unpowered mechanical* project brief and blank workshop permission/qualification record. Updated the facility tracker and WP0/2 planning link; no supervised machine rights or powered ELAB access granted.

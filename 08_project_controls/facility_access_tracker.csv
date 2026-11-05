@@ -1,6 +1,6 @@
 ﻿facility_id,facility,request,email_status,facility_decision,unresolved_question,next_check_date
 FAC-01,KTH ELAB,Membership/access inquiry,Sent,Awaiting response,Powered bench permitted? reservation/calibration?,2026-11-12
-FAC-02,KTH Student Workshop,Fab/induction inquiry,Canvas invitation confirmed 2026-11-05,Invited to Canvas course 32080; machine access not yet approved,Accept invitation and book/complete introduction; verify approved machines and supervised booking; no powered testing,2026-11-12
+FAC-02,KTH Student Workshop,Fab/induction inquiry,Canvas invitation confirmed 2026-11-05; signed-in course 32080 visible,Course is project-based and lists general introductions Nov 5 17-18 and Nov 6 16-17; neither booking nor machine clearance verified,Use Canvas Calendar Find Appointment; attend general induction then quiz and signed acknowledgement; each machine needs official risk assessment and practical introduction; no powered testing,2026-11-06
 FAC-03,KTH Manufacturing Lab,Metal workshop inquiry,Lab manager reply received 2026-11-05,Independent projects outside Maskineriet or formal research collaboration not accepted; no CNC or advanced metrology without required training,MG1000 required for student Maskineriet path; KTH student registration and independent project exception do not grant access,
 FAC-04,KTH Prototype Center,Fab exception inquiry,Sent,Awaiting response,Independent project access,2026-11-12
 FAC-05,KTH Central Makerspace,Spring 2027 inquiry,Sent,Awaiting response,Post-graduation access,2026-11-19

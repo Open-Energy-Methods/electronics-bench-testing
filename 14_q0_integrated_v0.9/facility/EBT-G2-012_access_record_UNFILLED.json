@@ -1,0 +1,41 @@
+{
+  "schema_version": "EBT-G2-012-WORKSHOP-ACCESS-1",
+  "review_date": "2026-11-05",
+  "evidence_class": "COURSE_PAGE_AND_EMAIL_ONLY_NO_FACILITY_APPROVAL",
+  "course_url": "https://canvas.kth.se/courses/32080",
+  "course_access_confirmed_by_browser_read": true,
+  "record_is_public_template_only": true,
+  "session_listing_not_availability": [
+    {
+      "date": "2026-11-05",
+      "start_local": "17:00",
+      "end_local": "18:00",
+      "appointment_group_id": 23312,
+      "booking_confirmed": false
+    },
+    {
+      "date": "2026-11-06",
+      "start_local": "16:00",
+      "end_local": "17:00",
+      "appointment_group_id": 23356,
+      "booking_confirmed": false
+    }
+  ],
+  "project_based_eligibility_confirmed_by_staff": null,
+  "canvas_project_group_ref": null,
+  "introduction_booking_ref": null,
+  "introduction_attended_evidence_ref": null,
+  "post_introduction_quiz_completion_ref": null,
+  "safety_acknowledgement_submission_ref": null,
+  "machine_specific_risk_assessment_refs": [],
+  "machine_specific_practical_introduction_refs": [],
+  "task_specific_machine_authorization_refs": [],
+  "machining_approval": false,
+  "powered_test_approval": false,
+  "approved_machine_names": [],
+  "workshop_operating_window_ref": null,
+  "actual_received_parts_inspected": [],
+  "permission_to_publish_photos_or_drawings_ref": null,
+  "status": "BOOKING_PENDING_INDUCTION_NOT_COMPLETED",
+  "caution": "For real use store private student/staff files outside public GitHub; this public document contains only null fields. The code cannot grant safety authority."
+}
