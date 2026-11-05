@@ -47,7 +47,8 @@ class ConsolidatedQ0Tests(unittest.TestCase):
     def test_expected_audit_status_is_not_permission(self):
         report=run_audit()
         self.assertEqual(report["project_status"],"BLOCKED_NEEDS_PHYSICAL_EVIDENCE")
-        self.assertEqual(report["physical_test_observations_count"],0)
+        self.assertEqual(report["physical_measurement_records_inspected"],0)
+        self.assertEqual(report["real_data_presence"],"NOT_ASSESSED_BY_TEMPLATE_AUDIT")
         self.assertTrue(report["software_never_grants_fabrication_or_power_authority"])
         self.assertTrue(report["declared_r01_cross_record_discrepancies"])
 

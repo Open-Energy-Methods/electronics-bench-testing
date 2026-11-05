@@ -102,7 +102,8 @@ def run_audit(gate_path=GATE_PATH,split_path=SPLIT_PATH):
     return {
       "report_class": "REVIEW_OF_RECORD_STRUCTURES_NOT_PHYSICAL_EVIDENCE",
       "integration_revision": "EBT-Q0-009-v0.9",
-      "physical_test_observations_count": 0,
+      "physical_measurement_records_inspected": 0,
+      "real_data_presence": "NOT_ASSESSED_BY_TEMPLATE_AUDIT",
       "run_metadata_template_invalid_until_populated": template_run_invalid,
       "g2_g3": {k:v["status"] for k,v in stage["status_by_stage"].items()},
       "declared_r01_cross_record_discrepancies": mismatch,

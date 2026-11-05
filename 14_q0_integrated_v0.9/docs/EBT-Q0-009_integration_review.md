@@ -46,3 +46,14 @@ that split's strict UTC `Z/+00:00` requirement; it converts a valid
 timezone-aware **v0.7 gate** instant to UTC for equality comparison.
 A negative test now confirms a local-offset split is rejected. The
 original failed CI run is retained in GitHub Actions for auditability.
+
+
+## Future-facing audit semantics
+
+The offline v0.9 structural checker inspects **only the example unfilled
+record templates**, not a future laboratory's acquired-run folder. Its
+`physical_measurement_records_inspected: 0` must never be interpreted
+as a permanent global claim that the project has no physical data.
+The template audit reports `real_data_presence: NOT_ASSESSED_BY_TEMPLATE_AUDIT`.
+The dated governance record separately states that no actual EBT tests
+have been conducted as of 5 November 2026.
