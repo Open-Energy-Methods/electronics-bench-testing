@@ -24,6 +24,7 @@ class ConsolidatedQ0Tests(unittest.TestCase):
             "12_physical_readiness_v0.7/validate_g2.py",
             "13_q0_data_integrity_v0.8/ebt_q0_data.py",
             "14_q0_integrated_v0.9/protocol/EBT-Q0-009_field_sequence.md",
+            "14_q0_integrated_v0.9/docs/EBT-Q0-009_site_handover.md",
             "08_project_controls/facility_access_tracker.csv"):
             self.assertTrue((ROOT/file).is_file(),file)
 

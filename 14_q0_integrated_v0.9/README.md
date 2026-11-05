@@ -40,6 +40,7 @@ SOP, released drawing, installation design or certified instrument record.
 
 ## Review and execution preparation
 
+- **[Site handover sheet for lab/workshop staff](docs/EBT-Q0-009_site_handover.md)** — unfilled G2 authority and instrumentation checks; **not an operational SOP**.
 - [EBT-Q0-009 integrated laboratory sequence](protocol/EBT-Q0-009_field_sequence.md)
 - [Conflict and interface review](docs/EBT-Q0-009_integration_review.md)
 - [Evidence still required](docs/EBT-Q0-009_open_evidence.md)
