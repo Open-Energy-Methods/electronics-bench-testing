@@ -1,0 +1,9 @@
+evidence_id,subject,quantity,value,unit,grade,source_url,qualifier,manufacturing_permission
+GEOM-001,Fischer SK 92 100 SA,external_width,100,mm,DISTRIBUTOR_PART_LISTING,https://www.tme.eu/en/details/sk_92_100_sa/heatsinks/fischer-elektronik/sk-92-100-sa/,Outer envelope only; not certified flat contact face,NO
+GEOM-002,Fischer SK 92 100 SA,extrusion_length,100,mm,DISTRIBUTOR_PART_LISTING,https://www.tme.eu/en/details/sk_92_100_sa/heatsinks/fischer-elektronik/sk-92-100-sa/,Part length; no finish or tolerance certified,NO
+GEOM-003,Fischer SK 92 family,profile_base_thickness,10,mm,MANUFACTURER_FAMILY_PROFILE,https://cdn.soselectronic.com/productdata/43/5c/5f09af37/sk-92-150-sa.pdf,Series extrusion drawing; verify as-shipped 100 mm variant and drilling rules,NO
+GEOM-004,EBT proposed optional plate,plate_thickness,4,mm,UNVERIFIED_DESIGN_ASSUMPTION,10_fixture_v0.5/docs/EBT-MEC-005_manufacturing_review.md,Not material-graded or ordered; extra TIM and thermal mass,NO
+GEOM-005,Bourns PWR220T-20,package_width,10.1,mm,MANUFACTURER_SERIES_DATASHEET,https://www.bourns.com/docs/product-datasheets/pwr220t-20.pdf,Package body not qualified thermal contact face,NO
+GEOM-006,Bourns PWR220T-20,body_height,14.6,mm,MANUFACTURER_SERIES_DATASHEET,https://www.bourns.com/docs/product-datasheets/pwr220t-20.pdf,Use as nominal only; no drilled hole location approved,NO
+GEOM-007,Bourns PWR220T-20,through_hole_diameter,3.6,mm,MANUFACTURER_SERIES_DATASHEET,https://www.bourns.com/docs/product-datasheets/pwr220t-20.pdf,Screw clearance not manufacturer tapping recommendation,NO
+GEOM-008,Fischer SK 92 family,profile_height_including_base,40,mm,MANUFACTURER_FAMILY_PROFILE,https://cdn.soselectronic.com/productdata/43/5c/5f09af37/sk-92-150-sa.pdf,Does not define fin pitch or drillable volume,NO

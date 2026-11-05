@@ -35,3 +35,20 @@
 - Archived v0.4 synthetic JSON/PNG output snapshots with hashes; baseline v0.1 remains unchanged. Preserved whole-repository boilerplate/representative-data audit and created current source hierarchy. Historic v1.0 manifest and QA report are retained as snapshots, not current summaries.
 - Added six offline integrity tests to GitHub Actions, covering data classification, no false calibration claims, circuit net coverage, vector geometry and partial BOM arithmetic.
 - Formal G1 novelty, G2 energized facility authorization, G3 physical experiment and hardware manufacturing release remain blocked.
+
+## Spatial model work package v0.6 — 2026-11-05 (integrated from PR #11)
+- Added hypothetical 2-D steady plate source/sensor transfer tests with numerical conservation/symmetry/record checks. Spatial heat loss coefficients, 1 W normalization and effective transfer differences remain synthetic, never manufacturer or physical validation.
+
+## Physical readiness v0.7 — 2026-11-05 (integrated from PR #12)
+- Added source-graded SK 92 manufacturer-family base thickness (nominal 10 mm) and conditional direct-to-sink versus assumed 4 mm adapter plate architecture; 97.2 J/K plate value only under generic assumed aluminium properties.
+- Added 23-point inspection register, separate workshop/powered authority, blank G2-G3 gate, Q0 source/site pilot alternative, and explicit no-permission software checks.
+
+## Acquisition integrity v0.8 — 2026-11-05 (integrated from PR #13)
+- Added prospective raw CSV/metadata contract, create-once SHA-256 sealing, retained aborts/quality flags, source/cooling and remount identities, and partition/lock validation with synthetic-only test generator. External pre-registration chronology and physical provenance are not authenticated by code.
+- Updated facility correspondence status for Student Workshop invitation and Manufacturing Lab restrictions; powered ELAB access still absent.
+
+## Unified Q0 v0.9 — 2026-11-05 (integration review)
+- Consolidated PRs #11–#13 with all source-code modules preserved and eight distinct GitHub Actions jobs.
+- Established 14_q0_integrated_v0.9 as the single Q0 review entry point; reconciled 12-run vs 8-event **alternative** pilot sketches and \`T_plate\` vs \`T_sink\` sensor labels.
+- Defined exact v0.7 EBT-GATE-007 ↔ v0.8 EBT-SPLIT-008 lock/hash/role mapping; added cross-module integrity checks and intentionally incomplete future-acquisition templates.
+- Remaining G1 novelty, G2 machining/power authority, G3 real metrology, Q0 physical pilot and R01 validation remain **HOLD / NOT COMPLETED**.

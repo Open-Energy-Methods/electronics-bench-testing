@@ -4,3 +4,6 @@ D-002,2026-11-05,Model transfer and observability research axis,Provisional scie
 D-003,2026-11-05,No powered experiments absent specific facility approval,Hard safety constraint,Site-specific controls and G2 required,EBT-Q0-TP-001
 D-004,2026-11-05,"54-run design is a planning envelope, not executable",Provisional DOE,Recalculate from pilot at G3,EBT-R01-TP-001
 D-005,2026-11-05,Open archive and journal submission are separate gates,Adopted publication rule,DOI cannot imply peer review,EBT-PUB-001
+D-006,2026-11-05,Choose current Q0 engineering document authority,Adopt v0.9 integrated Q0 review index,No laboratory or fabrication authorization implied,14_q0_integrated_v0.9/README.md
+D-007,2026-11-05,Resolve provisional 12-run and 8-event pilot designs,Treat as alternatives not cumulative,Select/revise from G2 feasibility and real Q0 precision not synthetic results,14_q0_integrated_v0.9/protocol/EBT-Q0-009_field_sequence.md
+D-008,2026-11-05,Resolve v0.7 gate and v0.8 registration interfaces,Lock identity hash and QUAL/CAL/HOLD mapping required,External chronology and site permissions still require independent evidence,14_q0_integrated_v0.9/interfaces/EBT-Q0-009_roles_and_schemas.md
