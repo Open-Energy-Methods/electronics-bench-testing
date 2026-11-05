@@ -67,3 +67,17 @@ The canonical v0.8 `EBT-SPLIT-008.lock_utc` **must be UTC**
 values, including local offsets; the v0.9 compatibility audit normalizes
 the **gate value** to UTC before comparing instants. For new records,
 prefer UTC `Z` in both to avoid ambiguous cross-references.
+
+## Mounting events and pseudoreplication (controlled clarification v1.1)
+
+`run_id` is an acquisition unit; `mount_event_id` is a single physical
+attachment event; `assembly_id` identifies the corresponding documented
+physical assembly. Changing an electrical setpoint or fan speed WITHOUT
+disassembly does not create an independent remount. Multiple run IDs within
+the **same role, assembly and fixture revision** may share one mount event.
+The acquisition checker rejects event reuse across roles or different
+assemblies. To claim a new remount replicate, log complete teardown and
+reassembly with BOTH new mount and assembly identities. The actual
+experimental log must describe the operation. The software cannot prove
+a teardown happened, or assign a variance-component independent unit
+using merely the number of raw CSV files.

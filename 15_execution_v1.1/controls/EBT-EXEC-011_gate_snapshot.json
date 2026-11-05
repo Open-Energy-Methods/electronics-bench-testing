@@ -1,0 +1,41 @@
+{
+  "schema_version": "EBT-EXEC-011-GATES-1",
+  "as_of_date": "2026-11-05",
+  "source_scope": "CONTROLLED_PLANNING_STATE_ONLY_NOT_FACILITY_AUTHORIZATION",
+  "no_physical_ebt_measurements_confirmed_as_of_date": true,
+  "hardware_fabrication_permission_confirmed": false,
+  "powered_q0_site_permission_confirmed": false,
+  "independent_r01_holdout_executed": false,
+  "gate_status": {
+    "G0": {
+      "status": "BASELINE_PREPARED_INTERNAL_REVIEW_PENDING",
+      "actual_authority_ref": null
+    },
+    "G1": {
+      "status": "OPEN_PARTIAL_FULLTEXT_REVIEW",
+      "actual_authority_ref": null
+    },
+    "G2": {
+      "status": "BLOCKED_NO_SITE_APPROVAL",
+      "actual_authority_ref": null
+    },
+    "G3": {
+      "status": "BLOCKED_NO_PHYSICAL_Q0",
+      "actual_authority_ref": null
+    },
+    "G4": {
+      "status": "BLOCKED_NO_CONFIRMED_R01_DATA",
+      "actual_authority_ref": null
+    },
+    "G5": {
+      "status": "NUMERICAL_VERIFIED_PHYSICAL_UNVALIDATED",
+      "actual_authority_ref": null
+    },
+    "G6": {
+      "status": "BLOCKED_NO_PHYSICAL_RELEASE_EVIDENCE",
+      "actual_authority_ref": null
+    }
+  },
+  "automatic_safety_release_permitted": false,
+  "note": "This is a dated project planning snapshot. Real future facility permission requires separate signed human approval and renewed records. Do not use a repository JSON flag as a safety interlock."
+}

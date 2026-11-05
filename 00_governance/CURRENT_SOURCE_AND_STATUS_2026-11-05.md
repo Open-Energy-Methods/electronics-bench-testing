@@ -44,3 +44,6 @@ Under the integrated contract, the 12-run screening plan and the 8-event
 source/site crossover are alternative research pilots. No blanket 20-run
 experimental authorization is implied, nor is the 54-row R01 design executed.
 Passing CI establishes parser/method verification only, not physical validity.
+## Future execution workplan (minor implementation revision v1.1)
+
+[EBT-EXEC-011](../15_execution_v1.1/README.md) extends G0–G6 stages from the **unchanged** v1.0 master programme; planning records are not physical evidence. The dated [gate snapshot](../15_execution_v1.1/controls/EBT-EXEC-011_gate_snapshot.json) makes explicit that all physical authority and R01 experimental gates are blocked or unvalidated as of 2026-11-05. The [37-task register](../15_execution_v1.1/controls/EBT-EXEC-011_dependencies.csv) is a future work dependency map, not an executed-work claim. Q0-010 remains unpowered intake, and the v0.9 Q0 authority is unchanged.

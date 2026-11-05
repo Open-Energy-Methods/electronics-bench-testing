@@ -57,3 +57,11 @@
 - Reviewed exact Bourns 10R0F datasheet and 2025 resistor thermal-management application note; distinguished 20 W at 25°C case from 2.8 W without heatsink. Neither is an EBT operating limit.
 - Cross-checked catalog thermal resistance inconsistency for SK 92 100 SA (Farnell, TME, DigiKey); expressly rejected fitting distributor figures as a measured cooling boundary.
 - Added **unfilled** part receiving and instrument inspection records with four guardrail tests. No received parts, real measurements, booked workshop introduction, authorized powered lab or physical test are claimed.
+## Future execution roadmap v1.1 — 2026-11-05 (planning minor revision)
+- Extended the governed EBT-PMP-001 v1.0 without rewriting it: seven G0–G6 stage-gate-oriented plans covering novelty, facility/mechanical/electrical G2 release, Q0 metrology, R01 preregistered design and physical data, statistical B0–B3 validation, open release and no-lab fallback.
+- Added machine-readable 37-task dependency/acceptance register, explicit as-of-date **unapproved physical gates** snapshot, nine open research/engineering decisions and adversarial offline roadmap validation. This is project planning, not laboratory authorization.
+- Corrected v0.8 acquisition validator pseudoreplication bug: *multiple runs may share a physical mount event within one assembly and data role*, but changed assembly, role or fixture revision requires different event ID. Distinct runs or timestamps are not independent remounts. Additional regression tests.
+- Flagged old R01 `NAT/PASS/FORCED` versus acquisition `NAT/FAN/OTHER_DOCUMENTED` as a **G3 definition requirement**, and R01 interface A/B distinct from Q0 heater site A/B.
+- No R01 power limits, sample sizes, real calibration, physical measurement, G2/G3 sign-off, publication DOI or KTH institutional endorsement are claimed.
+
+- Reinforced mount-event identity: assembly_id ↔ mount_event_id is one-to-one within a campaign, with *multiple acquisition runs per unchanged mount allowed*. A changed mount-event ID with old assembly ID is rejected. Structural checks do not prove that a human actually remounted the fixture.

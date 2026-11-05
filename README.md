@@ -15,6 +15,10 @@ The **v0.9 Q0 field sequence** replaces competing informal ordering, while leavi
 
 **Approval state: NO released machining drawing; NO power authorization; NO acquired physical Q0/R01 data.** This is a laboratory *review* package, not an executable laboratory SOP.
 
+## Remaining programme execution roadmap — v1.1 (planning only)
+
+The [EBT G0–G6 future execution programme](15_execution_v1.1/README.md) is the consolidated work breakdown covering unfinished literature/novelty, actual facility and fixture releases, metrology/Q0, physically preregistered R01, validation, manuscript and open archive. It retains the [Q0 v0.9 authority](14_q0_integrated_v0.9/README.md) rather than overwriting physical design controls. [Dependency register](15_execution_v1.1/controls/EBT-EXEC-011_dependencies.csv) and [dated blocked gate snapshot](15_execution_v1.1/controls/EBT-EXEC-011_gate_snapshot.json) distinguish plans from observed achievements. **No powered/laboratory safety approval or physical results implied.**
+
 Start with:
 1. `EBT_Master_Programme_Plan_v1.0.pdf` (readable master programme) or `.docx` (editable), also `.md` for diffable source.
 2. `08_project_controls/` (requirements, risks, decisions, tasks, standards, literature, instrument, budget, documents, change requests).

@@ -15,9 +15,15 @@
 
 ## Records and roles
 
-Run directory name and metadata run_id must match. An independent
-`mount_event_id` is unique across the campaign; `assembly_id` identifies
-a documented full assembly. Each run declares `site_id`, `heater_id`,
+Run directory name and metadata run_id must match. The `mount_event_id`
+identifies **one physical mounting event**, not one measurement run. Several
+different run IDs may correctly reuse the SAME mount_event_id when electrical
+power or fan conditions change **without any physical disassembly/remount**.
+Every physical remount requires a NEW mount_event_id and a NEW assembly_id.
+A mount_event_id cannot change roles, assembly IDs or fixture revision within
+one campaign. The count of time samples or runs does not establish the
+number of statistically independent remounts. `assembly_id` identifies
+a documented physical assembly. Each run declares `site_id`, `heater_id`,
 `temperature_surface` (exactly T_PLATE or T_SINK), fixture revision,
 sensor map, reference evidence, facility permission, protocol, timebase,
 acquisition UTC and review state. The raw CSV's surface column must not
@@ -67,3 +73,13 @@ data are acquired. `heater_part_ref`, `heating_envelope_ref` and
 electrical envelope. These are **references**, not invented numeric ratings.
 An ABORT or QUALITY_FLAG record requires `deviation_log_ref`; even an abort
 with missing thermometry is retained and cannot silently become accepted data.
+
+### Assembly-to-mount one-to-one identity
+
+The structural validator also rejects two different `mount_event_id`
+values under one `assembly_id`. Re-measuring different power/cooling
+conditions without physical movement reuses BOTH identifiers; complete
+teardown/reassembly requires BOTH identifiers to change. This is an
+identity consistency rule, **not physical evidence that the user really
+disassembled or reassembled hardware**; a signed mount-operation log
+and site review are still required to claim independent replicates.

@@ -1,0 +1,38 @@
+task_id,gate,work_package,task,depends_on,status,owner,acceptance_evidence,timing
+E-001,G0,WP0,Acknowledge original PMP v1.0 and v1.1 implementation scope,,IN_PROGRESS,Independent researcher,Dated internal planning acceptance (not laboratory permission),NOW
+E-002,G1,WP1,Retrieve and independently grade direct competing methods,E-001,IN_PROGRESS,Independent researcher,Existing fulltext matrix updated by source/method,PARALLEL
+E-003,G1,WP1,Decide evidence-backed originality and article-versus-benchmark fallback,E-002,BLOCKED,Independent researcher,Claim-level G1 reviewer-style decision with citations,AFTER_G1_REVIEW
+E-004,G2,WP0,Book and complete KTH Student Workshop introduction,E-001,IN_PROGRESS,Independent researcher,Canvas booking/attended introduction and machine-task permission,NOW_USER_ACTION
+E-005,G2,WP0,"Obtain explicit powered-site scope, supervisor and permission",E-001,BLOCKED,Independent researcher,Written site permission for specific low-voltage work,AWAIT_SITE
+E-006,G2,WP0,"Check public raw data, drawings, photographs and reference rights",E-005,BLOCKED,Independent researcher,Written release conditions by actual site owner,AWAIT_SITE
+E-007,G2,WP2,Qualify exact part candidate and procurement justification,E-001,PLANNED,Independent researcher,Exact sourced part revisions and actual approved purchase decision,AFTER_FACILITY_FEASIBILITY
+E-008,G2,WP2,Receive and inspect two heaters and sink as actual parts,E-007,BLOCKED,Independent researcher,"Actual purchase/receipt, photos, markings, lot, damage record",AFTER_RECEIPT
+E-009,G2,WP2,Inspect mounting face and measure exact part dimensions,E-008;E-004,BLOCKED,Independent researcher,Traceable dimensional readings and competent contact-face review,AFTER_MACHINE_PERMISSION
+E-010,G2,WP2,Resolve direct-sink or optional adapter architecture,E-009,BLOCKED,Independent researcher,Versioned mounting and thermal-interface decision,AFTER_INSPECTION
+E-011,G2,WP2,Release mechanical drawing under authorized workshop rules,E-010;E-004,BLOCKED,Independent researcher,Approved drawing/fastening review and named authorized fabricator,AFTER_G2_MACHINE_REVIEW
+E-012,G2,WP3,"Inventory actual PSU, DMM, logger, thermometers and airflow",E-005,BLOCKED,Independent researcher,Models/serials/site reference documents and ranges,AFTER_SITE_ACCESS
+E-013,G2,WP2,"Review real wiring, isolation, branch protection and independent stop",E-010;E-012,BLOCKED,Independent researcher,"Approved connection diagram, protected system and site technical signoff",AFTER_INVENTORY
+E-014,G2,WP3,"Inspect references, timebase, lag and channel covariance",E-012;E-013,BLOCKED,Independent researcher,Actual temperature/electrical reference chain and recording checks,AFTER_INSTRUMENTS
+E-015,G2,WP2,Obtain site-specific bounded SOP and competent G2 release,E-011;E-013;E-014;E-005,BLOCKED,Independent researcher,Staff-authorized power/temperature limits and stop/incident SOP,AFTER_SAFETY_REVIEW
+E-016,G3,WP3,Choose or revise one Q0 screening plan using approved setup,E-015,BLOCKED,Independent researcher,"Pilot choice, safe acquisition envelope and analysis plan approved",AFTER_G2
+E-017,G3,WP3,Acquire raw exploratory Q0 with real independent remounts,E-016,BLOCKED,Independent researcher,Actual signed and sealed Q0_PILOT measurements with aborts,AFTER_G2
+E-018,G3,WP3,"Estimate precision, lag, uncertainty, covariance and mount variance",E-017,BLOCKED,Independent researcher,Metrology report with real measurement and suitability references,AFTER_Q0
+E-019,G3,WP3,Assess source/site cooling boundary transfer or FAIL-TRANSFER,E-018,BLOCKED,Independent researcher,Independent physical qualification evidence and fail-case record,AFTER_Q0
+E-020,G3,WP4,"Specify cooling levels, interface factor and source sites distinctly",E-019,BLOCKED,Independent researcher,Physical factors and nomenclature resolved before R01,AFTER_Q0
+E-021,G3,WP4,Choose sample size and independent remount strategy from Q0,E-018;E-020,BLOCKED,Independent researcher,Precision/power design using independent assembly units,AFTER_Q0
+E-022,G3,WP4,Freeze model-selection rules and external R01 QUAL/CAL/HOLD lock,E-021;E-003,BLOCKED,Independent researcher,"Verified external dated lock, protocol hash and distinct assemblies",BEFORE_HOLD
+E-023,G3,WP4,Obtain G3 independent protocol/safety review decision,E-022;E-015,BLOCKED,Independent researcher,Human-reviewed G3 decision and authorized acquisition scope,BEFORE_R01
+E-024,G4,WP5,Collect and seal R01 QUAL boundary data,E-023,BLOCKED,Independent researcher,Real separate QUAL source/provenance and retained failures,AFTER_G3
+E-025,G4,WP5,Collect and seal R01 CAL model-fitting data,E-024,BLOCKED,Independent researcher,Real CAL traces and independent run records,AFTER_QUAL
+E-026,G4,WP5,Collect blind independent R01 HOLD assemblies,E-025,BLOCKED,Independent researcher,Real HOLD traces acquired without accessing outcomes in fitting,AFTER_CAL
+E-027,G4,WP5,"Verify complete raw/abort manifest, rights, uncertainty and G4 sufficiency",E-024;E-025;E-026;E-006,BLOCKED,Independent researcher,Signed acquisition audit by independent assembly and missingness,AFTER_R01
+E-028,G5,WP6,Complete numerical test fixtures and frozen B0–B3 analysis code,E-001,IN_PROGRESS,Independent researcher,"Code tests, parameter registry and no-HOLD-leakage checks",PARALLEL
+E-029,G5,WP7,Run preregistered independent HOLD inference,E-027;E-028,BLOCKED,Independent researcher,Full HOLD predictions/uncertainties incl negative cases,AFTER_G4
+E-030,G5,WP7,Determine G5 quantitative claim and null/conditional conclusions,E-029,BLOCKED,Independent researcher,Reviewer-style model/uncertainty/physical-validity decision,AFTER_INFERENCE
+E-031,G6,WP8,"Select experimental article, methods benchmark or report",E-003;E-030,BLOCKED,Independent researcher,Dated contribution and manuscript-route decision,AFTER_G5
+E-032,G6,WP9,Reproduce end-to-end open raw-to-figures and verify licenses,E-027;E-030,BLOCKED,Independent researcher,"Clean checkout reproduction, rights and provenance audit",AFTER_G5
+E-033,G6,WP8,Finalize manuscript and obtain critical review,E-031;E-032,BLOCKED,Independent researcher,"Technical manuscript, figures, supplement, review responses",AFTER_G5
+E-034,G6,WP9,Release authorized research pack and verify Zenodo DOI,E-033;E-006,BLOCKED,Independent researcher,"Actual code/data release, permissions and deposited DOI if granted",AFTER_G6
+E-035,G6,WP9,Prepare portfolio case study with graded evidence,E-033,BLOCKED,Independent researcher,Portfolio links to genuine data and limits; no false KTH affiliation,AFTER_REVIEW
+E-036,G1,WP8,Prepare computational-only fallback if G2 or transfer fails,E-003;E-028,CONDITIONAL,Independent researcher,Simulation-labelled methods/report with no experimental claim,FALLBACK_ONLY
+E-037,G0,WP0,"Weekly record risks, spend, facility status and change requests",E-001,IN_PROGRESS,Independent researcher,"Dated weekly change/decision/issue review, no invented progress",RECURRING

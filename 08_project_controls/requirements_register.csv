@@ -19,3 +19,6 @@ REQ-017,Fixture,Mechanical mount/interfaces uniquely identifiable and reassembly
 REQ-018,Publication,"Manuscript conclusions separate verification, validation, uncertainty and model limits",High,Reviewer assessment,EBT-R01-RPT-001,G6,Open
 REQ-019,Programme,Every scope/method change is controlled and logged,High,Document audit,EBT-CR-REG,All,Draft
 REQ-020,Career,Portfolio identifies researcher contributions with direct evidence links,Medium,Document review,EBT-PORT-001,G6,Open
+REQ-021,DoE,Mount IDs represent physical assembly events and repeated runs are not independent replications,Critical,Software tests and physical remount audit,EBT-DAT-008 and EBT-R01-011,G3/G4,Software contract corrected; physical verification pending
+REQ-022,DoE,NAT/PASS/FORCED factors mapped to physically distinct documented cooling configurations before confirmatory lock,High,Method review and actual Q0 measurements,EBT-R01-011,G3,Open
+REQ-023,Research,Claimed preregistration timing independently verifiable and locked HOLD complete assembly partitions,Critical,Independent timestamp and protocol hash review,EBT-SPLIT-008 and EBT-R01-011,G3,Open

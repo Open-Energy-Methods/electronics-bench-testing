@@ -23,11 +23,16 @@ This package defines and checks:
 3. **Roles**: Q0_PILOT must remain exploratory. Confirmatory R01 requires
    separate QUAL, CAL and HOLD registration, non-overlapping run IDs and
    disjoint held-out assembly IDs from calibration/qualification.
-4. **Partition lock**: `split_lock.json` declares UTC lock time, protocol
+4. **Mount-event meaning:** repeated power/cooling runs on one unchanged physical
+   mounting may share a mount_event_id *within the same role and assembly*.
+   A new physical remount requires a new mount_event_id AND assembly_id;
+   reusing an event across roles, assemblies or fixture revisions is rejected.
+   Distinct run count is **not** independent replication count.
+5. **Partition lock**: `split_lock.json` declares UTC lock time, protocol
    hash, planned run IDs/roles and an external lock reference. The code checks
    shapes/declared chronology but **cannot verify that a claimed Git commit
    existed before data were inspected**. Independent verification is mandatory.
-5. **Physical vs synthetic provenance**: SYNTHETIC_DEMO and
+6. **Physical vs synthetic provenance**: SYNTHETIC_DEMO and
    PHYSICAL_UNVERIFIED must never share the same campaign. Even structurally
    complete physical records are not certified by this software.
 
