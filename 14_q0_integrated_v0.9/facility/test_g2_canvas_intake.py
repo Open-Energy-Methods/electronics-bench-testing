@@ -1,7 +1,7 @@
 """Structural regression tests: KTH Canvas source is not machine permission."""
 import json, unittest
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parent
 class G2CanvasAccessTests(unittest.TestCase):
     def setUp(self):
         self.r=json.loads((ROOT/"EBT-G2-012_access_record_UNFILLED.json").read_text(encoding="utf-8"))
