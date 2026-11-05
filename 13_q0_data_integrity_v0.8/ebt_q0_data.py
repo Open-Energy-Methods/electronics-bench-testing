@@ -229,6 +229,9 @@ def inspect_campaign(folder):
     # One physical mount may be measured repeatedly under several treatments.
     # Reusing its identity across a NEW assembly or different data role is invalid.
     event_owners = {}
+    # Each assembly identifies one fixed, independent mounting operation;
+    # repeated acquisitions under that operation may share the same pair.
+    assembly_owners = {}
     evidence_classes = set()
     for d in run_dirs:
         require(d.name in roles, f"unregistered run folder {d.name}")
@@ -240,6 +243,10 @@ def inspect_campaign(folder):
         old_owner = event_owners.setdefault(meta["mount_event_id"], owner)
         require(old_owner == owner,
                 "mount_event_id reused across assemblies, roles or fixture revisions")
+        assembly_owner = (meta["mount_event_id"], meta["role"],
+                          meta["fixture_revision"])
+        old_assembly = assembly_owners.setdefault(meta["assembly_id"],
+                                                   assembly_owner)
         assemblies[meta["role"]].add(meta["assembly_id"])
         evidence_classes.add(meta["evidence_class"])
         recorded.add(d.name)
@@ -249,6 +256,15 @@ def inspect_campaign(folder):
         require(not assemblies["HOLD"].intersection(assemblies["CAL"] |
                                                    assemblies["QUAL"]),
                 "HOLD assembly overlaps qualification or calibration")
+    for assembly_id, old_assembly in assembly_owners.items():
+        # A second mount event on the same assembly is not an independent
+        # remount. To claim one, the old physical assembly ID must change.
+        for d in run_dirs:
+            meta = load_json(d / "metadata.json")
+            if meta["assembly_id"] == assembly_id:
+                require((meta["mount_event_id"], meta["role"],
+                         meta["fixture_revision"]) == old_assembly,
+                        "assembly_id reused across multiple mounts or roles")
     return {"report_kind": "EVIDENCE_INTEGRITY_AUDIT_NOT_PHYSICAL_VALIDATION",
             "planned_run_count": len(roles), "recorded_run_count": len(recorded),
             "missing_planned_runs": sorted(set(roles) - recorded),

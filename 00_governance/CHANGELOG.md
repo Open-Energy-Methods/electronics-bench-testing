@@ -63,3 +63,5 @@
 - Corrected v0.8 acquisition validator pseudoreplication bug: *multiple runs may share a physical mount event within one assembly and data role*, but changed assembly, role or fixture revision requires different event ID. Distinct runs or timestamps are not independent remounts. Additional regression tests.
 - Flagged old R01 `NAT/PASS/FORCED` versus acquisition `NAT/FAN/OTHER_DOCUMENTED` as a **G3 definition requirement**, and R01 interface A/B distinct from Q0 heater site A/B.
 - No R01 power limits, sample sizes, real calibration, physical measurement, G2/G3 sign-off, publication DOI or KTH institutional endorsement are claimed.
+
+- Reinforced mount-event identity: assembly_id ↔ mount_event_id is one-to-one within a campaign, with *multiple acquisition runs per unchanged mount allowed*. A changed mount-event ID with old assembly ID is rejected. Structural checks do not prove that a human actually remounted the fixture.

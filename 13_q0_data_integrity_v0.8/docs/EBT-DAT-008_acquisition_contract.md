@@ -73,3 +73,13 @@ data are acquired. `heater_part_ref`, `heating_envelope_ref` and
 electrical envelope. These are **references**, not invented numeric ratings.
 An ABORT or QUALITY_FLAG record requires `deviation_log_ref`; even an abort
 with missing thermometry is retained and cannot silently become accepted data.
+
+### Assembly-to-mount one-to-one identity
+
+The structural validator also rejects two different `mount_event_id`
+values under one `assembly_id`. Re-measuring different power/cooling
+conditions without physical movement reuses BOTH identifiers; complete
+teardown/reassembly requires BOTH identifiers to change. This is an
+identity consistency rule, **not physical evidence that the user really
+disassembled or reassembled hardware**; a signed mount-operation log
+and site review are still required to claim independent replicates.

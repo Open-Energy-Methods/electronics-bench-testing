@@ -219,6 +219,16 @@ class DataChecks(unittest.TestCase):
         self.assertEqual(report["distinct_mount_events_recorded"],1)
         self.assertTrue(report["checks_do_not_infer_statistical_independence_from_row_count"])
 
+    def test_new_mount_event_reusing_old_assembly_id_is_not_independent(self):
+        locked=load_json(self.root/"split_lock.json")
+        locked["role_run_ids"]["QUAL"].append("QUAL-002")
+        save_json(self.root/"split_lock.json",locked)
+        self.make_run("QUAL-001","QUAL","ASSEMBLY-001","MOUNT-001")
+        self.make_run("QUAL-002","QUAL","ASSEMBLY-001","MOUNT-002")
+        with self.assertRaisesRegex(DataError,
+                                    "assembly_id reused across multiple mounts"):
+            inspect_campaign(self.root)
+
     def test_same_mount_id_cannot_change_data_role_even_on_same_assembly(self):
         self.make_run("QUAL-001","QUAL","ASSEMBLY-001","MOUNT-001")
         self.make_run("CAL-001","CAL","ASSEMBLY-001","MOUNT-001")
