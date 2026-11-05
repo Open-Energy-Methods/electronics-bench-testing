@@ -11,3 +11,8 @@ T-009,WP4,Approve sample sizing and holdout partitions,Current researcher,TBD af
 T-010,WP8,Prepare KTH research concept packet,Current researcher,After scientific gap + pilot,Not started,2-page concept with measured evidence if available
 T-011,WP2,Prepare final connection-level schematic and mechanical drawing,Current researcher,After facility instrument inspection,Blocked,Site-approved wiring and fixture drawing
 T-012,WP3,Define pilot operating envelope and temperature references,Current researcher,After G2 access,Blocked,Site-approved Q0 procedure with numeric safe limits
+T-013,WP0,Define remainder of G0-G6 execution plans and dependencies,Current researcher,2026-11-05,Planning documentation complete only,EBT-EXEC-011 roadmap + DAG integrity tests; no physical authorization
+T-014,WP0,Complete Student Workshop Canvas introduction and task-specific approval,Current researcher,Before any permitted machining,In progress - booking not verified,Actual attended induction and operation permissions
+T-015,WP2,Record actual sink and heater receiving inspections,Current researcher,After authorized procurement,Blocked,Physical measurements and reference evidence in Q0-010 records
+T-016,WP4,Resolve physical R01 factor definitions and remount sample sizing,Current researcher,After measured Q0,Blocked,Prospective G3 plan with actual cooling factor mapping
+T-017,WP8,Prepare research-versus-benchmark publication decision,Current researcher,After G1 and G5,Blocked,Scientific contribution and reproduction evidence checked

@@ -1,0 +1,10 @@
+decision_id,question,options,trigger_for_decision,evidence_needed,decision_status,owner
+V11-01,Is there truly a differentiated scientific contribution?,experimental transfer;benchmark;technical report,Fulltext competitor review,Method-by-method G1 evidence,UNDECIDED,Independent researcher
+V11-02,Where can fixtures be fabricated?,Student Workshop;qualified external fabricator,Machine induction and inspection,Specific workshop task approval,UNDECIDED,Independent researcher
+V11-03,Where can powered Q0 be conducted?,ELAB;qualified alternate site;no experiment,Written powered scope,Named staff site SOP and acceptable references,UNDECIDED,Independent researcher
+V11-04,Which mechanical thermal path is used?,direct to sink;added adapter;redesign,Actual part inspection,Surface geometry assembly force and electrical isolation,UNDECIDED,Independent researcher
+V11-05,Which Q0 pilot will be executed?,12 run screen;8 event crossover;redesign,Actual site capabilities,Approved power fixture metrology and Q0 review,UNDECIDED,Independent researcher
+V11-06,Are NAT and PASS physically distinct?,distinct;merge;drop level,Q0 boundary definition,Observed cooling fixture geometry and meaningful factor contrast,UNDECIDED,Independent researcher
+V11-07,How many independent R01 mounts are needed?,pilot-based precision/design option,Real Q0 mounting variance and measurement uncertainty,Registered sample size and stop criterion,UNDECIDED,Independent researcher
+V11-08,Can B3 transfer between source geometries?,transferable;position-conditional;failed,Q0 independent physical boundary test,Measured independent boundary comparison and uncertainty,UNDECIDED,Independent researcher
+V11-09,What can be published?,research article;benchmark;technical report,G5 evidence and G1 review,Scientific validity reproducibility and rights,UNDECIDED,Independent researcher

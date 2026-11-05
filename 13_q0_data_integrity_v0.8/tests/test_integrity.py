@@ -205,7 +205,24 @@ class DataChecks(unittest.TestCase):
     def test_independent_mount_event_identity(self):
         self.make_run()
         self.make_run("CAL-001","CAL","ASSEMBLY-002","MOUNT-001")
-        with self.assertRaisesRegex(DataError,"reused mount_event_id"):
+        with self.assertRaisesRegex(DataError,"mount_event_id reused across"):
+            inspect_campaign(self.root)
+
+    def test_same_mount_id_multiple_runs_one_role_is_not_new_replication(self):
+        locked=load_json(self.root/"split_lock.json")
+        locked["role_run_ids"]["QUAL"].append("QUAL-002")
+        save_json(self.root/"split_lock.json",locked)
+        self.make_run("QUAL-001","QUAL","ASSEMBLY-001","MOUNT-001")
+        self.make_run("QUAL-002","QUAL","ASSEMBLY-001","MOUNT-001")
+        report=inspect_campaign(self.root)
+        self.assertEqual(report["recorded_run_count"],2)
+        self.assertEqual(report["distinct_mount_events_recorded"],1)
+        self.assertTrue(report["checks_do_not_infer_statistical_independence_from_row_count"])
+
+    def test_same_mount_id_cannot_change_data_role_even_on_same_assembly(self):
+        self.make_run("QUAL-001","QUAL","ASSEMBLY-001","MOUNT-001")
+        self.make_run("CAL-001","CAL","ASSEMBLY-001","MOUNT-001")
+        with self.assertRaisesRegex(DataError,"mount_event_id reused across"):
             inspect_campaign(self.root)
 
     def test_holdout_assembly_overlap_rejected(self):

@@ -226,7 +226,9 @@ def inspect_campaign(folder):
     recorded = set()
     reports = []
     assemblies = {"QUAL": set(), "CAL": set(), "HOLD": set(), "Q0_PILOT": set()}
-    events = set()
+    # One physical mount may be measured repeatedly under several treatments.
+    # Reusing its identity across a NEW assembly or different data role is invalid.
+    event_owners = {}
     evidence_classes = set()
     for d in run_dirs:
         require(d.name in roles, f"unregistered run folder {d.name}")
@@ -234,8 +236,10 @@ def inspect_campaign(folder):
         meta = load_json(d / "metadata.json")
         require(meta["role"] == roles[d.name], "role mismatch against locked plan")
         require(utc_datetime(meta["acquired_utc"]) >= lock, "run acquired before declared lock")
-        require(meta["mount_event_id"] not in events, "reused mount_event_id")
-        events.add(meta["mount_event_id"])
+        owner = (meta["assembly_id"], meta["role"], meta["fixture_revision"])
+        old_owner = event_owners.setdefault(meta["mount_event_id"], owner)
+        require(old_owner == owner,
+                "mount_event_id reused across assemblies, roles or fixture revisions")
         assemblies[meta["role"]].add(meta["assembly_id"])
         evidence_classes.add(meta["evidence_class"])
         recorded.add(d.name)
@@ -248,6 +252,8 @@ def inspect_campaign(folder):
     return {"report_kind": "EVIDENCE_INTEGRITY_AUDIT_NOT_PHYSICAL_VALIDATION",
             "planned_run_count": len(roles), "recorded_run_count": len(recorded),
             "missing_planned_runs": sorted(set(roles) - recorded),
+            "distinct_mount_events_recorded": len(event_owners),
+            "checks_do_not_infer_statistical_independence_from_row_count": True,
             "checks_do_not_prove_preregistration_timing": True,
             "checks_do_not_grant_facility_authorization": True,
             "runs": reports,
