@@ -10,7 +10,7 @@ REQ-008,DOE,Sample size and stopping are justified from pilot precision and phys
 REQ-009,Data,"Experimental raw files are immutable, timestamped, hashed and quality-flagged",Critical,Inspection/Test,EBT-R01-DAT-001,G4,Open
 REQ-010,Model,Physics and numerical checks pass and are maintained in CI,High,Automated test,EBT-R01-SW-001,G0/G5,Partially met
 REQ-011,Model,Claims about internal junction temperature require qualified evidence or explicit model label,Critical,Document review,EBT-R01-RPT-001,G5,Open
-REQ-012,Research,Prior-art comparison identifies novelty limitations before manuscript claims,High,Literature review,EBT-LIT-001,G1,Open
+REQ-012,Research,Prior-art comparison identifies novelty limitations before manuscript claims,High,Literature review,EBT-LIT-003,G1,Partially met; G1 open
 REQ-013,Reproducibility,Clean checkout regenerates key report outputs from released datasets,Critical,Independent test,EBT-PUB-001,G6,Open
 REQ-014,Rights,Public release and facility photo/data rights recorded,Critical,Document review,EBT-PUB-001,G6,Open
 REQ-015,Quality,Deviations/aborted runs preserved and exclusion rules predeclared,Critical,Inspection,EBT-R01-TP-001,G4,Open
