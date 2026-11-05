@@ -50,3 +50,10 @@ The [critical methods report](09_model_comparison/docs/EBT-R01_model_comparison_
 - [EBT v0.5 preliminary engineering package](10_fixture_v0.5/README.md) contains editable mechanical DXF, SVG plan/section, a documented electrical topology and net ledger, metrology channel definitions, experimental boundary-transfer tests and sourced **partial** BOM.
 - **Design status: PDR / HOLD** — no released manufacturing toolpath, approved schematic, safe operating powers, KTH energized authorization, tested device or calibrated measurements. Two heaters and a catalog heatsink have independently listed **indicative** prices; all other costs depend on actual procurement or facility equipment.
 - [Checked v0.4 synthetic output snapshots](09_model_comparison/GENERATED_OUTPUT_PROVENANCE.md) are now tracked with SHA-256; numerical verification is not physical validation.
+
+### Q0 future-acquisition integrity v0.8 — SOFTWARE CHECKS ONLY
+
+- [EBT v0.8 Q0 raw-data integrity package](13_q0_data_integrity_v0.8/README.md) creates *demonstration-only* records, hashes raw files/metadata, retains abort/missing-sensor flags and checks run IDs plus QUAL/CAL/HOLD partition integrity.
+- The validator rejects overwritten seal files, corrupted hashes, reused mount-event IDs, ambiguous T_plate/T_sink labels, unregistered runs and overlap between HOLD and model-calibration/qualification assemblies.
+- An externally verifiable pre-registration record must be assessed separately; merely declaring an earlier UTC timestamp is **not proof of prospective validation**.
+- **No physical data collected or approved operating conditions established.** v0.6 [draft PR #11](https://github.com/Open-Energy-Methods/electronics-bench-testing/pull/11) and v0.7 [draft PR #12](https://github.com/Open-Energy-Methods/electronics-bench-testing/pull/12) are independent and not merged.

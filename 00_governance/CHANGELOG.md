@@ -35,3 +35,11 @@
 - Archived v0.4 synthetic JSON/PNG output snapshots with hashes; baseline v0.1 remains unchanged. Preserved whole-repository boilerplate/representative-data audit and created current source hierarchy. Historic v1.0 manifest and QA report are retained as snapshots, not current summaries.
 - Added six offline integrity tests to GitHub Actions, covering data classification, no false calibration claims, circuit net coverage, vector geometry and partial BOM arithmetic.
 - Formal G1 novelty, G2 energized facility authorization, G3 physical experiment and hardware manufacturing release remain blocked.
+
+## Data integrity work package v0.8 — 2026-11-05 (draft PR)
+
+- Added Q0/R01 prospective raw-record schema and strict audit CLI with SHA-256 seal, independent heater/site/remount IDs and T_plate versus T_sink metadata.
+- Added structural held-out partition checker to detect overlapping QUAL/CAL/HOLD run IDs, reused mount events, cross-role assembly overlap and prelock declared acquisition timestamps. A local stated timestamp is not proof of actual chronology; external reviewer confirmation remains required.
+- Added adversarial unit checks and synthetic-only demo generator; no synthetic readings are promoted to physical data.
+- Updated Student Workshop tracker to reflect invitation received (introduction pending) and Manufacturing Lab enquiry response restricting independent project access.
+- All G2/G3 site/machine permissions, safety-reviewed setpoints, calibrated instruments and physical validation remain OPEN.

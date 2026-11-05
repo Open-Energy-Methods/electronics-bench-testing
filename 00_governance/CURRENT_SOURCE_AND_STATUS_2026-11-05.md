@@ -28,3 +28,10 @@ The historic 65-entry `00_governance/RELEASE_MANIFEST_SHA256.json` refers to the
 ## Work-status rule
 
 A successful GitHub numerical CI check demonstrates **source/software verification**, not calibrated instruments, safety authorization, physical heat-transfer model validation or scientific novelty. Publish a figure only with its numerical/physical evidence class in the caption.
+
+## Subsequent draft research/engineering branches (not merged)
+
+- Draft PR #11: proposed v0.6 conditional spatial model; synthetic-only sensitivity, not manufacturer geometry validation.
+- Draft PR #12: proposed v0.7 physical readiness checklist and conditional fixture architecture, with unapproved real access.
+- Draft v0.8: \`13_q0_data_integrity_v0.8/\` adds prospective RAW DATA **schema and software verification only**, not a measured experimental campaign.
+- Facility correspondence on 5 Nov 2026: Student Workshop Canvas invitation sent (induction yet to be completed); KTH Manufacturing Lab declined casual independent-project access under current policy (MG1000/Maskineriet for enrolled students and formal funded research are described pathways); ELAB authority is unverified.

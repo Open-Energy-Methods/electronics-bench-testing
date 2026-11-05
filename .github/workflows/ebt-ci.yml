@@ -69,3 +69,18 @@ jobs:
           python-version: '3.11'
       - name: Verify v0.5 source traceability, topology and BOM arithmetic
         run: python -m unittest discover -s 10_fixture_v0.5/tests -p 'test_*.py' -v
+
+  q0-acquisition-integrity-verification:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 13_q0_data_integrity_v0.8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check synthetic data integrity and adversarial failures
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Generate synthetic-only data contract example
+        run: python demo.py
