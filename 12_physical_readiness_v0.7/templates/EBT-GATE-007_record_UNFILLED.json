@@ -1,0 +1,40 @@
+{
+  "schema_version": "EBT-GATE-007-v0.7",
+  "document_status": "NOT_AUTHORIZED",
+  "fabrication": {
+    "fixture_strategy": "UNSELECTED",
+    "manufacturer_profile_ref": "https://cdn.soselectronic.com/productdata/43/5c/5f09af37/sk-92-150-sa.pdf",
+    "actual_part_inspection_ref": null,
+    "approved_mechanical_drawing_ref": null,
+    "mounting_and_torque_review_ref": null,
+    "thermal_interface_review_ref": null,
+    "workshop_induction_ref": null,
+    "workshop_permission_ref": null
+  },
+  "powered_q0": {
+    "electrical_lab_permission_ref": null,
+    "lab_induction_ref": null,
+    "responsible_supervisor": null,
+    "approved_schematic_ref": null,
+    "psu_model_and_serial_ref": null,
+    "dc_protection_review_ref": null,
+    "independent_shutdown_verification_ref": null,
+    "isolation_and_grounding_review_ref": null,
+    "temperature_reference_chain_ref": null,
+    "voltage_current_reference_chain_ref": null,
+    "sensor_lag_verification_ref": null,
+    "timebase_verification_ref": null,
+    "bounded_power_envelope_ref": null,
+    "risk_review_ref": null
+  },
+  "r01_confirmatory": {
+    "q0_measured_report_ref": null,
+    "measured_uncertainty_budget_ref": null,
+    "preregistered_model_protocol_ref": null,
+    "prereg_lock_utc": null,
+    "prereg_document_sha256": null,
+    "qualification_ids": [],
+    "calibration_ids": [],
+    "reserved_holdout_ids": []
+  }
+}

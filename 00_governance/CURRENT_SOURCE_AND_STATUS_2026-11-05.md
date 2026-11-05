@@ -28,3 +28,19 @@ The historic 65-entry `00_governance/RELEASE_MANIFEST_SHA256.json` refers to the
 ## Work-status rule
 
 A successful GitHub numerical CI check demonstrates **source/software verification**, not calibrated instruments, safety authorization, physical heat-transfer model validation or scientific novelty. Publish a figure only with its numerical/physical evidence class in the caption.
+
+## Current integrated Q0 review status — v0.9 (5 November 2026)
+
+The **current** Q0 documentation index is [14_q0_integrated_v0.9/README.md](../14_q0_integrated_v0.9/README.md).
+It reconciles the following preserved independent work packages:
+
+- \`11_spatial_transfer_v0.6/\` — conditional **synthetic plate** spatial analysis, not a measured Fischer SK 92 thermohydraulic/thermal network.
+- \`12_physical_readiness_v0.7/\` — nominal **10 mm** heatsink-family base specification, unfilled physical inspection/permission gates, direct/adapter decision candidate. No authorized machining.
+- \`13_q0_data_integrity_v0.8/\` — future physical data schema and **synthetic demonstration** of data checks; all actual thermometry, calibration and timestamps unverified.
+- \`14_q0_integrated_v0.9/\` — unique Q0 index, physical review sequence and cross-record compatibility audit; NOT a site-approved operational SOP.
+
+**Original source baseline and earlier drawings remain preserved and unreleased.**
+Under the integrated contract, the 12-run screening plan and the 8-event
+source/site crossover are alternative research pilots. No blanket 20-run
+experimental authorization is implied, nor is the 54-row R01 design executed.
+Passing CI establishes parser/method verification only, not physical validity.

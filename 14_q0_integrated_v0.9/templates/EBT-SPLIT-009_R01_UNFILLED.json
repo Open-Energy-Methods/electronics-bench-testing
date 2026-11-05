@@ -1,0 +1,13 @@
+{
+  "schema_version": "EBT-SPLIT-008",
+  "study_kind": "R01",
+  "document_status": "UNFILLED_REQUIRES_INDEPENDENT_PREREGISTRATION",
+  "lock_utc": null,
+  "protocol_sha256": null,
+  "external_lock_ref": null,
+  "role_run_ids": {
+    "QUAL": [],
+    "CAL": [],
+    "HOLD": []
+  }
+}

@@ -3,9 +3,9 @@ T-001,G0,Approve programme baseline,Current researcher,2026-11-06,Ready for revi
 T-002,WP0,Track already-sent KTH facility enquiries and responses,Current researcher,2026-11-12,In progress,facility tracker
 T-003,WP1,Obtain and screen direct competing full text,Current researcher,2026-11-19,In progress,Full-text assessment v0.3 completed for 5 articles plus 1 KTH thesis summary; 8 restricted sources; G1 still open
 T-004,WP2,Select candidate low-voltage components from datasheets,Current researcher,2026-11-19,In progress,Reference heater candidate matrix v0.2; semiconductor undecided
-T-005,WP2,Prepare protected block schematic and sensor-location map,Current researcher,2026-11-19,In progress,Functional architecture v0.2; connection-level schematic and fixture drawing pending
+T-005,WP2,Prepare protected block schematic and sensor-location map,Current researcher,2026-11-19,PDR completed - G2 release blocked,v0.5 source-grounded draft topology and concept drawing; v0.9 authority index; not fabrication or electrical release
 T-006,WP3,Inspect instruments and collect allowed reference evidence,Current researcher,TBD after facility permission,Blocked,instrument register
-T-007,WP6,Add identifiability/noise/parameter bounds synthetic benchmark tests,Current researcher,2026-11-26,Not started,passing CI and plots
+T-007,WP6,Add identifiability/noise/parameter bounds synthetic benchmark tests,Current researcher,2026-11-26,Synthetic numerical verification complete,v0.4 and v0.6 numerical CI; actual physical model identification unvalidated
 T-008,WP3,Run protected resistive-heater qualification pilot,Current researcher,TBD after G2,Blocked,real pilot raw dataset
 T-009,WP4,Approve sample sizing and holdout partitions,Current researcher,TBD after pilot,Blocked,preregistered TP v1.0
 T-010,WP8,Prepare KTH research concept packet,Current researcher,After scientific gap + pilot,Not started,2-page concept with measured evidence if available

@@ -4,6 +4,17 @@
 
 This repository preserves a controlled, independent postgraduate-scope research programme. It is not an enrolled thesis, KTH-affiliated laboratory, validated physical test campaign, or peer-reviewed publication. The programme is living: updates enter through change requests and revisions instead of replacing the whole plan.
 
+## Current Q0 engineering authority — v0.9 integrated review (5 November 2026)
+
+**[OPEN THE CONSOLIDATED Q0 PACKAGE](14_q0_integrated_v0.9/README.md)** before using earlier design documents. It reconciles:
+- [v0.6 conditional spatial sensitivity](11_spatial_transfer_v0.6/README.md): synthetic plate model and source/sensor effects only.
+- [v0.7 mechanical and G2 readiness](12_physical_readiness_v0.7/README.md): SK 92 nominal 10 mm base; direct sink versus optional 4 mm adapter; facility inspection and stage gate **not yet passed**.
+- [v0.8 Q0 acquisition integrity](13_q0_data_integrity_v0.8/README.md): raw-file SHA-256, run/mount identity and prospective QUAL/CAL/HOLD separation; demonstrations strictly synthetic.
+
+The **v0.9 Q0 field sequence** replaces competing informal ordering, while leaving historical v0.5 PDR and all existing numerical models intact. Neither 12 planned Q0 power/cooling/remount runs nor 8 proposed source/site crossover events are executed or site-approved; they are alternative pilot designs. The 54-run R01 matrix remains provisional.
+
+**Approval state: NO released machining drawing; NO power authorization; NO acquired physical Q0/R01 data.** This is a laboratory *review* package, not an executable laboratory SOP.
+
 Start with:
 1. `EBT_Master_Programme_Plan_v1.0.pdf` (readable master programme) or `.docx` (editable), also `.md` for diffable source.
 2. `08_project_controls/` (requirements, risks, decisions, tasks, standards, literature, instrument, budget, documents, change requests).
