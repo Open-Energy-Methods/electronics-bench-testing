@@ -1,11 +1,13 @@
 ﻿task_id,work_package,task,owner,target,status,definition_of_done
 T-001,G0,Approve programme baseline,Current researcher,2026-11-06,Ready for review,Master plan + decision log
 T-002,WP0,Track already-sent KTH facility enquiries and responses,Current researcher,2026-11-12,In progress,facility tracker
-T-003,WP1,Obtain and screen direct competing full text,Current researcher,2026-11-19,Not started,8 detailed literature rows
-T-004,WP2,Select candidate low-voltage components from datasheets,Current researcher,2026-11-19,Not started,DUT candidate matrix
-T-005,WP2,Prepare protected block schematic and sensor-location map,Current researcher,2026-11-19,Not started,revisioned drawing
+T-003,WP1,Obtain and screen direct competing full text,Current researcher,2026-11-19,In progress,Targeted overlap assessment v0.2; full-text analysis outstanding
+T-004,WP2,Select candidate low-voltage components from datasheets,Current researcher,2026-11-19,In progress,Reference heater candidate matrix v0.2; semiconductor undecided
+T-005,WP2,Prepare protected block schematic and sensor-location map,Current researcher,2026-11-19,In progress,Functional architecture v0.2; connection-level schematic and fixture drawing pending
 T-006,WP3,Inspect instruments and collect allowed reference evidence,Current researcher,TBD after facility permission,Blocked,instrument register
 T-007,WP6,Add identifiability/noise/parameter bounds synthetic benchmark tests,Current researcher,2026-11-26,Not started,passing CI and plots
 T-008,WP3,Run protected resistive-heater qualification pilot,Current researcher,TBD after G2,Blocked,real pilot raw dataset
 T-009,WP4,Approve sample sizing and holdout partitions,Current researcher,TBD after pilot,Blocked,preregistered TP v1.0
 T-010,WP8,Prepare KTH research concept packet,Current researcher,After scientific gap + pilot,Not started,2-page concept with measured evidence if available
+T-011,WP2,Prepare final connection-level schematic and mechanical drawing,Current researcher,After facility instrument inspection,Blocked,Site-approved wiring and fixture drawing
+T-012,WP3,Define pilot operating envelope and temperature references,Current researcher,After G2 access,Blocked,Site-approved Q0 procedure with numeric safe limits

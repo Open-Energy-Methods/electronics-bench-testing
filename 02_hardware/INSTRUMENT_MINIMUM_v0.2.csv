@@ -1,0 +1,11 @@
+id,need,primary_quantity,mandatory_or_optional,verification_evidence,notes
+I-01,Current limited isolated DC laboratory PSU,Power source,Mandatory,Voltage current limit and independent shutdown checks,Facility approval required
+I-02,Voltage measurement at heater Kelvin terminals,V_heater,Mandatory,Range resolution uncertainty and reference evidence,Instrument grounding suitability must be confirmed
+I-03,Measured heater branch current,I_heater,Mandatory,Current sensor or qualified shunt uncertainty and power,Sensor heat dissipation must not enter heater power
+I-04,Two contact temperature channels,T_case and T_sink,Mandatory,Position attachment lag uncertainty and qualified reference,Do not infer semiconductor junction temperature
+I-05,Independent ambient temperature channel,T_ambient,Mandatory,Shielding location drift and channel verification,Keep outside heater plume or fan exhaust
+I-06,Synchronized logging and file hashing,Time and provenance,Mandatory,Timebase dropouts units immutable raw archive,Verification with known input required
+I-07,Airflow or fan-speed measurement,Cooling boundary,Conditional if FAN,Instrument accuracy boundary characterization and tach metadata,Fan setting alone insufficient
+I-08,Thermal camera,Surface mapping,Optional,Emissivity reference and cross-check,Never used as direct junction thermometer
+I-09,Oscilloscope and rated differential probes,Transient V and I,Conditional,Grounding and probe reference approved,Do not use ordinary ground clips on unknown nodes
+I-10,Temperature sensitive electrical parameter rig,Semiconductor junction observable,Optional research gate,Validated against an appropriate reference and applicable standards,Do not claim junction validation before this
