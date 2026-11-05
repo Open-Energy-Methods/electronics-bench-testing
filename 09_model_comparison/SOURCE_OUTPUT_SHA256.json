@@ -1,0 +1,6 @@
+{
+  "figures/boundary_failure_modes.png": "11f4db16eb40c649433a7dc799d9de101a092a1658b093767f2dad20eab037d0",
+  "figures/comparison_holdouts.png": "b5c65a76ea16f426d3e615fdf788919c9d362621eedd1ef57f26450149bf9d7d",
+  "results/synthetic_model_comparison_v0.4.json": "8b1e113d9b361ae0da5435e37cbc0f7d76793f2cb1154ec6936708fa10836392",
+  "results/synthetic_noise_seed_robustness_v0.4.json": "6b8cbd4c6fd03fe7a0a56fb454094a19fe38306f2b79c8e04a349f6d3b58c483"
+}

@@ -1,3 +1,5 @@
+> **ARCHIVED IMPORT NOTE (2026-11-05):** This procedure describes the original empty-repository setup, already completed. Do **not** rerun `git init` or create a duplicate project. For current work and provenance see [current status](00_governance/CURRENT_SOURCE_AND_STATUS_2026-11-05.md) and [v0.5 preliminary engineering](10_fixture_v0.5/README.md).
+
 # Import this research baseline into a dedicated GitHub repository
 
 **Recommended destination:** `Open-Energy-Methods/electronics-bench-testing` (or the researcher's personal account). Create an empty repository in GitHub first. The available connector could not create a repository automatically.

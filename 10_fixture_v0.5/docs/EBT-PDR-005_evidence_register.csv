@@ -1,0 +1,13 @@
+evidence_id,claim_or_requirement,source_or_record,classification,observed_evidence,release_blocker
+E-001,Bourns resistor specific part and nominal 10 ohm and dimensions,https://www.bourns.com/docs/product-datasheets/pwr220t-20.pdf,SOURCE_SPECIFICATION,TO-220 body width 10.1 mm height 14.6 mm mounting hole diameter 3.6 mm,Actual part receipt mechanical mating torque and safety review
+E-002,Heater Sweden retail price,https://se.farnell.com/en-SE/c/passive-components/resistors-fixed-value/through-hole-resistors?brand=bourns&resistance=10ohm,PRICE_SNAPSHOT,38.82 SEK excluding VAT at 1+ quantity as checked 2026-11-05,Checkout revalidation
+E-003,SK92 heat sink nominal external dimensions,https://se.farnell.com/fischer-elektronik/sk-92-100-sa/heat-sink-100mm-1-4-c-w/dp/4621580,SOURCE_SPECIFICATION,100 by 100 by 40 mm black anodized nominal,Base cross section flatness thickness and machining review
+E-004,SK92 retail price,https://se.farnell.com/fischer-elektronik/sk-92-100-sa/heat-sink-100mm-1-4-c-w/dp/4621580,PRICE_SNAPSHOT,268.94 SEK excluding VAT checked 2026-11-05,Checkout revalidation
+E-005,Plate 100 by 100 by 4 mm and device sites plus or minus 25 mm,EBT-MEC-005_plan.svg,DESIGN_ASSUMPTION,Proposed coordinates and interference study only,Real cross section and stack mechanical release
+E-006,Heater apparent boundary resistance transfer,EBT-R01 model v0.4,UNVALIDATED_HYPOTHESIS,Synthetic counterexamples show transfer can fail,Qualified site experiment independent validation
+E-007,Temperature logger NI 9213 capabilities,https://download.ni.com/support/manuals/374916a_02.pdf,OPTIONAL_CANDIDATE_SPEC,16 channels scanned; high speed/low-noise modes have different sample rates,No instrument possession or calibration confirmed
+E-008,Proposed sample rate at least 5 Hz,EBT-MET-005_uncertainty_budget.md,DESIGN_TARGET,Derived from hypothetical 4.84 second synthetic mode not measured plant,Real sensor lag and DAQ accuracy test
+E-009,Actual lab instruments,08_project_controls/equipment_register.csv,UNKNOWN_UNINSPECTED,No serials references or qualification evidence,Site inventory and calibration references
+E-010,Physical operation approval,08_project_controls/facility_access_tracker.csv,NOT_GRANTED,Student workshop Canvas invitation in progress not energized permission,Authorized powered facility permission induction risk review
+E-011,Actual measured temperature and electrical data,03_campaigns/EBT-Q0/qualification_protocol_draft.md,NOT_EXISTING,No experimental recordings produced,Safe Q0 pilot and archive
+E-012,Reviewable electrical topology,EBT-EL-005_nets.csv,DESIGN_ASSUMPTION,Netlist includes 2 mutually exclusive heaters and metrology connections,Protection fusing switch rating ground isolation schematic approval

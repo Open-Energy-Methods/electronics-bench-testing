@@ -1,8 +1,8 @@
-# Electronics Bench Testing — controlled programme baseline v1.0
+# Electronics Bench Testing — independent electrothermal research
 
 **Status: research planning and verified synthetic feasibility. No physical experiments yet. No KTH institutional approval or accreditation.**
 
-This package converts a series of conversations and the EBT-R01 v0.1 feasibility demonstrator into an **editable, controlled, thesis-equivalent independent research programme**. The programme is living: updates enter through change requests and revisions instead of replacing the whole plan.
+This repository preserves a controlled, independent postgraduate-scope research programme. It is not an enrolled thesis, KTH-affiliated laboratory, validated physical test campaign, or peer-reviewed publication. The programme is living: updates enter through change requests and revisions instead of replacing the whole plan.
 
 Start with:
 1. `EBT_Master_Programme_Plan_v1.0.pdf` (readable master programme) or `.docx` (editable), also `.md` for diffable source.
@@ -43,3 +43,10 @@ Submit new proposals through `08_project_controls/change_requests.csv` and `06_t
 The [executable model comparison](09_model_comparison/README.md) contains B0 static, B1 one-RC, B2 fixed-boundary two-node and B3 independently boundary-qualified two-node models, a package-only observability ablation, synthetic qualification, stress scenarios, uncertainty formulas and tests.
 
 The [critical methods report](09_model_comparison/docs/EBT-R01_model_comparison_and_boundary_qualification_v0.4.md) documents the transferability failure under mismatched heating/fixture geometries, and why a locally measured apparent sink resistance is not automatically a convection coefficient. No physical experiments, KTH authorization or scientific novelty are claimed.
+
+### Preliminary physical fixture v0.5 — DESIGN FOR REVIEW ONLY
+
+- [Source and authenticity status](00_governance/CURRENT_SOURCE_AND_STATUS_2026-11-05.md) distinguishes historical manifests, synthetic evidence, unpriced hardware and physical authorization.
+- [EBT v0.5 preliminary engineering package](10_fixture_v0.5/README.md) contains editable mechanical DXF, SVG plan/section, a documented electrical topology and net ledger, metrology channel definitions, experimental boundary-transfer tests and sourced **partial** BOM.
+- **Design status: PDR / HOLD** — no released manufacturing toolpath, approved schematic, safe operating powers, KTH energized authorization, tested device or calibrated measurements. Two heaters and a catalog heatsink have independently listed **indicative** prices; all other costs depend on actual procurement or facility equipment.
+- [Checked v0.4 synthetic output snapshots](09_model_comparison/GENERATED_OUTPUT_PROVENANCE.md) are now tracked with SHA-256; numerical verification is not physical validation.

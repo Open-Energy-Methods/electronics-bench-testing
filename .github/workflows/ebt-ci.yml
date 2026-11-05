@@ -59,3 +59,13 @@ jobs:
         run: python -m scripts.robustness_scan
       - name: Regenerate synthetic figures
         run: python -m scripts.plot_comparison
+
+  fixture-preliminary-design-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify v0.5 source traceability, topology and BOM arithmetic
+        run: python -m unittest discover -s 10_fixture_v0.5/tests -p 'test_*.py' -v

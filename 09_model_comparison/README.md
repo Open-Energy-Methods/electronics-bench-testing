@@ -26,3 +26,11 @@ B0 is static only; B1 fits a case-only one-RC model; B2 fits fixed-boundary two-
 [Read the critical model and boundary-method report](docs/EBT-R01_model_comparison_and_boundary_qualification_v0.4.md).
 
 All input powers, heat capacities, resistances, noise and operating times are *assumed synthetic values*, not an approved powered test envelope. The previous v0.1 source baseline remains intact.
+
+## Generated numerical output snapshots checked into version control
+
+- [`results/synthetic_model_comparison_v0.4.json`](results/synthetic_model_comparison_v0.4.json) and [`results/synthetic_noise_seed_robustness_v0.4.json`](results/synthetic_noise_seed_robustness_v0.4.json)
+- [`figures/comparison_holdouts.png`](figures/comparison_holdouts.png) and [`figures/boundary_failure_modes.png`](figures/boundary_failure_modes.png)
+- [Generation provenance and integrity hashes](GENERATED_OUTPUT_PROVENANCE.md), [`SOURCE_OUTPUT_SHA256.json`](SOURCE_OUTPUT_SHA256.json)
+
+**These are stored synthetic outputs**, regenerated data can differ at floating-point or plot-byte level between environments. Do not present them as measured validation.

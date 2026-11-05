@@ -1,0 +1,824 @@
+{
+  "ideal": {
+    "boundary_sensitivity_for_forced_holdout": {
+      "max_package_C_per_K_W": 4.983978705350102,
+      "max_sink_C_per_K_W": 4.984743786388854,
+      "one_sigma_package_C": 0.13725742438855065,
+      "one_sigma_sink_C": 0.13727849451325141
+    },
+    "evidence_type": "SYNTHETIC_ONLY_NO_PHYSICAL_MEASUREMENTS",
+    "mode": "ideal",
+    "seed": 20261105,
+    "truth": {
+      "truth_rsa_nat_k_w": 2.8,
+      "truth_rsa_fan_k_w": 0.95,
+      "truth_rps_train_k_w": 0.48,
+      "truth_rps_new_interface_k_w": 0.78,
+      "rpa_bypass_k_w": 0.0,
+      "qualification_mismatch_factor": 1.0
+    },
+    "qualification": {
+      "NAT": {
+        "mean_k_w": 2.820521794767367,
+        "u_k_w": 0.039581278281483855,
+        "n_independent_runs": 4,
+        "type": "apparent sink-node resistance, not convection coefficient"
+      },
+      "FAN": {
+        "mean_k_w": 0.9516488409039554,
+        "u_k_w": 0.02753972930125289,
+        "n_independent_runs": 4,
+        "type": "apparent sink-node resistance, not convection coefficient"
+      }
+    },
+    "identifiability_ablation_B2_case_only": {
+      "parameters": [
+        0.062147037734357334,
+        0.5000000000000526,
+        59.028065248954626,
+        3.152149415263592
+      ],
+      "optimizer_success": true,
+      "training_rmse_c": 0.3457543761938943,
+      "jacobian_log_condition_number": 9666.902074919857,
+      "log_jacobian_singular_values": [
+        1053.7788403506117,
+        482.3297394449794,
+        14.658496829544642,
+        0.10900894952526434
+      ],
+      "warning": "Condition number is local and weighting/parameterization dependent; singularity means no unique physical parameters."
+    },
+    "fitted": {
+      "B0": {
+        "parameters": [
+          3.007429744014427
+        ],
+        "n_parameters": 1,
+        "training_observables": "package late-power plateau",
+        "training_rmse_c": null,
+        "jacobian_log_condition_number": null,
+        "jacobian_log_singular_values": []
+      },
+      "B1": {
+        "parameters": [
+          3.17581706302433,
+          58.29419891420569
+        ],
+        "n_parameters": 2,
+        "training_observables": "package only",
+        "training_rmse_c": 0.3605541697144838,
+        "jacobian_log_condition_number": 2.180236251256773,
+        "jacobian_log_singular_values": [
+          754.4296856550021,
+          346.0311630081921
+        ]
+      },
+      "B2": {
+        "parameters": [
+          0.4965277200918648,
+          14.283720964351392,
+          62.83380779439542,
+          2.7620043278168533
+        ],
+        "n_parameters": 4,
+        "training_observables": "package + sink",
+        "training_rmse_c": 0.1110097511249307,
+        "jacobian_log_condition_number": 44.207785557273645,
+        "jacobian_log_singular_values": [
+          875.970709125997,
+          364.97524734776346,
+          105.33856752035297,
+          19.814851571588633
+        ]
+      },
+      "B3": {
+        "parameters": [
+          0.45596470533108807,
+          8.812510311345532,
+          69.20428185548035
+        ],
+        "n_parameters": 3,
+        "training_observables": "package + sink",
+        "training_rmse_c": 0.14290699431267892,
+        "jacobian_log_condition_number": 27.86789770403036,
+        "jacobian_log_singular_values": [
+          400.66759785021696,
+          114.12696047926457,
+          14.377388711035456
+        ]
+      }
+    },
+    "holdout": [
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 0.05241875293772106,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B1",
+        "package_transient_rmse_C": 0.3142085521283599,
+        "package_late_bias_C": -0.01188666045499076,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B2",
+        "package_transient_rmse_C": 0.1309587449339678,
+        "package_late_bias_C": 0.053711433464667856,
+        "sink_transient_rmse_C": 0.1434722168731597,
+        "sink_late_bias_C": -0.10928439267825141
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B3",
+        "package_transient_rmse_C": 0.15672629697295834,
+        "package_late_bias_C": 0.06008878559449234,
+        "sink_transient_rmse_C": 0.11288819666554147,
+        "sink_late_bias_C": 0.04562603010313637
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 7.730889560108101,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B1",
+        "package_transient_rmse_C": 5.525729404785007,
+        "package_late_bias_C": 7.6505077933672085,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B2",
+        "package_transient_rmse_C": 5.488775518223964,
+        "package_late_bias_C": 7.732505410766774,
+        "sink_transient_rmse_C": 5.35339023871632,
+        "sink_late_bias_C": 7.738850763308364
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B3",
+        "package_transient_rmse_C": 0.18797834479033423,
+        "package_late_bias_C": -0.2730497605111655,
+        "sink_transient_rmse_C": 0.19852694377010094,
+        "sink_late_bias_C": -0.1051162980388689
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": -1.644944752384499,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B1",
+        "package_transient_rmse_C": 1.2842737953622911,
+        "package_late_bias_C": -1.72532651912539,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B2",
+        "package_transient_rmse_C": 1.1346520561485285,
+        "package_late_bias_C": -1.6433289017258257,
+        "sink_transient_rmse_C": 0.255439904232661,
+        "sink_late_bias_C": -0.21300617701254865
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B3",
+        "package_transient_rmse_C": 1.1360306468758734,
+        "package_late_bias_C": -1.6353572115635373,
+        "sink_transient_rmse_C": 0.1475607480074473,
+        "sink_late_bias_C": -0.019368148535805336
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 5.035385133397984,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B1",
+        "package_transient_rmse_C": 3.8391478368434564,
+        "package_late_bias_C": 4.971079720005272,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B2",
+        "package_transient_rmse_C": 3.787898504081432,
+        "package_late_bias_C": 5.036677813924931,
+        "sink_transient_rmse_C": 4.472452037698331,
+        "sink_late_bias_C": 6.327642994111457
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B3",
+        "package_transient_rmse_C": 0.9756611612448718,
+        "package_late_bias_C": -1.3677663230974257,
+        "sink_transient_rmse_C": 0.1412849533747317,
+        "sink_late_bias_C": 0.052469345033667146
+      }
+    ],
+    "warning": "No physical test, calibration traceability, semiconductor junction or confirmed novelty. Boundary qualification uses a separate sink-injection rig and can be nontransferable."
+  },
+  "bypass": {
+    "boundary_sensitivity_for_forced_holdout": {
+      "max_package_C_per_K_W": 4.992417487356885,
+      "max_sink_C_per_K_W": 4.992430370149715,
+      "one_sigma_package_C": 0.13587214133540707,
+      "one_sigma_sink_C": 0.1358724919496441
+    },
+    "evidence_type": "SYNTHETIC_ONLY_NO_PHYSICAL_MEASUREMENTS",
+    "mode": "bypass",
+    "seed": 20261105,
+    "truth": {
+      "truth_rsa_nat_k_w": 2.8,
+      "truth_rsa_fan_k_w": 0.95,
+      "truth_rps_train_k_w": 0.48,
+      "truth_rps_new_interface_k_w": 0.78,
+      "rpa_bypass_k_w": 8.5,
+      "qualification_mismatch_factor": 1.0
+    },
+    "qualification": {
+      "NAT": {
+        "mean_k_w": 2.1525693904297576,
+        "u_k_w": 0.03451101670047813,
+        "n_independent_runs": 4,
+        "type": "apparent sink-node resistance, not convection coefficient"
+      },
+      "FAN": {
+        "mean_k_w": 0.8609111291438061,
+        "u_k_w": 0.027215700946384855,
+        "n_independent_runs": 4,
+        "type": "apparent sink-node resistance, not convection coefficient"
+      }
+    },
+    "identifiability_ablation_B2_case_only": {
+      "parameters": [
+        0.0500000000000634,
+        0.5000000000000001,
+        59.327016901461775,
+        2.276347386745321
+      ],
+      "optimizer_success": true,
+      "training_rmse_c": 0.2963895090267009,
+      "jacobian_log_condition_number": 10902.339703142408,
+      "log_jacobian_singular_values": [
+        838.107701633501,
+        326.8726168759417,
+        11.648429299238913,
+        0.07687411367230937
+      ],
+      "warning": "Condition number is local and weighting/parameterization dependent; singularity means no unique physical parameters."
+    },
+    "fitted": {
+      "B0": {
+        "parameters": [
+          2.271989808100478
+        ],
+        "n_parameters": 1,
+        "training_observables": "package late-power plateau",
+        "training_rmse_c": null,
+        "jacobian_log_condition_number": null,
+        "jacobian_log_singular_values": []
+      },
+      "B1": {
+        "parameters": [
+          2.2976604849915767,
+          58.48840250489276
+        ],
+        "n_parameters": 2,
+        "training_observables": "package only",
+        "training_rmse_c": 0.30497737631740307,
+        "jacobian_log_condition_number": 2.561695188162166,
+        "jacobian_log_singular_values": [
+          600.0596988410597,
+          234.24320801865574
+        ]
+      },
+      "B2": {
+        "parameters": [
+          0.3719855958101105,
+          7.035329080898955,
+          74.45835243684272,
+          1.9844404486306524
+        ],
+        "n_parameters": 4,
+        "training_observables": "package + sink",
+        "training_rmse_c": 0.1197469622172594,
+        "jacobian_log_condition_number": 110.27163770796844,
+        "jacobian_log_singular_values": [
+          699.2110853054793,
+          280.2827103545597,
+          82.7905683871801,
+          6.340806211268893
+        ]
+      },
+      "B3": {
+        "parameters": [
+          0.2588494954977068,
+          0.5000000000000001,
+          78.92636217183119
+        ],
+        "n_parameters": 3,
+        "training_observables": "package + sink",
+        "training_rmse_c": 0.3464052759675153,
+        "jacobian_log_condition_number": 806.0252394577759,
+        "jacobian_log_singular_values": [
+          329.6768530024418,
+          70.01073148074282,
+          0.4090155454985751
+        ]
+      }
+    },
+    "holdout": [
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 0.0878783770441629,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B1",
+        "package_transient_rmse_C": 0.26907315591604714,
+        "package_late_bias_C": 0.006701070208419442,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B2",
+        "package_transient_rmse_C": 0.16203313126951185,
+        "package_late_bias_C": 0.1082662103156385,
+        "sink_transient_rmse_C": 0.1570205952755168,
+        "sink_late_bias_C": -0.10833904533459264
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B3",
+        "package_transient_rmse_C": 0.32277193302503593,
+        "package_late_bias_C": 0.24929793494437646,
+        "sink_transient_rmse_C": 0.32180333454448706,
+        "sink_late_bias_C": 0.48040868148522087
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 5.107044779730506,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B1",
+        "package_transient_rmse_C": 3.5989467350194246,
+        "package_late_bias_C": 5.0055731461858235,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B2",
+        "package_transient_rmse_C": 3.591469179850786,
+        "package_late_bias_C": 5.132529571319853,
+        "sink_transient_rmse_C": 3.612492506180836,
+        "sink_late_bias_C": 5.362524203953363
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B3",
+        "package_transient_rmse_C": 0.47741854483521,
+        "package_late_bias_C": -0.6562012751019696,
+        "sink_transient_rmse_C": 0.14900973014062394,
+        "sink_late_bias_C": 0.1330673415854514
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": -0.9630591199910524,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B1",
+        "package_transient_rmse_C": 0.8633155361596554,
+        "package_late_bias_C": -1.0645307535357347,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B2",
+        "package_transient_rmse_C": 0.7104710358447867,
+        "package_late_bias_C": -0.9375743284017055,
+        "sink_transient_rmse_C": 0.1655646577208732,
+        "sink_late_bias_C": -0.004306038911515486
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B3",
+        "package_transient_rmse_C": 0.7636648965304808,
+        "package_late_bias_C": -0.7612846726157821,
+        "sink_transient_rmse_C": 0.439443011401465,
+        "sink_late_bias_C": 0.7316286196132538
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 3.260769638912034,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B1",
+        "package_transient_rmse_C": 2.454092313793755,
+        "package_late_bias_C": 3.179592332076291,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B2",
+        "package_transient_rmse_C": 2.429433281189249,
+        "package_late_bias_C": 3.28115747218351,
+        "sink_transient_rmse_C": 3.142165396319,
+        "sink_late_bias_C": 4.51509619874883
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B3",
+        "package_transient_rmse_C": 0.9934126886407435,
+        "package_late_bias_C": -1.3498272049539466,
+        "sink_transient_rmse_C": 0.30572965577957295,
+        "sink_late_bias_C": 0.3315307088544994
+      }
+    ],
+    "warning": "No physical test, calibration traceability, semiconductor junction or confirmed novelty. Boundary qualification uses a separate sink-injection rig and can be nontransferable."
+  },
+  "mismatched": {
+    "boundary_sensitivity_for_forced_holdout": {
+      "max_package_C_per_K_W": 3.192834585045638,
+      "max_sink_C_per_K_W": 3.1925592127206053,
+      "one_sigma_package_C": 0.15399261829155758,
+      "one_sigma_sink_C": 0.15397933689403845
+    },
+    "evidence_type": "SYNTHETIC_ONLY_NO_PHYSICAL_MEASUREMENTS",
+    "mode": "mismatched",
+    "seed": 20261105,
+    "truth": {
+      "truth_rsa_nat_k_w": 2.8,
+      "truth_rsa_fan_k_w": 0.95,
+      "truth_rps_train_k_w": 0.48,
+      "truth_rps_new_interface_k_w": 0.78,
+      "rpa_bypass_k_w": 0.0,
+      "qualification_mismatch_factor": 4.0
+    },
+    "qualification": {
+      "NAT": {
+        "mean_k_w": 2.820521794767367,
+        "u_k_w": 0.039581278281483855,
+        "n_independent_runs": 4,
+        "type": "apparent sink-node resistance, not convection coefficient"
+      },
+      "FAN": {
+        "mean_k_w": 3.78600364488372,
+        "u_k_w": 0.048230691001913094,
+        "n_independent_runs": 4,
+        "type": "apparent sink-node resistance, not convection coefficient"
+      }
+    },
+    "identifiability_ablation_B2_case_only": {
+      "parameters": [
+        0.062147037734357334,
+        0.5000000000000526,
+        59.028065248954626,
+        3.152149415263592
+      ],
+      "optimizer_success": true,
+      "training_rmse_c": 0.3457543761938943,
+      "jacobian_log_condition_number": 9666.902074919857,
+      "log_jacobian_singular_values": [
+        1053.7788403506117,
+        482.3297394449794,
+        14.658496829544642,
+        0.10900894952526434
+      ],
+      "warning": "Condition number is local and weighting/parameterization dependent; singularity means no unique physical parameters."
+    },
+    "fitted": {
+      "B0": {
+        "parameters": [
+          3.007429744014427
+        ],
+        "n_parameters": 1,
+        "training_observables": "package late-power plateau",
+        "training_rmse_c": null,
+        "jacobian_log_condition_number": null,
+        "jacobian_log_singular_values": []
+      },
+      "B1": {
+        "parameters": [
+          3.17581706302433,
+          58.29419891420569
+        ],
+        "n_parameters": 2,
+        "training_observables": "package only",
+        "training_rmse_c": 0.3605541697144838,
+        "jacobian_log_condition_number": 2.180236251256773,
+        "jacobian_log_singular_values": [
+          754.4296856550021,
+          346.0311630081921
+        ]
+      },
+      "B2": {
+        "parameters": [
+          0.4965277200918648,
+          14.283720964351392,
+          62.83380779439542,
+          2.7620043278168533
+        ],
+        "n_parameters": 4,
+        "training_observables": "package + sink",
+        "training_rmse_c": 0.1110097511249307,
+        "jacobian_log_condition_number": 44.207785557273645,
+        "jacobian_log_singular_values": [
+          875.970709125997,
+          364.97524734776346,
+          105.33856752035297,
+          19.814851571588633
+        ]
+      },
+      "B3": {
+        "parameters": [
+          0.45596470533108807,
+          8.812510311345532,
+          69.20428185548035
+        ],
+        "n_parameters": 3,
+        "training_observables": "package + sink",
+        "training_rmse_c": 0.14290699431267892,
+        "jacobian_log_condition_number": 27.86789770403036,
+        "jacobian_log_singular_values": [
+          400.66759785021696,
+          114.12696047926457,
+          14.377388711035456
+        ]
+      }
+    },
+    "holdout": [
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 0.05241875293772106,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B1",
+        "package_transient_rmse_C": 0.3142085521283599,
+        "package_late_bias_C": -0.01188666045499076,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B2",
+        "package_transient_rmse_C": 0.1309587449339678,
+        "package_late_bias_C": 0.053711433464667856,
+        "sink_transient_rmse_C": 0.1434722168731597,
+        "sink_late_bias_C": -0.10928439267825141
+      },
+      {
+        "run": "HO-NAT-4W",
+        "cooling": "NAT",
+        "assembly": "HO-01",
+        "model": "B3",
+        "package_transient_rmse_C": 0.15672629697295834,
+        "package_late_bias_C": 0.06008878559449234,
+        "sink_transient_rmse_C": 0.11288819666554147,
+        "sink_late_bias_C": 0.04562603010313637
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 7.730889560108101,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B1",
+        "package_transient_rmse_C": 5.525729404785007,
+        "package_late_bias_C": 7.6505077933672085,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B2",
+        "package_transient_rmse_C": 5.488775518223964,
+        "package_late_bias_C": 7.732505410766774,
+        "sink_transient_rmse_C": 5.35339023871632,
+        "sink_late_bias_C": 7.738850763308364
+      },
+      {
+        "run": "HO-FAN-5W",
+        "cooling": "FAN",
+        "assembly": "HO-02",
+        "model": "B3",
+        "package_transient_rmse_C": 7.773559897996949,
+        "package_late_bias_C": 10.643926332984051,
+        "sink_transient_rmse_C": 7.757541799508375,
+        "sink_late_bias_C": 10.855873536001615
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": -1.644944752384499,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B1",
+        "package_transient_rmse_C": 1.2842737953622911,
+        "package_late_bias_C": -1.72532651912539,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B2",
+        "package_transient_rmse_C": 1.1346520561485285,
+        "package_late_bias_C": -1.6433289017258257,
+        "sink_transient_rmse_C": 0.255439904232661,
+        "sink_late_bias_C": -0.21300617701254865
+      },
+      {
+        "run": "HO-NAT-INTERFACE",
+        "cooling": "NAT",
+        "assembly": "HO-03",
+        "model": "B3",
+        "package_transient_rmse_C": 1.1360306468758734,
+        "package_late_bias_C": -1.6353572115635373,
+        "sink_transient_rmse_C": 0.1475607480074473,
+        "sink_late_bias_C": -0.019368148535805336
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B0",
+        "package_transient_rmse_C": null,
+        "package_late_bias_C": 5.035385133397984,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B1",
+        "package_transient_rmse_C": 3.8391478368434564,
+        "package_late_bias_C": 4.971079720005272,
+        "sink_transient_rmse_C": null,
+        "sink_late_bias_C": null
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B2",
+        "package_transient_rmse_C": 3.787898504081432,
+        "package_late_bias_C": 5.036677813924931,
+        "sink_transient_rmse_C": 4.472452037698331,
+        "sink_late_bias_C": 6.327642994111457
+      },
+      {
+        "run": "HO-FAN-INTERFACE",
+        "cooling": "FAN",
+        "assembly": "HO-04",
+        "model": "B3",
+        "package_transient_rmse_C": 5.644309675257859,
+        "package_late_bias_C": 7.365814551698748,
+        "sink_transient_rmse_C": 6.395296637802411,
+        "sink_late_bias_C": 8.821261212266057
+      }
+    ],
+    "warning": "No physical test, calibration traceability, semiconductor junction or confirmed novelty. Boundary qualification uses a separate sink-injection rig and can be nontransferable."
+  }
+}

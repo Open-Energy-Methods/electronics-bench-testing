@@ -1,0 +1,36 @@
+{
+  "evidence_type": "SYNTHETIC_ONLY",
+  "warning": "Monte Carlo noise seeds are NOT independent hardware remounts; quantiles are not experimental confidence intervals.",
+  "summary": {
+    "ideal": {
+      "seed_start": 20261105,
+      "n_independent_synthetic_noise_seeds": 25,
+      "median_B2_minus_B3_RMSE_C": 5.434002784780092,
+      "q05_B2_minus_B3_RMSE_C": 5.20316203514293,
+      "q95_B2_minus_B3_RMSE_C": 5.543888838408909,
+      "number_B3_lower_error": 25,
+      "median_package_only_B2_Jacobian_condition": 9666.902074919857,
+      "n_caseonly_optimizer_nonconverged": 0
+    },
+    "bypass": {
+      "seed_start": 20261105,
+      "n_independent_synthetic_noise_seeds": 25,
+      "median_B2_minus_B3_RMSE_C": 3.2697061129328255,
+      "q05_B2_minus_B3_RMSE_C": 3.0273872739940413,
+      "q95_B2_minus_B3_RMSE_C": 3.4804525764949874,
+      "number_B3_lower_error": 25,
+      "median_package_only_B2_Jacobian_condition": 10903.410523854678,
+      "n_caseonly_optimizer_nonconverged": 0
+    },
+    "mismatched": {
+      "seed_start": 20261105,
+      "n_independent_synthetic_noise_seeds": 25,
+      "median_B2_minus_B3_RMSE_C": -2.3370673523992878,
+      "q05_B2_minus_B3_RMSE_C": -2.4031308652475083,
+      "q95_B2_minus_B3_RMSE_C": -2.2911797070369784,
+      "number_B3_lower_error": 0,
+      "median_package_only_B2_Jacobian_condition": 9666.902074919857,
+      "n_caseonly_optimizer_nonconverged": 0
+    }
+  }
+}

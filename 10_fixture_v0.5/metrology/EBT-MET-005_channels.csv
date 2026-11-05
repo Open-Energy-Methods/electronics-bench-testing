@@ -1,0 +1,12 @@
+channel_id,physical_quantity,location_or_geometry,units,sensor_type_candidate,min_rate_target_Hz,actual_rate_Hz,actual_accuracy,verification_evidence,status
+EL_VH1,heater 1 terminal differential voltage,H1 actual lead pair,V,qualified differential DMM or DAQ,5,,,Instrument input range and time alignment,UNVERIFIED
+EL_VH2,heater 2 terminal differential voltage,H2 actual lead pair,V,qualified differential DMM or DAQ,5,,,Instrument input range and time alignment,UNVERIFIED
+EL_I,heater branch current,low-side shunt or verified transducer,A,precision four-wire shunt and approved DAQ,5,,,Reference transducer and self heating,UNVERIFIED
+TH_CASE1,contact surface temperature,H1 front package at (-25 -3) nominal,degC,surface T-type thermocouple or RTD,5,,,Reference; junction bonding; response,UNVERIFIED
+TH_CASE2,contact surface temperature,H2 front package at (+25 -3) nominal,degC,surface T-type thermocouple or RTD,5,,,Reference; junction bonding; response,UNVERIFIED
+TH_NEAR1,plate/sink near H1,nominal (-25 -17) actual location TBD,degC,contact sensor T type or RTD,5,,,Physical meaning T_plate versus T_sink,UNVERIFIED
+TH_NEAR2,plate/sink near H2,nominal (+25 -17) actual location TBD,degC,contact sensor T type or RTD,5,,,Physical meaning T_plate versus T_sink,UNVERIFIED
+TH_FAR,far sink/plate contact,nominal (+0 +32) actual location TBD,degC,contact sensor T type or RTD,5,,,Position repeatability and lag,OPTIONAL_UNVERIFIED
+TH_AMB,shielded air temperature,outside plume and fan outlet location TBD,degC,shielded RTD or verified reference,1,,,Ambient reference and shielding placement,UNVERIFIED
+FAN_TACH,fan rpm or verified airflow,fan-mounted tach or airflow reference,rpm,qualified tachometer,1,,,Tach calibration or datasheet and airflow validation,OPTIONAL_UNVERIFIED
+AUX_INTERLOCK,approved hardware interruption status,S0 F1 S1 state,boolean,site approved state observation,5,,,Independent protection verification,UNVERIFIED
