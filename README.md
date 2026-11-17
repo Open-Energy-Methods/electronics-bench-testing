@@ -65,3 +65,13 @@ The [critical methods report](09_model_comparison/docs/EBT-R01_model_comparison_
 - [EBT v0.5 preliminary engineering package](10_fixture_v0.5/README.md) contains editable mechanical DXF, SVG plan/section, a documented electrical topology and net ledger, metrology channel definitions, experimental boundary-transfer tests and sourced **partial** BOM.
 - **Design status: PDR / HOLD** — no released manufacturing toolpath, approved schematic, safe operating powers, KTH energized authorization, tested device or calibrated measurements. Two heaters and a catalog heatsink have independently listed **indicative** prices; all other costs depend on actual procurement or facility equipment.
 - [Checked v0.4 synthetic output snapshots](09_model_comparison/GENERATED_OUTPUT_PROVENANCE.md) are now tracked with SHA-256; numerical verification is not physical validation.
+
+<!-- portfolio-reader-guide-2026:start -->
+## Engineering portfolio reader's guide (November 2026)
+
+**What to inspect:** Independent electrothermal bench-testing research programme and synthetic feasibility. Physical testing, calibration, institutional approval and external qualification are not claimed.
+
+**Portfolio context:** [Selected work for engineering recruiters](https://abhijith-sivaprasadan.github.io/for/armada-2026.html) · [Armada 2026 employer-facing selection](https://abhijith-sivaprasadan.github.io/for/armada-2026.html).
+
+These navigation links do not supersede the research status, assumptions, provenance, licences or validation limits documented above. This independent research project is not an employer-commissioned deliverable or externally qualified engineering product.
+<!-- portfolio-reader-guide-2026:end -->
