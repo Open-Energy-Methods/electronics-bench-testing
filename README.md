@@ -19,6 +19,10 @@ The **v0.9 Q0 field sequence** replaces competing informal ordering, while leavi
 
 The [EBT G0–G6 future execution programme](15_execution_v1.1/README.md) is the consolidated work breakdown covering unfinished literature/novelty, actual facility and fixture releases, metrology/Q0, physically preregistered R01, validation, manuscript and open archive. It retains the [Q0 v0.9 authority](14_q0_integrated_v0.9/README.md) rather than overwriting physical design controls. [Dependency register](15_execution_v1.1/controls/EBT-EXEC-011_dependencies.csv) and [dated blocked gate snapshot](15_execution_v1.1/controls/EBT-EXEC-011_gate_snapshot.json) distinguish plans from observed achievements. **No powered/laboratory safety approval or physical results implied.**
 
+## Native CAD / EDA engineering drawings (PRE-DESIGN v0.11)
+
+The [KiCad circuit schematic and parametric CAD rig package](16_native_cad_v0.11/README.md) replaces illustration-only circuit and fixture sources with independently editable native engineering files: KiCad .kicad_sch, OpenSCAD, CadQuery STEP generation, and DXF review drawing generation. It preserves v0.9 Q0 source authority and v1.1 work dependencies. All drawings are **NOT FOR MANUFACTURE / NOT FOR WIRING** until actual KTH workshop and independent powered-site review and release. No native KiCad ERC has been claimed as passed.
+
 Start with:
 1. `EBT_Master_Programme_Plan_v1.0.pdf` (readable master programme) or `.docx` (editable), also `.md` for diffable source.
 2. `08_project_controls/` (requirements, risks, decisions, tasks, standards, literature, instrument, budget, documents, change requests).

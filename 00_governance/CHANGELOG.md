@@ -70,3 +70,8 @@
 - Read actual signed-in EECS Student Workshop Canvas front page; course 32080 is accessible and specifies project-based participation, Find Appointment booking, general safety induction, post-induction quiz, signed acknowledgement, machine-specific official risk assessment, and practical introduction.
 - The course lists general introductions Nov 5 17:00–18:00 and Nov 6 16:00–17:00; **listings are not seat availability, booking or evidence of attendance**.
 - Prepared one-page independent EBT *unpowered mechanical* project brief and blank workshop permission/qualification record. Updated the facility tracker and WP0/2 planning link; no supervised machine rights or powered ELAB access granted.
+
+## v0.11 — native engineering CAD/EDA review design (2026-11-17)
+- Added editable native KiCad A3 electrical topology with embedded functional review symbols, 15 instances/14 labelled networks, preserving v0.5 H1/H2 selection, differential V and 4-wire shunt, separate fan supply/tach.
+- Added editable OpenSCAD direct-to-sink and optional adapter models; CadQuery source creates neutral STEP named assemblies, and ezdxf emits an R2010 engineering review sheet. Fin cross-section and TO-220 thickness are deliberately non-manufacturer surrogates, with no drilling or specified torque.
+- Added ledger and static engineering source tests, plus GitHub Actions verification and updated root index. Full native KiCad ERC and actual electrothermal/mounting approval remain OPEN; no hardware receipt or experimental data.

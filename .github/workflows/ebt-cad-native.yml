@@ -1,0 +1,48 @@
+name: EBT — native KiCad document import/export verification
+
+on:
+  pull_request:
+    paths:
+      - '16_native_cad_v0.11/**'
+      - '.github/workflows/ebt-cad-native.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kicad-native-schematic-export:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install KiCad 10 stable via official KiCad Ubuntu PPA
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends software-properties-common
+          sudo add-apt-repository --yes ppa:kicad/kicad-10.0-releases
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends kicad
+          kicad-cli version
+      - name: Verify native KiCad schematic load by exporting vector schematic and netlist
+        run: |
+          mkdir -p /tmp/ebt-kicad/schematic
+          kicad-cli sch export svg \
+            --output /tmp/ebt-kicad/schematic \
+            16_native_cad_v0.11/electrical/EBT-EL-020.kicad_sch
+          kicad-cli sch export netlist \
+            --output /tmp/ebt-kicad/EBT-EL-020.net \
+            16_native_cad_v0.11/electrical/EBT-EL-020.kicad_sch
+          test -s /tmp/ebt-kicad/EBT-EL-020.net
+          ls -lh /tmp/ebt-kicad/schematic
+      - name: Produce ERC report for responsible engineer (violations are NOT waived)
+        if: always()
+        run: |
+          kicad-cli sch erc --output /tmp/ebt-kicad/EBT-EL-020_ERC.txt \
+            16_native_cad_v0.11/electrical/EBT-EL-020.kicad_sch || true
+          test -f /tmp/ebt-kicad/EBT-EL-020_ERC.txt || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ebt-kicad-native-review
+          path: /tmp/ebt-kicad/
