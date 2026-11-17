@@ -16,3 +16,5 @@ TO-220 body thickness and placement/lead stubs; sensor markers and size.
 
 The CAD and KiCad files are NOT evidence of a safe or functioning test rig.
 This register is not a release checklist for manufacturing or wiring.
+
+**Rev A review alignment:** heater marker centres in the DXF underside view are matched to the provisional CAD x=±25 mm layout; surface sensors NEAR1/NEAR2/FAR are visually labelled as non-manufacturing *proposals*. No hole location or verified thermometric attachment is implied.

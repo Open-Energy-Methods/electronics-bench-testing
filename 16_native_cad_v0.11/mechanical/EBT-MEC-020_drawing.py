@@ -51,9 +51,13 @@ def create(path):
     txt("Heater contact face / thickness not verified",149,160,2.8,"UNVERIFIED")
     txt("C. UNDERSIDE HEATER SITES",277,231,4)
     rect(293,105,100,100)
-    rect(311,148,10.1,14.6,"UNVERIFIED")
-    rect(361,148,10.1,14.6,"UNVERIFIED")
-    txt("H1",310,167,3);txt("H2",361,167,3)
+    rect(312.95,147.7,10.1,14.6,"UNVERIFIED")
+    rect(362.95,147.7,10.1,14.6,"UNVERIFIED")
+    txt("H1",316,167,3);txt("H2",366,167,3)
+    # Explicit exploratory thermometry markers, never drill/attachment points.
+    for x,y,label in [(318,138,"NEAR1"),(368,138,"NEAR2"),(343,187,"FAR")]:
+        m.add_circle((x,y),1.7,dxfattribs={"layer":"UNVERIFIED"})
+        txt(label,x+3,y-1,2.3,"UNVERIFIED")
     txt("SITE CENTRES: x=-25/+25 (unreleased)",280,95,2.7,"UNVERIFIED")
     txt("Direct sink: no plate; adapter: OPTIONAL 4 mm",19,76,3.1)
     txt("TO-220 placement is predesign, not hole coordinates",19,68,2.8,"UNVERIFIED")
