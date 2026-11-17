@@ -2,7 +2,7 @@ task_id,gate,work_package,task,depends_on,status,owner,acceptance_evidence,timin
 E-001,G0,WP0,Acknowledge original PMP v1.0 and v1.1 implementation scope,,IN_PROGRESS,Independent researcher,Dated internal planning acceptance (not laboratory permission),NOW
 E-002,G1,WP1,Retrieve and independently grade direct competing methods,E-001,IN_PROGRESS,Independent researcher,Existing fulltext matrix updated by source/method,PARALLEL
 E-003,G1,WP1,Decide evidence-backed originality and article-versus-benchmark fallback,E-002,BLOCKED,Independent researcher,Claim-level G1 reviewer-style decision with citations,AFTER_G1_REVIEW
-E-004,G2,WP0,Book and complete KTH Student Workshop introduction,E-001,IN_PROGRESS,Independent researcher,Canvas booking/attended introduction and machine-task permission,NOW_USER_ACTION
+E-004,G2,WP0,Book and complete KTH Student Workshop introduction,E-001,IN_PROGRESS,Independent researcher,Appointment user-confirmed for 2026-11-18 16:00-17:00; attendance quiz acknowledgement and task-specific machine permissions still pending,BOOKED_ATTEND_2026-11-18
 E-005,G2,WP0,"Obtain explicit powered-site scope, supervisor and permission",E-001,BLOCKED,Independent researcher,Written site permission for specific low-voltage work,AWAIT_SITE
 E-006,G2,WP0,"Check public raw data, drawings, photographs and reference rights",E-005,BLOCKED,Independent researcher,Written release conditions by actual site owner,AWAIT_SITE
 E-007,G2,WP2,Qualify exact part candidate and procurement justification,E-001,PLANNED,Independent researcher,Exact sourced part revisions and actual approved purchase decision,AFTER_FACILITY_FEASIBILITY
