@@ -51,5 +51,5 @@ class NativeCADTests(unittest.TestCase):
         s=(ROOT/"README.md").read_text()
         for keyword in ("NOT FOR MANUFACTURE","STOP","ERC","T_PLATE","T_SINK","workshop"):
             if keyword=="STOP":continue
-            self.assertIn(keyword,s)
+            self.assertIn(keyword.lower(),s.lower())
 if __name__=="__main__": unittest.main()

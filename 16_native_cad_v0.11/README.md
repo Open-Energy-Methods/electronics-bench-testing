@@ -62,8 +62,11 @@ Commands (from this folder):
     openscad -o build/EBT-MEC-020_direct.stl mechanical/EBT-MEC-020_assembly.scad
     openscad -o build/EBT-MEC-020_adapter.stl -D 'adapter=true' mechanical/EBT-MEC-020_assembly.scad
 
-Local software checks demonstrate file structure, syntax and
-source-ledger consistency, but do NOT prove KiCad/ERC compliance or
+Static source checks demonstrate file structure, syntax and
+source-ledger consistency. A separate native KiCad CLI export check is
+required to prove the editor can read and export the schematic; even
+then, ERC deviations remain for real electrical design review and no
+code or export can establish site safety or
 manufacturer tolerances. STEP and DXF preview exports were independently
 generated in a CAD environment and visually reviewed.
 
