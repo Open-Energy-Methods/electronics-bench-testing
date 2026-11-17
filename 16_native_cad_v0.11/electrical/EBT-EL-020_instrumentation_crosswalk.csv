@@ -1,0 +1,12 @@
+channel_id,instrument_symbol,measurand,positive_net,negative_net,physical_reference,validation_required,status
+EL_VH1,V1,Heater 1 terminal voltage,H1_POS,H_RET,H1 actual package lead terminals,True differential/isolated channel and calibrated V instrument,UNVERIFIED
+EL_VH2,V2,Heater 2 terminal voltage,H2_POS,H_RET,H2 actual package lead terminals,True differential/isolated channel and calibrated V instrument,UNVERIFIED
+EL_I,VI and RSH1,Heater branch current,I_PLUS,I_MINUS,4-wire shunt sense terminals,Calibrated shunt resistance + voltage/current timing + self-heating,UNVERIFIED
+TH_CASE1,NOT_DRAWN,Heater 1 accessible case temperature,,,H1 accessible case surface NOT junction,Sensor attachment reference and response time/grounding,UNVERIFIED
+TH_CASE2,NOT_DRAWN,Heater 2 accessible case temperature,,,H2 accessible case surface NOT junction,Sensor attachment reference and response time/grounding,UNVERIFIED
+TH_NEAR1,NOT_DRAWN,Near source 1 surface temperature,,,T_PLATE or T_SINK to be physically declared,Real attached surface and sensor map,UNVERIFIED
+TH_NEAR2,NOT_DRAWN,Near source 2 surface temperature,,,T_PLATE or T_SINK to be physically declared,Real attached surface and sensor map,UNVERIFIED
+TH_FAR,NOT_DRAWN,Far field sink/plate surface temperature,,,Real inspected far location,Position and sensor lag,OPTIONAL_UNVERIFIED
+TH_AMB,NOT_DRAWN,Shielded ambient air temperature,,,Ambient reference outside heater and fan plumes,Position calibration and thermal shielding,UNVERIFIED
+FAN_TACH,J1,Fan speed sensing,FAN_TACH,FAN_N,Actual fan tach interface (model TBD),Independent fan supply reference and tach level compatibility,OPTIONAL_UNVERIFIED
+AUX_INTERLOCK,NOT_DRAWN,Power protective disconnect state,,,Actual site approved independent shutdown system,Fail-safe hardware cut-off and fault-state definition,UNVERIFIED
