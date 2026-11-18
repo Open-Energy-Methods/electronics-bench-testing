@@ -14,6 +14,14 @@ machining, laser cutting and every future experiment. Workshop manufacture,
 clean metrology, powered electronics, mechanical loading and chamber tests
 must occur in their appropriate authorized areas.
 
+## Active facility baseline — 19 November 2026
+
+KTH EECS Student Workshop (Teknikringen 31, floor 2) is the sole currently
+user-reported accessible facility. Actual task-specific authorization remains
+open. Stockholm Makerspace is not the active site; its inventory, storage
+dimensions and funding rules are withdrawn. ELAB and other KTH facilities
+require separate access. See [facility correction and request process](career/OPEP-PROC-004_makerspace_requests.md).
+
 ## Programme products
 - [Integrated systems architecture and roadmap](OPEP-SE-001_system_and_roadmap.md)
 - [Fifteen module portfolio and evidence contracts](OPEP-MOD-001_modules.csv)

@@ -18,7 +18,7 @@ New work samples are small derivative configurations, not separate full rigs.
 First produce one completed physical case. Manual machinery training,
 actual workshop authorization, metrology and separate electrical/wet/thermal
 site approval remain prerequisites. One active personal module and common
-hardware must meet inspected member-box limits. Borrow equipment and do not
+hardware must meet measured KTH project-box limits. Borrow equipment and do not
 store shared instruments in the box.
 
 ## Execution order

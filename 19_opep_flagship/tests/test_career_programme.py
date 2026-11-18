@@ -41,12 +41,13 @@ class CareerProgrammeTests(unittest.TestCase):
         self.assertEqual(len({x["id"] for x in r}),25)
         for x in r:
             self.assertTrue(x["limitation"])
+            self.assertIn(x["evidence_status"],("PUBLIC_LISTED","PUBLIC_GUIDE_2020","USER_REPORTED_NOT_INSPECTED","SURVEY_REQUIRED"))
         self.assertIn("NOT load calibration",next(x["limitation"] for x in r if x["id"]=="F08"))
     def test_non_nuclear_and_heating_scope(self):
         t=(D/"OPEP-ENG-004_structural_thermal_quality.md").read_text()
         for marker in ("No boiling","radioactive material","No deliberate crack initiation","not an improvised heater"):
             self.assertIn(marker,t)
         t=(D/"OPEP-PROC-004_makerspace_requests.md").read_text()
-        self.assertIn("not association approval amounts",t)
-        self.assertIn("no current available",t)
+        self.assertIn("No Stockholm Makerspace board or funding",t)
+        self.assertIn("No public student equipment allowance",t)
 if __name__=="__main__":unittest.main()

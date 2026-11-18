@@ -1,83 +1,62 @@
-# Makerspace capability, make/buy/borrow and shared investment request
-2026-11-18 | public inventory review, no approvals or actual equipment inspected.
+# OPEP-PROC-004 — KTH EECS Student Workshop facility and equipment needs
+19 November 2026 | supersedes the incorrect Stockholm Makerspace facility baseline.
 
-## Facility facts and governance
-Inventory: https://wiki.makerspace.se/doc/maskiner-och-inventarier-8991ffd97b
-Electronics: https://wiki.makerspace.se/doc/electronics-ebd1c6a868
-Rules: https://wiki.makerspace.se/doc/general-rules-english-710a7afe49
-Storage: https://wiki.makerspace.se/Medlemsf%C3%B6rvaring
-Contact: https://www.makerspace.se/kontakta-oss
-Purchasing manager rules: https://wiki.makerspace.se/doc/inkopsansvariga-7d9e0ff6c5
-Preapproval and receipts: https://wiki.makerspace.se/doc/redovisning-av-utlagg-0b1dfbaa80
-Bylaws: https://www.makerspace.se/foreningens-stadgar
-Sponsorship guidance: https://makersofsweden.se/sponsring-donationer-till-makerspaces/
+## Verified public policy
+KTH EECS Student Workshop, Teknikringen 31 floor 2, is school-run and distinct
+from student-run ELAB at Teknikringen 29. The user reports access only to the
+Student Workshop; actual machine-specific training and task approval are open.
+KTH describes an educational environment for courses, associations and private
+projects, with courses prioritized. Use is free; personal project materials
+are purchased independently or at cost. No solitary work, no working on live
+circuits; supervisor booking for listed machinery. Follow current Canvas
+course 32080 and staff instructions; public pages may lag local practice.
+Sources:
+https://www.kth.se/emp/student-workshop/studentverkstan-1.683473
+https://www.kth.se/emp/student-workshop/q-a-1.1324211
+https://www.kth.se/emp/student-workshop/regler-och-sakerhet
+https://www.kth.se/emp/student-workshop/material-1.686906
+https://www.kth.se/emp/student-workshop/verkstan/mekanik-1.686913
+https://www.kth.se/emp/student-workshop/verkstan/elektronik-1.686912
+https://www.kth.se/emp/student-workshop/manualer-och-guider-1.686421
 
-Shared equipment, training and noncommercial personal prototype are distinct
-from individual entitlement to investment. General rules prohibit commercial
-activity and removing equipment; ask before photographing people/equipment.
-Donations and purchases need board/authorized approval before procurement or
-transport; don't spend first and claim reimbursement. Ask Slack #metallrummet,
-#elektronikrummet, #svetsrummet and current area purchasing managers;
-info@makerspace.se for board-level proposals and current manager/budget.
-For investments above SEK 2,000 the published purchasing-manager page
-calls for room Slack discussion at least 72h beforehand. For larger
-investments ask board for additional funds. The page's SEK 15,000 per
-quarter and manager list are explicitly dated 2023; no current available
-budget or binding spending cap has been verified. Do not split expenses
-to bypass approval. Expense claims after approved purchase to
-ekonomi@makerspace.se with receipts and required information privately.
-Bylaws ordinary meeting Oct 1–Nov 30; motion received >=3 weeks before it.
-On Nov 18 the normal latest possible 2026 motion deadline is past.
-Ask board about next budget cycle; no meeting date verified.
+## Request route
+Record missing/broken/needed equipment on the Student Workshop Needs list per
+official safety rules. Ask current supervisor for stock and training. Discuss
+shared equipment or major project scope with Mykola Ivchenko (nickolay@kth.se);
+safety and procedures with Alicia Carredano Robertsson (aliciacr@kth.se).
+Sharvil Joglekar (sharvil@kth.se) is listed through November 2026; reconfirm
+supervisor. No public student equipment allowance, reimbursement entitlement
+or purchasing threshold verified. No Stockholm Makerspace board or funding
+rule applies. KTH controls all purchases, donations and installation.
+Do not buy on KTH's behalf without authorization. No request submitted.
 
-## Investment cases (illustrative budget brackets SEK; not quotes)
-P00 zero incremental: survey existing machines, instrument loan, consumable
-stock, current condition, calibrations, area responsibilities and permission.
-P01 first personal coupon/common hardware: small approved material purchases
-and fasteners; target 500–1500 personal cost if workshop stock/tools available.
-P02 metrology shared gaps: dial indicators/stands, calipers/micrometers if
-absent, gauges/weights, small displacement/force chain and basic sensors.
-P03 acoustic and dynamic sensors: initial individually calibrated measurement
-mic (not full IEC 61672 system) and mount; then synchronized input, impact
-hammer/IEPE/accelerometer loan, used calibrated system or partner.
-P04 airflow: cold blower, low-range differential pressure and suitable flow
-reference instrumentation; no heater required at first.
-P05 wet thermal hydraulics: only authorized area, approved commercial
-low-energy pump, open reservoir and spill containment; instruments reusable.
-P06 multi-channel measurement/logging: actual thermocouple/RTD, bridge,
-isolated/differential inputs, references, clocks and logging.
-P07 optional advanced fabrication: existing approved machines, consumables,
-fit/visual-inspection learning. Prefer shared tool improvements not specific
-private consumables.
-P08 process-air heater: defer until measured cold-flow need, applicable heat
-addition and complete facility authority. SEK 12,500 heater-only is user
-planning estimate, not verified quotation; example Leister LHS 21L Classic
-3.3 kW requires complementary installation/blower per intended use
-(https://www.leister.com/en/product/LHS-21L-Classic). Example is not a selected
-part or safe power rating. All-in equipment, control/protection, installation,
-flow instruments, maintenance and storage must be priced before board action.
-Consider donation or authorized loan, smaller correctly specified commercial
-unit, or external laboratory. Never convert consumer space heater or hot-air
-tool.
+## Materials (posted prices, last changed 2023-08-29; verify local price)
+Aluminium 70 SEK/kg; steel 50 SEK/kg; stainless steel 100 SEK/kg;
+plastics 100 SEK/kg; wood 10 SEK/kg; filament 0.7 SEK/g.
+Copper listing has ambiguous units and is excluded until clarified.
+Stock form, grade, traceability and availability must be inspected.
+The electronics page states no general component stock except surplus.
+Buy only needed project components after review. Pay workshop material
+by its posted Swish process.
 
-Suggested proposal prioritization: <=2000 small shared reusable gap subject
-to preapproval; 2000–5000 evidence-backed shared instrumentation with Slack
-discussion; 5000–15000 modular kit board and current budget review, supplier
-quotes and responsible members; >15000 seek external collaboration/sponsorship.
-These are our planning tiers, not association approval amounts.
-Proposals must specify shared future use, current inventory deficit, alternatives,
-exact quotations inclusive VAT/shipping, calibration/maintenance/training,
-allocation of space, owner/steward, safety approval/site installation,
-documentation and open member access. Private components not shared value.
-No grant, purchase, email or reimbursement submitted.
+## Investment sequence
+P00 survey actual equipment, ranges, manuals, calibration, supervision, box.
+P01 precision stock and consumables; first article and unpowered acceptance.
+P02 dimensional metrology and bounded force/displacement chain.
+P03 acoustic and vibration chain: loan before purchase; distinguish low-cost
+screening from calibrated simultaneous DAQ, accelerometers and impact hammer.
+P04 low-range differential pressure, airflow and approved cold-air source.
+P05 wet thermal-hydraulics only at independently authorized site.
+P06 multi-channel temperature/strain and synchronized acquisition.
+P07 optional manufacturing skills only if equipment and teaching scope verified.
+P08 commercial process-air heater deferred: 12,500 SEK user estimate only,
+not supplier quote. Full system needs reviewed power, airflow, protection,
+ventilation, guarding, calibration and maintenance; ask about existing
+equipment or formal external lab collaboration first. No adaptation of
+consumer space heaters, hot air stations or improvised pressure equipment.
 
-## Ask first: missing-inventory checklist
-Do not assume instrument absence merely because it is not listed: ask for
-DMM calibration; caliper, micrometer, gauge blocks, height gauge, dial
-indicators and stand; low-force reference scale/load sensor, displacement
-sensor/strain conditioner; K/PT100 multi-channel logger and thermometry
-reference; differential pressure/airflow, actual measurement ranges; IEPE
-accelerometers/hammer, dynamic DAQ with simultaneous channels and anti-alias;
-microphone/calibrator, quiet space; approved external test loads/thermal chamber;
-safe cold airflow and any commercial heated source; software licences.
-Use only approved tools and materials in designated rooms.
+Each proposal identifies shared teaching use, inventory gap, alternatives,
+specification, quotes incl VAT, maintenance, responsible staff, storage and
+safety. Do not assume purchase or access. User-reported thermal chamber
+requires actual model, permitted heat load, training and site verification.
+Other KTH facilities are possible referrals only, not granted access.

@@ -17,6 +17,10 @@ This rig is the first application of the broader [OPEP flagship programme](../19
 
 The [native CadQuery layout source and local geometry audit](cad/README.md) document four preliminary dock/cell packaging models, not manufacturing CAD.
 
+## Active site correction — 19 November 2026
+
+KTH EECS Student Workshop is the sole user-reported accessible facility. The actual project-box dimensions and task permissions remain open. No Stockholm Makerspace inventory, member-box policy or purchasing process applies. See [KTH facility baseline](../19_opep_flagship/career/OPEP-PROC-004_makerspace_requests.md).
+
 ## System baseline and controlled documents
 
 | Document | Purpose |

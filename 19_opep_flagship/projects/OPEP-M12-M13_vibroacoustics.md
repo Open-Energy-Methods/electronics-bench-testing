@@ -37,13 +37,13 @@ frequency response; distinguish structural-borne and airborne paths.
 Flow-induced noise or heated air adds a separate environment and risk review.
 
 ## Facility and instrumentation survey
-Ask Makerspace/KTH about impact hammer, IEPE or other compatible conditioned
+Ask EECS Student Workshop staff about impact hammer, IEPE or other compatible conditioned
 accelerometers, simultaneous sampling DAQ, signal conditioner, shaker or
 approved speaker, acoustic measurement microphones, sound calibrator,
 tachometer, quiet room and background noise restrictions. Confirm channel
 ranges, bandwidth, clock skew, anti-alias filtering, sensor mass and traceable
 reference/calibration; scope channels alone do not establish those properties.
-Respect noise exposure and adjacent members; safe excitation/level defined by
+Respect noise exposure and nearby users; safe excitation/level defined by
 site. No availability inferred. Portable beam/duct and sensor adapters may
 share box; shaker, DAQ, sound reference and stand remain facility equipment.
 

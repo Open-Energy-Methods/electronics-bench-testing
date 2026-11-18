@@ -2,22 +2,16 @@
 2026-11-18 | Proposed RD0 design amendment | NO manufacturing or powered release.
 
 ## Storage constraint and architecture
-Stockholm Makerspace permits one approved SmartStore Classic 31 or Home 31
-member box for active lab-access members. Classic 31 published external size
-500 x 390 x 260 mm; Bauhaus lists internal 400 x 307 x 221 mm. Actual
-taper, rib/clip/lid geometry and permissible mass must be measured.
-Sources:
-https://wiki.makerspace.se/Medlemsf%C3%B6rvaring
-https://www.bauhaus.se/forvaringslada-smartstore-classic-31l-med-lock
-
-Proposed packed envelope 380 x 285 x 200 mm; baseplate target 350 x 250 mm;
-longest single component 380 mm (orientation-dependent); packed user-owned
-active module + common hardware target <=8 kg; setup <=15 min, pack <=10 min
-after safe cooldown/disconnection. These targets are author choices to
-review, not measured fit or performance. Mutually exclusive modules can be
-stored elsewhere; do not assume ten modules fit in one box. Borrow shared
-instruments on-site; do not store them, lithium cells or prohibited materials
-in the box. Box is storage only, never an operating enclosure.
+The researcher requires a single storage box at KTH EECS Student Workshop.
+Actual box internal dimensions, opening, lid clearance, permissible mass,
+labelling and storage duration remain unverified. The former 31 L SmartStore
+assumption came from a different facility and is withdrawn.
+Earlier 380 x 285 x 200 mm packed / 350 x 250 mm plate dimensions are historical
+design hypotheses and NOT current dimensional requirements. Freeze dimensions
+only after measuring the actual box. Retain provisional setup <=15 min,
+pack <=10 min after safe cooldown/disconnection and <=8 kg carry target,
+subject to actual facility and handling review. Borrow instruments with
+permission; storage box is not an operating enclosure.
 
 Supersede the earlier fixed 600 x 450 x 400 mm dock as the physical design
 baseline. Retain existing RD0 CAD as historical packaging exploration.
@@ -35,8 +29,7 @@ only if separately authorized use a suitable commercially manufactured
 process-air source/heater with reviewed electrical, thermal, airflow and
 emergency protection. No conversion of consumer space heater or heat gun
 into duct, no pressurized hot air, pressure vessel, combustion or custom
-high-speed rotor in this baseline. Shared compressed air is not experiment
-approval. Keep hot components away from storage box and polymers; cooldown
+high-speed rotor in this baseline. Compressed-air availability is unverified at this facility; no pressurized experiment is authorized. Keep hot components away from storage box and polymers; cooldown
 before storing. Approved heater and bench limits are TBD.
 
 Engineering questions: duct/reducer pressure loss, distribution and mixing,
@@ -53,24 +46,15 @@ hardware-in-the-loop emulated signals; distinguish simulation from measured
 performance. Later guarded commercial fan characterization may be considered
 separately after review; genuine rotating turbomachinery requires another facility.
 
-## Makerspace capability and questions
-Public list records electronics bench DMM, scope, function generator, supplies,
-thermal camera, PCB work, 3D scanning, metal lathe/mill, surface plate,
-compressed-air plant and convection oven. It does not establish calibrated
-flow/pressure sensors, a process-air heater, chamber suitability or authorization.
-References:
-https://wiki.makerspace.se/doc/electronics-ebd1c6a868
-https://wiki.makerspace.se/doc/maskiner-och-inventarier-8991ffd97b
-https://wiki.makerspace.se/doc/general-rules-english-710a7afe49
-https://www.makerspace.se/kontakta-oss
-
-Ask board whether personal noncommercial supervised/intermittent heated-air
-bench work is acceptable, designated area, applicable electrical/thermal/
-ventilation/fire restrictions, suitable existing heater/blower or donated
-surplus, permissible sources, thermocouples/DAQ, pressure/flow instruments,
-probe isolation and calibration, training, storage and permission for
-photographs/public documentation. No funding, procurement or equipment
-availability inferred. No email sent by this change.
+## KTH EECS Student Workshop capability and questions
+Use KTH public inventory and local Canvas course 32080; see career/OPEP-FAC-004_machine_opportunity.csv and career/OPEP-PROC-004_makerspace_requests.md.
+KTH lists electronics equipment, 3D printers, laser, PCB mill, CNC/manual
+milling, turning and carpentry; actual models and permissions still require
+survey. A thermal chamber has been user-reported but is not publicly verified.
+Ask Mykola Ivchenko about project scope and equipment needs and Alicia
+Carredano Robertsson about safety/heat/noise/flow testing. Record missing
+equipment on the Student Workshop Needs list. ELAB is a separate facility.
+No funding, equipment purchase or test authorization assumed.
 
 ## Acceptance planning
 SRR: inspect exact box and tools and facility scope; PDR: actual packaging

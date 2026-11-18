@@ -17,7 +17,7 @@ and draft DVP&R. Each campaign requires its own readiness review, actual
 facility permission, inspected equipment and accepted conditions before use.
 No manufacture, measurements, purchases, grants, endorsements or safety
 approval are claimed. One active compact module plus common hardware must fit
-the storage target or use separate permitted facility storage.
+the measured KTH project box or use separate permitted facility storage.
 
 ## First complete portfolio releases
 1. C01/C11 precision cassette + first article dossier (no power).
@@ -35,3 +35,5 @@ qualification. Each release can be published separately.
 
 ## Adjacent work samples (005)
 See [six incremental work samples](OPEP-ADJ-005_adjacent_work_samples.md) and [shared-equipment request outline](OPEP-PROC-005_request_outline.md). Public role matrix expanded to 28 entries; no personal email history published.
+
+**Facility correction 19 November 2026:** use EECS Student Workshop only; prior Stockholm Makerspace inventory and budgeting assumptions withdrawn. See OPEP-PROC-004 and the updated facility register.

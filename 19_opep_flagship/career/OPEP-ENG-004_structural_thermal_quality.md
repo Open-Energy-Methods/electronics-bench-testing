@@ -2,9 +2,9 @@
 RD0 design extension | 2026-11-18. No powered or manufacturing release.
 
 ## C01 / C11 — modular precision interface and manufacturing validation
-Keep the one-box 380 x 285 x 200 mm packed target, provisional 350 x 250 mm
-baseplate and <8 kg mass target. Actual box interior/taper/lid and actual
-component masses control. No common high-load/pressure platform.
+Keep the one-box requirement. The physical envelope and plate size remain TBD
+until the actual KTH storage box is measured. <8 kg is a provisional carry target.
+Actual box interior/taper/lid and component masses control. No common high-load/pressure platform.
 First article: a removable low-load datum cassette and small machined
 coupon. Obtain staff approval for material and process, survey reference
 artefacts and dimensional measurement tools. Derive GD&T and a tolerance
@@ -35,8 +35,8 @@ validated joint model.
 Define allowable load and measurement range from qualified stand/fixture
 and actual material; no universal load is assigned. Use a separate approved
 bounded loading setup, retained loads, reference force and displacement or
-strain chain. The Makerspace 20-ton shop press is NOT a calibrated universal
-testing machine and must not be repurposed without competent review.
+strain chain. No shop press or calibrated universal testing machine is confirmed at EECS.
+Any fabrication press, if present, is NOT a calibrated test machine.
 Stop short of yield/failure in baseline. Predeclare observable deflection/
 strain and uncertainty, blind prediction and independent installation
 holdouts. Quantify fixture stiffness, gauge placement/temperature, preload,

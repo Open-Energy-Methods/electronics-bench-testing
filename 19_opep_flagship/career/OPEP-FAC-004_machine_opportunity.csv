@@ -1,26 +1,26 @@
-id,inventory_area,listed_asset,proposed_evidence,limitation
-F01,Metal room,EMCO Maximat 11 lathe,Turned spacer and documented dimensions,Training and material scope required
-F02,Metal room,ZX45 milling machine,Datum faces and bracket inspection,Machine-specific review
-F03,Metal room,Arboga E100 pillar drill,Approved hole pattern and fit,Workholding and task approval
-F04,Metal room,CNC gantry mill and Carvera Air,Native CAD CAM and first article,Actual suitability and postprocessor review
-F05,Metal room,EMCO Compact 5 CNC lathe,Optional turned coupon,Actual operational status and training
-F06,Metal room,100x63 cm surface plate and parallels,Dimensional repeatability and datum inspection,Reference grade is unknown
-F07,Metal room,Makita chop saw and belt sander,Stock preparation and edge finishing,Approved material and equipment
-F08,Metal room,20 ton hydraulic press,Ask about ordinary fabrication only,NOT load calibration or test machine
-F09,Metal room,Bender and rivet gun,Sheet and fastening coupon,Approved operations only
-F10,Laser room,Redsail 100W and other laser cutters,Cold template label and flat pattern,Approved material and training
-F11,3D printer room,Bambulab Ultimaker and Prusa SLA,Fit prototype and printed dimensional study,Only approved material and processes
-F12,Large room,EinScan Einstar and Revopoint scanners,As-built scan to CAD,No CMM accuracy assumption
-F13,Electronics,Rigol DS1054Z Fluke 8842A bench supplies GFG-813,Reference circuit waveforms and metrology,Actual isolation calibration and ratings
-F14,Electronics,Voltera V-One and soldering stations,Reviewed PCB build and inspection,Low-energy approved circuit only
-F15,Electronics,Thermal camera and microscope,Relative temperature map and visual inspection,Emissivity/reference and resolution limitations
-F16,Wet room,Convection oven listed 320 C,Ask about suitable unpowered material studies,Not chamber or process air heater
-F17,Wet room,Ultrasonic cleaner and coating equipment,Approved surface preparation work,Material and chemical rules
-F18,Welding room,MIG MAG TIG and plasma,Supervised optional coupon and visual inspection,No safety critical welded structure
-F19,Wood room,Woodworking machines,Cold fixture mockup or training coupon,No hot zone or load-bearing use
-F20,Shared,Compressed air Mattei plant,Survey available regulated utilities,No authorized pressurized experiment
-F21,Shared,Zoom H1 and Rode microphones,Qualitative sound recordings ask board,Not calibrated acoustic chain
-F22,Shared,Postal scale and photo kit,Packaging mass screening and documentation,Check accuracy and photography permission
-F23,Not confirmed,Calibrated dynamic DAQ microphone hammer accelerometers,Ask borrow partner or shared investment,No inventory assumption
-F24,Not confirmed,Actual thermal chamber and flow reference instrumentation,Ask borrow partner or shared investment,Convection oven is not calibrated chamber
-F25,Not confirmed,Process-air heater,Defer until measured need and site support,No purchase approval
+id,inventory_area,listed_asset,proposed_evidence,limitation,evidence_status
+"F01","Mechanical","Turning / lathe","Turned spacer and inspected dimensions","Supervisor required","PUBLIC_LISTED"
+"F02","Mechanical","Manual milling","Datum faces and bracket inspection","Supervisor required","PUBLIC_LISTED"
+"F03","Mechanical","Vertical drill","Approved hole and fit study","Confirm supervisor and workholding","PUBLIC_LISTED"
+"F04","Mechanical","CNC mill","CAM and first article","Booked supervisor and local CAM guidance","PUBLIC_LISTED"
+"F05","Electronics","LPKF PCB mill E44 guide","PCB prototype and inspection","Current model verify; supervised","PUBLIC_GUIDE_2020"
+"F06","Mechanical","Calipers micrometers indicators surface plate","Dimensional inspection","Actual tools and references unknown","SURVEY_REQUIRED"
+"F07","Mechanical","Metal hand tools and power tools","Stock preparation and finishing","Local tool and task approval","PUBLIC_LISTED"
+"F08","Mechanical","Calibrated force/displacement test fixture","Elastic beam validation","NOT load calibration from fabrication equipment; dedicated verified chain needed","SURVEY_REQUIRED"
+"F09","Mechanical","Assembly benches","Modular jig and assembly study","Verify dimensions and safe scope","PUBLIC_LISTED"
+"F10","Electronics","Laser cutter","Approved flat pattern and cold mockup","Supervisor and material approval","PUBLIC_LISTED"
+"F11","Electronics","Zortrax M200 Prusa i3 MK3 guides","Additive fit comparison","Current operational models verify","PUBLIC_GUIDE_2020"
+"F12","Mechanical","3D scanner","Reverse engineering","Not confirmed","SURVEY_REQUIRED"
+"F13","Electronics","Bench supplies oscilloscopes signal generators multimeters","Reference circuit and DAQ study","Actual ratings and calibration unknown","PUBLIC_LISTED"
+"F14","Electronics","Soldering stations PCB benches","Low energy board assembly","No work on live circuits; approved test scope","PUBLIC_LISTED"
+"F15","Electronics","Stereoscopic microscope and hot air station","Visual and solder inspection","Not a process air heater","PUBLIC_LISTED"
+"F16","Testing","Thermal chamber","Environmental mapping","User reports availability; model and heat load unknown","USER_REPORTED_NOT_INSPECTED"
+"F17","Mechanical","Surface preparation equipment","Approved finishing","Actual equipment unknown","SURVEY_REQUIRED"
+"F18","Mechanical","Welding and plasma cutting","Optional coupon","Not confirmed at EECS; external if approved","SURVEY_REQUIRED"
+"F19","Carpentry","Wood and plastic tools assembly benches","Cold mockup and packaging","Miter saw and designated tools supervised","PUBLIC_LISTED"
+"F20","Utilities","Compressed air","Survey only","Not confirmed; no pressure experiment","SURVEY_REQUIRED"
+"F21","Testing","Measurement microphone and calibrator","Acoustic testing","Not confirmed","SURVEY_REQUIRED"
+"F22","Testing","Scale and dimensional reference","Packing inspection","Not confirmed","SURVEY_REQUIRED"
+"F23","Testing","Dynamic DAQ hammer accelerometers","Modal testing","Not confirmed","SURVEY_REQUIRED"
+"F24","Testing","Flow and pressure instruments and thermometry references","Cold flow validation","Not confirmed","SURVEY_REQUIRED"
+"F25","Testing","Process-air heater","Optional later reviewed heat study","Not confirmed or authorized","SURVEY_REQUIRED"
