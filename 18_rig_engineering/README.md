@@ -13,6 +13,10 @@ cutters, woodworking and CNC machinery. This is a user-reported capability
 list, not inspected models, completed machine training, available booking,
 or permission for the proposed powered test. Obtain specific authority.
 
+This rig is the first application of the broader [OPEP flagship programme](../19_opep_flagship/README.md). The candidate standards list below is a screening queue; selected official scope pages independently checked on 18 November are recorded in [OPEP-STD-001](../19_opep_flagship/OPEP-STD-001_extensions.csv). Full text, editions and applicability remain to be reviewed for actual equipment.
+
+The [native CadQuery layout source and local geometry audit](cad/README.md) document four preliminary dock/cell packaging models, not manufacturing CAD.
+
 ## System baseline and controlled documents
 
 | Document | Purpose |
