@@ -35,6 +35,10 @@ The [native CadQuery layout source and local geometry audit](cad/README.md) docu
 | [RIG-COST-001](manufacturing/RIG-COST-001_cost_and_make_buy.csv) | Make/buy/borrow and cost scope |
 | [RIG-SURVEY-001](facility/RIG-SURVEY-001_capability_inventory.csv) | Real facility survey to fill in privately |
 
+## Current packaging amendment
+
+[OPEP-PKG-002](../19_opep_flagship/OPEP-PKG-002_packaway_and_process_air.md) introduces a one-box portable design target. Existing RD0 STEP layouts are historical space reservations, not the current physical design. Actual pack verification and modular redesign remain open.
+
 ## Separate design gates
 
 RD0 system definition; RD1 system requirements review (SRR); RD2 preliminary

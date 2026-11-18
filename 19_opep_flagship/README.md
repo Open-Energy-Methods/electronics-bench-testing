@@ -29,6 +29,10 @@ provides 28 system requirements, 12 interfaces, 14 open hazards, a candidate
 standards register, verification plan and RD0–RD6 gates. It covers the first
 electrothermal dock rather than claiming every module is designed.
 
+## Pack-away requirement / process-air extension
+
+See [OPEP-PKG-002](OPEP-PKG-002_packaway_and_process_air.md) for the proposed single-box constraint and M11 candidate process-air analogue. The historical fixed dock envelope is no longer the physical design baseline. M11 requires separate review; the 10-module registry retains the original baseline pending SRR allocation.
+
 ## Baseline decisions
 Start with an unpowered precision interface, training coupons and measurement
 system characterization. Develop M04/M05 on approved low-energy references

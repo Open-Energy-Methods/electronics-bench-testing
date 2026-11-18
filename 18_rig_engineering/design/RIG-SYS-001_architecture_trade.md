@@ -58,7 +58,9 @@ guard or duct; parasitic conduction and airflow effects must be evaluated.
 Natural convection and forced air are separate documented configurations;
 chamber insertion introduces an additional boundary, not equivalent to room air.
 
-## Design baseline
+## Historical RD0 layout (superseded as physical baseline)
+
+See [OPEP-PKG-002](../../19_opep_flagship/OPEP-PKG-002_packaway_and_process_air.md) for the new pack-away storage requirement. The following dimensions remain historical concept reservations only.
 Provisional external dock 600 × 450 mm footprint, 400 mm reserved structural
 height; removable cell envelope 300 × 250 × 160 mm for layout evaluation only.
 No actual chamber fit is asserted. A separate equipment shelf/utility region
