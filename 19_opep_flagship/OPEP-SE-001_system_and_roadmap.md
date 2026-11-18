@@ -82,3 +82,13 @@ held-out validation. M15 starts with offline replay; no direct command path
 from the virtual turbine or twin to physical protection. The one-box target
 remains, using one active physical module at a time and external lab instruments.
 See OPEP-DT-003 for model/experiment release rules and cross-domain priorities.
+
+## Career-informed execution crosswalk (004)
+For actual portfolio delivery follow [campaigns C01–C12](career/OPEP-CAM-004_campaign_registry.csv).
+Prioritize approved precision manufacture and first article, elastic structural
+FEA evidence and modal measurement, reference electronics and cold-flow
+experiments. Develop cold open-liquid thermal hydraulics only with a separate
+approved wet area and equipment. Defer process heating, externally qualified
+shock/fatigue and hazardous test domains. The campaign DVP&R and real acceptance
+references augment, not replace, EBT and RD0–RD6 gates. No private application
+history or employment guarantees are part of the public programme.

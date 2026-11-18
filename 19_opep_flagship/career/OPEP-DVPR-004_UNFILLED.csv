@@ -1,0 +1,13 @@
+test_id,campaign,requirement_intent,verification_method,procedure_ref,acceptance_limit_ref,facility_authorization_ref,as_built_ref,instrument_reference_ref,actual_evidence_ref,uncertainty_ref,disposition,review_ref
+DV01,C01,Repeat location and one-box packaging,Inspection and repeated assembly,,,,,,,,PLANNED,
+DV02,C11,First article dimensions and process traceability,Inspection and review,,,,,,,,PLANNED,
+DV03,C02,Elastic displacement and strain prediction,Analysis and independent test,,,,,,,,PLANNED,
+DV04,C03,Joint compliance and thermal expansion,Analysis and bounded test,,,,,,,,PLANNED,
+DV05,C04,Modal frequency and FRF within validated band,Analysis and test,,,,,,,,PLANNED,
+DV06,C05,Acoustic resonance and damping within measured domain,Analysis and test,,,,,,,,PLANNED,
+DV07,C06,Atmospheric pressure-loss correlation,CFD and test,,,,,,,,PLANNED,
+DV08,C07,Non-nuclear liquid flow and heat transfer,Analysis and test,,,,,,,,PLANNED,
+DV09,C08,Electrical and sensor chain verification,Inspection and test,,,,,,,,PLANNED,
+DV10,C09,Requirements and gate evidence integrity,Independent review,,,,,,,,PLANNED,
+DV11,C10,Bounded commissioning and read-only replay,Demonstration and review,,,,,,,,PLANNED,
+DV12,C12,Approved fabrication and as-built inspection,Inspection and supervised demonstration,,,,,,,,PLANNED,

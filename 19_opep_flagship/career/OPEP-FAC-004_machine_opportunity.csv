@@ -1,0 +1,26 @@
+id,inventory_area,listed_asset,proposed_evidence,limitation
+F01,Metal room,EMCO Maximat 11 lathe,Turned spacer and documented dimensions,Training and material scope required
+F02,Metal room,ZX45 milling machine,Datum faces and bracket inspection,Machine-specific review
+F03,Metal room,Arboga E100 pillar drill,Approved hole pattern and fit,Workholding and task approval
+F04,Metal room,CNC gantry mill and Carvera Air,Native CAD CAM and first article,Actual suitability and postprocessor review
+F05,Metal room,EMCO Compact 5 CNC lathe,Optional turned coupon,Actual operational status and training
+F06,Metal room,100x63 cm surface plate and parallels,Dimensional repeatability and datum inspection,Reference grade is unknown
+F07,Metal room,Makita chop saw and belt sander,Stock preparation and edge finishing,Approved material and equipment
+F08,Metal room,20 ton hydraulic press,Ask about ordinary fabrication only,NOT load calibration or test machine
+F09,Metal room,Bender and rivet gun,Sheet and fastening coupon,Approved operations only
+F10,Laser room,Redsail 100W and other laser cutters,Cold template label and flat pattern,Approved material and training
+F11,3D printer room,Bambulab Ultimaker and Prusa SLA,Fit prototype and printed dimensional study,Only approved material and processes
+F12,Large room,EinScan Einstar and Revopoint scanners,As-built scan to CAD,No CMM accuracy assumption
+F13,Electronics,Rigol DS1054Z Fluke 8842A bench supplies GFG-813,Reference circuit waveforms and metrology,Actual isolation calibration and ratings
+F14,Electronics,Voltera V-One and soldering stations,Reviewed PCB build and inspection,Low-energy approved circuit only
+F15,Electronics,Thermal camera and microscope,Relative temperature map and visual inspection,Emissivity/reference and resolution limitations
+F16,Wet room,Convection oven listed 320 C,Ask about suitable unpowered material studies,Not chamber or process air heater
+F17,Wet room,Ultrasonic cleaner and coating equipment,Approved surface preparation work,Material and chemical rules
+F18,Welding room,MIG MAG TIG and plasma,Supervised optional coupon and visual inspection,No safety critical welded structure
+F19,Wood room,Woodworking machines,Cold fixture mockup or training coupon,No hot zone or load-bearing use
+F20,Shared,Compressed air Mattei plant,Survey available regulated utilities,No authorized pressurized experiment
+F21,Shared,Zoom H1 and Rode microphones,Qualitative sound recordings ask board,Not calibrated acoustic chain
+F22,Shared,Postal scale and photo kit,Packaging mass screening and documentation,Check accuracy and photography permission
+F23,Not confirmed,Calibrated dynamic DAQ microphone hammer accelerometers,Ask borrow partner or shared investment,No inventory assumption
+F24,Not confirmed,Actual thermal chamber and flow reference instrumentation,Ask borrow partner or shared investment,Convection oven is not calibrated chamber
+F25,Not confirmed,Process-air heater,Defer until measured need and site support,No purchase approval

@@ -37,6 +37,15 @@ See [OPEP-PKG-002](OPEP-PKG-002_packaway_and_process_air.md) for the proposed si
 
 [OPEP-DT-003](digital_twin/OPEP-DT-003_architecture_and_validation.md) defines the rig twin, verification/validation and ThermoTwin-F handoff. [Vibration and acoustics](projects/OPEP-M12-M13_vibroacoustics.md) adds modal, duct-acoustic and eventual coupled tests. [V&V matrix](digital_twin/OPEP-VV-003_model_experiment_matrix.csv), [scope references](digital_twin/OPEP-STD-003_vvuq_vibration_acoustics.csv) and [signal benchmark](analysis/dynamics.py) are the implementation baseline; no real data, licensed solver run or external integration is claimed.
 
+## Career-derived engineering campaigns and equipment strategy
+
+[OPEP career/industrial competence package 004](career/README.md) maps 23 public
+job descriptions to 12 cross-module engineering campaigns, with an explicit
+structural-integrity/FEA and non-nuclear thermal-hydraulics scope, maker facility
+inventory and procurement review, and an unfilled design verification plan and
+report. The 15-module registry remains unchanged. No personal application
+history is included. No added campaign is physically qualified.
+
 ## Baseline decisions
 Start with an unpowered precision interface, training coupons and measurement
 system characterization. Develop M04/M05 on approved low-energy references

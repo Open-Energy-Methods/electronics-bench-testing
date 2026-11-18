@@ -39,3 +39,13 @@ limits. Record failed comparisons, not only aligned plots. Distinguish design
 model, offline validated model, one-way operational shadow and live twin.
 Include source and permitted native solver projects, hashes, mesh data,
 postprocessing, environment versions, and independent reproduction notes.
+
+## Career-facing evidence packages (004)
+Write one two-page technical work sample per accepted campaign and link to
+native files, test data, independently validated prediction, uncertainty and
+actual change records. Include as-built inspection, PFMEA/DFMEA, control plan,
+DVP&R, nonconformance, calibration, method and sign-off limitations as relevant.
+Use public job-derived competencies, not copies of private applications or
+unverified skills claims. Separate a completed engineering artifact from
+industrial qualifications or nuclear-code compliance. Study codes legally and
+record intended-use applicability rather than claiming certification.
