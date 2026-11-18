@@ -1,0 +1,18 @@
+{
+  "schema": "OPEP-SENSOR-EXCHANGE-003",
+  "evidence_class": "SYNTHETIC_REFERENCE",
+  "physical_validation": "NOT_VALIDATED",
+  "model_id": "IDEAL-THERMAL-SENSOR",
+  "model_version": "0.1",
+  "quantity": "temperature",
+  "unit": "K",
+  "tau_s": 2,
+  "input_domain": [
+    290,
+    330
+  ],
+  "calibration_provenance": null,
+  "parameter_uncertainty": null,
+  "holdout_evidence": null,
+  "note": "Synthetic parameters only. No physical use or aerodynamic scaling."
+}

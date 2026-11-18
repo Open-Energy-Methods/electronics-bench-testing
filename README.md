@@ -1,3 +1,7 @@
+## Open Physical Engineering Platform — rig and flagship programme (RD0)
+
+[OPEP](19_opep_flagship/README.md) expands the project into modular design, manufacturing, metrology, electronics, sensors, thermal/fluids, controls and production quality. [EBT-RIG-001](18_rig_engineering/README.md) is the first modular dock and has its own requirements, interfaces, systems engineering gates and verification. It does not supersede the existing scientific Q0/R01 contract. All physical releases remain pending; reported equipment access is not task authorization.
+
 # Electronics Bench Testing — independent electrothermal research
 
 **Status: research planning and verified synthetic feasibility. No physical experiments yet. No KTH institutional approval or accreditation.**

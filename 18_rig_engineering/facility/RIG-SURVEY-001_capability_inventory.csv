@@ -1,0 +1,20 @@
+id,reported_capability,required_real_information,actual_model_or_spec,permission_reference,booking_or_training,review_state
+S01,Measurement and instrumentation,Voltage/current/temp/airflow equipment ranges references isolation,,,,USER_REPORTED_NOT_INSPECTED
+S02,Oscilloscope,Model bandwidth channels input ground differential probes and references,,,,USER_REPORTED_NOT_INSPECTED
+S03,Thermal chamber,Door and working volume shelf load permitted heat load feedthrough environment uniformity and booking,,,,USER_REPORTED_NOT_INSPECTED
+S04,3D printer,Process approved polymers actual printer build envelope and task permission,,,,USER_REPORTED_NOT_INSPECTED
+S05,Laser cutter,Approved materials bed size ventilation and task-specific training,,,,USER_REPORTED_NOT_INSPECTED
+S06,Drill,Allowed materials tools workholding and induction,,,,USER_REPORTED_NOT_INSPECTED
+S07,Lathe,Machine type envelope skills and allowed work,,,,USER_REPORTED_NOT_INSPECTED
+S08,Cutters,Actual equipment and material scope,,,,USER_REPORTED_NOT_INSPECTED
+S09,Woodworking,Specific machine and official safety requirements,,,,USER_REPORTED_NOT_INSPECTED
+S10,CNC mill,Controller tooling postprocessor permitted materials and training,,,,USER_REPORTED_NOT_INSPECTED
+S11,Manual milling,Availability and permitted task to confirm,,,,NOT_CONFIRMED
+S12,Powered electrothermal lab,Written experiment scope supervisor SOP and emergency procedure,,,,NOT_CONFIRMED
+S13,Instrumented impact hammer,Force transducer range impulse bandwidth reference and staff scope,,,,NOT_CONFIRMED
+S14,Accelerometers,Axis sensitivity mass mounting resonance and actual conditioned input,,,,NOT_CONFIRMED
+S15,Simultaneous dynamic DAQ,Sample rates phase alignment anti-aliasing IEPE compatibility and references,,,,NOT_CONFIRMED
+S16,Acoustic measurement chain,Microphone sensitivity frequency response calibrator background noise and room permission,,,,NOT_CONFIRMED
+S17,Low-level excitation,Approved speaker or shaker fixture and noise or vibration limits,,,,NOT_CONFIRMED
+S18,Guarded fan and tachometer,Commercial fan guard and tach reference with synchronization,,,,NOT_CONFIRMED
+S19,Multiphysics software,COMSOL modules ANSYS licences and permitted usage or alternatives,,,,NOT_CONFIRMED

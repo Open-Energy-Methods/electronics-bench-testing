@@ -150,3 +150,13 @@ jobs:
           python-version: '3.11'
       - name: Assert Canvas course visibility cannot be mistaken for workshop permission
         run: python -m unittest discover -s 14_q0_integrated_v0.9/facility -p 'test_g2_canvas_intake.py' -v
+
+  opep-rig-programme-review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check programme structure and synthetic metrology cases
+        run: python -m unittest discover -s 19_opep_flagship/tests -p 'test_*.py' -v

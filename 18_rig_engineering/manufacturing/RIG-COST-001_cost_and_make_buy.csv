@@ -1,0 +1,12 @@
+id,subsystem,item,make_buy_borrow,quantity,unit_cost_SEK,source_or_quote,status
+C01,100,Structural profiles and joints,BUY_OR_AVAILABLE,TBD,,,UNPRICED
+C02,200,Cassette blank and locators,MAKE,TBD,,,UNPRICED
+C03,200,Heatsink and reference heaters,BUY_IF_APPROVED,TBD,,,UNPRICED
+C04,300,Fan duct and guard,MAKE_BUY,TBD,,,UNPRICED
+C05,400,Rated protection and harness,BUY_IF_APPROVED,TBD,,,UNPRICED
+C06,500,Power source and measurement instruments,BORROW_IF_APPROVED,TBD,,,UNPRICED
+C07,500,Reference sensors and probes,BORROW_BUY,TBD,,,UNPRICED
+C08,700,Chamber feedthrough and transport interface,BORROW_MAKE,TBD,,,UNPRICED
+C09,800,Qualified enclosure and guarding,BUY_MAKE,TBD,,,UNPRICED
+C10,ALL,Machine time and training consumables,VERIFY,TBD,,,UNPRICED
+C11,ALL,Calibration and reference services,VERIFY,TBD,,,UNPRICED

@@ -1,0 +1,13 @@
+id,from,to,interface,design_intent,unresolved_fields,verification
+"IF01","100","200","Mechanical dock/cassette","Datum A plane, B side, C end; repeatable clamping separate from heat path","Coordinate frame, mass, dimensions, constraints","fit, repeat removal and inspection"
+"IF02","200","300","Cooling duct","Removable without altering DUT mounting; sealed flow boundary if needed","actual cross-section, spacing, airflow disturbance","flow survey and differential configuration"
+"IF03","200","400","DUT power","Identified detachable terminals/harness; one resistive heater","pinout/rating/current/temperature/strain TBD","wiring and isolation inspection"
+"IF04","200","500","Thermometry","Stable named sensor map and wires routed without disturbing contact","type, coordinates, cable, lag, attachment TBD","reference check and sensor lag"
+"IF05","400","500","Electrical measurement","Terminal V and same-branch I; true differential/common-mode reviewed","range, isolation, shunt/probe/calibration TBD","known reference and time alignment"
+"IF06","300","500","Airflow","Tach separate from air measurement","actual speed, flow probe/calibration/geometry TBD","flow mapping"
+"IF07","500","600","Acquisition","Synchronized timestamps and channel units; preserve raw records","protocol, clock and sample rate TBD","timing and data contract tests"
+"IF08","400","600","Control","Commands are not protective authority; independent stop status read separately","approved hardwired protection and control interface TBD","fault-state checks"
+"IF09","200","700","Chamber insertion","Only approved removable cell; external instruments stay outside","door, working volume, shelf, feedthrough, heat load TBD","fit, load and site check"
+"IF10","700","500","Environmental sensing","Measured approach air, chamber setpoint separately logged","loaded uniformity and actual references TBD","temperature mapping"
+"IF11","800","100/200/300","Guarding and handling","Guard does not confound boundary or obstruct safe handling","materials, hot-zone clearance, access and airflow TBD","inspection and hazard review"
+"IF12","600","EBT","Research acquisition export","Existing EBT schema version and physical configuration/role IDs","raw units, metadata and seal crosswalk","existing v0.8/0.9 tests"
