@@ -1,0 +1,42 @@
+{
+  "RIG200_NAT_CELL_RD0": {
+    "solid_count": 5,
+    "max_positive_overlap_mm3": 0,
+    "reservation_bounds_mm": [
+      300,
+      250,
+      160
+    ],
+    "status": "RD0_GEOMETRY_ONLY"
+  },
+  "RIG100_NAT_DOCK_RD0": {
+    "solid_count": 21,
+    "max_positive_overlap_mm3": 0,
+    "reservation_bounds_mm": [
+      600,
+      450,
+      400
+    ],
+    "status": "RD0_GEOMETRY_ONLY"
+  },
+  "RIG200_FORCED_CELL_RD0": {
+    "solid_count": 6,
+    "max_positive_overlap_mm3": 0,
+    "reservation_bounds_mm": [
+      300,
+      250,
+      160
+    ],
+    "status": "RD0_GEOMETRY_ONLY"
+  },
+  "RIG100_FORCED_DOCK_RD0": {
+    "solid_count": 22,
+    "max_positive_overlap_mm3": 0,
+    "reservation_bounds_mm": [
+      600,
+      450,
+      400
+    ],
+    "status": "RD0_GEOMETRY_ONLY"
+  }
+}

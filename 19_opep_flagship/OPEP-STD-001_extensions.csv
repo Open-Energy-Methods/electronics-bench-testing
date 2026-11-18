@@ -1,0 +1,17 @@
+id,reference,subject,application,official_public_scope,disposition
+O-STD01,ISO/IEC/IEEE 15288:2023,System life cycle,Requirements and verification,https://www.iso.org/standard/81702.html,PUBLIC_SCOPE_CHECKED
+O-STD02,ISO 12100:2010,Risk reduction,Method for machinery hazards pending applicability,https://www.iso.org/standard/51528.html,PUBLIC_SCOPE_CHECKED
+O-STD03,IEC 61010-1:2010+A1:2016,Lab equipment safety,Scope review for actual bench modules,https://webstore.iec.ch/en/publication/59769,PUBLIC_SCOPE_CHECKED
+O-STD04,IEC 61326-1:2020,EMC,Potential measurement and control equipment applicability,https://webstore.iec.ch/en/publication/62793,PUBLIC_SCOPE_CHECKED
+O-STD05,ISO 1101:2017,Geometrical tolerancing,Functional dimensional and datum specifications,https://www.iso.org/standard/66777.html,PUBLIC_SCOPE_CHECKED
+O-STD06,ISO 14253-1:2017,Conformance decision rules,Plan measurement uncertainty and decision rule,https://www.iso.org/standard/70137.html,PUBLIC_SCOPE_CHECKED
+O-STD07,ISO 230-1:2012,Machine tool geometric accuracy,Reference only for relevant staff-approved geometric tests,https://www.iso.org/standard/46449.html,PUBLIC_SCOPE_CHECKED
+O-STD08,ISO 230-12:2022,Finished test pieces,Method reference not machine certification,https://www.iso.org/standard/76756.html,PUBLIC_SCOPE_CHECKED
+O-STD09,ISO/ASTM 52900:2021,Additive manufacturing vocabulary,Use terminology for documented printing process,https://www.iso.org/standard/74514.html,PUBLIC_SCOPE_CHECKED
+O-STD10,ISO 22514-1:2014,Process capability principles,Statistical manufacturing study only with adequate stable process data,https://www.iso.org/standard/64135.html,PUBLIC_SCOPE_CHECKED
+O-STD11,ISO 22514-7:2026,Measurement process capability,Candidate measurement process methodology,https://www.iso.org/standard/89276.html,PUBLIC_SCOPE_CHECKED
+O-STD12,ISO 10303-242:2025,Managed model based 3D engineering,STEP interoperability reference not exporter conformity claim,https://www.iso.org/standard/84300.html,PUBLIC_SCOPE_CHECKED
+O-STD13,JCGM GUM-1:2023 and JCGM 100:2008,Uncertainty,Traceable uncertainty and covariance methods,https://www.bipm.org/en/web/guest/publications/guides,PUBLIC_SCOPE_CHECKED
+O-STD14,ISO/IEC 17025:2017,Lab competence,Guidance only no accreditation claim,https://www.iso.org/standard/66912.html,PUBLIC_SCOPE_CHECKED
+O-STD15,AFS 2023:11 as amended,Swedish work equipment,Responsible site determines applicable requirements,https://www.av.se/afs-202311/,PUBLIC_SCOPE_CHECKED
+O-STD16,NASA Systems Engineering Handbook,System design and product realization,Adapt review and traceability methods,https://www.nasa.gov/reference/systems-engineering-handbook/,PUBLIC_SCOPE_CHECKED

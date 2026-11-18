@@ -70,3 +70,9 @@
 - Read actual signed-in EECS Student Workshop Canvas front page; course 32080 is accessible and specifies project-based participation, Find Appointment booking, general safety induction, post-induction quiz, signed acknowledgement, machine-specific official risk assessment, and practical introduction.
 - The course lists general introductions Nov 5 17:00–18:00 and Nov 6 16:00–17:00; **listings are not seat availability, booking or evidence of attendance**.
 - Prepared one-page independent EBT *unpowered mechanical* project brief and blank workshop permission/qualification record. Updated the facility tracker and WP0/2 planning link; no supervised machine rights or powered ELAB access granted.
+
+## 2026-11-18 — OPEP flagship concept baseline and EBT-RIG-001 RD0
+- Defined standalone rig engineering lifecycle, preliminary architecture trade, design basis, 28 requirements, 12 interfaces, 14 initial open hazards, candidate standards screening, verification, manufacturing, instrumentation and skills evidence.
+- Established ten-module OPEP programme, including clean mechanical metrology and separate production, electronics, structural and environmental modules. EBT remains its initial electrothermal application.
+- Added native CadQuery spatial layout source and local geometry audit, a first-article inspection and production traveller template, conservative metrology screening and repeatability code with synthetic unit tests, and programme structural tests.
+- All dimensional layout reservations and scores are design hypotheses, not approved fabrication; actual machine permissions, instrument specs, chamber fit, material, component and protection decisions remain open. No physical or certification claim.
