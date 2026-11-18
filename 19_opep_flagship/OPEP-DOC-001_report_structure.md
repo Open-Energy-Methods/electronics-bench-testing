@@ -25,3 +25,17 @@ instrument identity, actual measurements, feedback and limitations matter.
 Do not use stock imagery as personal evidence. Each physical result has its
 own independent artifact ID. Public GitHub contains redacted permissible
 records; real approvals, personal IDs and restricted certificates stay private.
+
+## Closed-loop additions
+For each module, add an intended-use statement, pre-test blind prediction,
+solver/mesh/time-step verification, as-built model, measurement uncertainty,
+CAL/VALIDATION partition, comparison and discrepancy assessment, change
+request if needed, new independent validation and bounded model release.
+Document experimental modal analysis, FRFs, coherence, damping and mounting;
+calibrated acoustic pressure, room background and transfer functions; CFD,
+FEA and COMSOL model settings if licensed/access permitted; reduced-order
+models; synchronized measurement replay; external ThermoTwin-F interface and
+limits. Record failed comparisons, not only aligned plots. Distinguish design
+model, offline validated model, one-way operational shadow and live twin.
+Include source and permitted native solver projects, hashes, mesh data,
+postprocessing, environment versions, and independent reproduction notes.

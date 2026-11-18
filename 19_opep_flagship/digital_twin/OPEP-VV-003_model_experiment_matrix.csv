@@ -1,0 +1,11 @@
+id,module,quantity,analytical_reference,numerical_method,physical_validation,holdout_unit,acceptance_basis,state
+VV01,M03,Static deflection,Linear beam theory,FEA static,Measured load and displacement,Independent installed specimen,Uncertainty and intended use,PLANNED
+VV02,M12,Modal frequency,Uniform beam eigenfrequency,FEA eigenmodes,Calibrated force and acceleration,Independent remount,Predeclared modal target band,PLANNED
+VV03,M12,Complex accelerance,Linear oscillator transfer,Harmonic response,Coherent measured FRF,Independent remount,Complex FRF discrepancy and uncertainty,PLANNED
+VV04,M13,Duct resonances,1D ideal acoustic modes,Pressure acoustics,Calibrated microphone transfer,Independent duct length or configuration,Frequency and environment uncertainty,PLANNED
+VV05,M13,Coupled response,Independent limiting cases,Vibroacoustic coupled FEM,Simultaneous pressure acceleration and force,Independent configuration,Phase and bandwise response uncertainty,CONDITIONAL
+VV06,M11,Pressure loss,Loss balance,CFD cold flow,Measured flow and differential pressure,Independent geometry or flow condition,Bounded Re and Mach and uncertainty,PLANNED
+VV07,M06,Surface temperature,RC energy balance,CFD CHT and ROM,Measured synchronized thermal and electrical channels,EBT independent HOLD assemblies,Existing EBT G3 preregistration,PLANNED
+VV08,M05,Sensor lag,First order response,Time integration and ROM,Reference transient response,Independent excitation and remount,Timing and temperature uncertainty,PLANNED
+VV09,M15,Sensor response replay,Known step and ramp,Offline simulation,Independent measured sensor history,Independent test history,Input domain and uncertainty,PLANNED
+VV10,M14,Configuration synchronization,Known synthetic manifest,Replay software,Actual read only stream and timestamps,Independent run,Stale data and mismatch handling,PLANNED

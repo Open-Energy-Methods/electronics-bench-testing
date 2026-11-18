@@ -7,8 +7,8 @@ def rows(path):
 class TestProgramme(unittest.TestCase):
     def test_modules_unique_and_not_accepted(self):
         r=rows("19_opep_flagship/OPEP-MOD-001_modules.csv")
-        self.assertEqual({x["id"] for x in r},{f"M{i:02d}" for i in range(1,11)})
-        self.assertEqual(len(r),10)
+        self.assertEqual({x["id"] for x in r},{f"M{i:02d}" for i in range(1,16)})
+        self.assertEqual(len(r),15)
         self.assertTrue(all(x["state"] in ("PLANNED","CONDITIONAL") for x in r))
     def test_requirements_unique_and_open(self):
         r=rows("18_rig_engineering/verification/RIG-REQ-001_requirements.csv")

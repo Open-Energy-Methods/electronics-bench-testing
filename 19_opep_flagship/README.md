@@ -16,7 +16,7 @@ must occur in their appropriate authorized areas.
 
 ## Programme products
 - [Integrated systems architecture and roadmap](OPEP-SE-001_system_and_roadmap.md)
-- [Ten module portfolio and evidence contracts](OPEP-MOD-001_modules.csv)
+- [Fifteen module portfolio and evidence contracts](OPEP-MOD-001_modules.csv)
 - [Extended standards applicability register](OPEP-STD-001_extensions.csv)
 - [M01/M02 first design-manufacture-inspect project](projects/OPEP-M01-001_precision_cassette.md)
 - [Manufacturing and quality plan](projects/OPEP-M02-001_production_quality.md)
@@ -31,7 +31,11 @@ electrothermal dock rather than claiming every module is designed.
 
 ## Pack-away requirement / process-air extension
 
-See [OPEP-PKG-002](OPEP-PKG-002_packaway_and_process_air.md) for the proposed single-box constraint and M11 candidate process-air analogue. The historical fixed dock envelope is no longer the physical design baseline. M11 requires separate review; the 10-module registry retains the original baseline pending SRR allocation.
+See [OPEP-PKG-002](OPEP-PKG-002_packaway_and_process_air.md) for the proposed single-box constraint and M11 candidate process-air analogue. The historical fixed dock envelope is no longer the physical design baseline. M11 requires separate review; the expanded registry retains all earlier modules and adds M11–M15 as conditional or planned.
+
+## Closed-loop multiphysics and digital twin
+
+[OPEP-DT-003](digital_twin/OPEP-DT-003_architecture_and_validation.md) defines the rig twin, verification/validation and ThermoTwin-F handoff. [Vibration and acoustics](projects/OPEP-M12-M13_vibroacoustics.md) adds modal, duct-acoustic and eventual coupled tests. [V&V matrix](digital_twin/OPEP-VV-003_model_experiment_matrix.csv), [scope references](digital_twin/OPEP-STD-003_vvuq_vibration_acoustics.csv) and [signal benchmark](analysis/dynamics.py) are the implementation baseline; no real data, licensed solver run or external integration is claimed.
 
 ## Baseline decisions
 Start with an unpowered precision interface, training coupons and measurement

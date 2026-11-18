@@ -72,3 +72,13 @@ Module maturity: PLANNED -> DESIGN_REVIEW -> RELEASED_FOR_SPECIFIC_BUILD ->
 BUILT_UNVERIFIED -> ACCEPTED_FOR_BOUNDED_USE. Only named human reviewers and
 actual evidence can authorize physical stages. Software checks report
 structural consistency only. RD6 never grants unrestricted operation.
+
+## Parallel M11–M15 path
+M12 passive structural modes and M13 low-level acoustic resonance may start after
+module-specific review and suitable references; no energized thermal rig is needed
+for the first beam. M11 starts with cold atmospheric flow. M14 is developed
+continuously from analytical verification through as-built models and separately
+held-out validation. M15 starts with offline replay; no direct command path
+from the virtual turbine or twin to physical protection. The one-box target
+remains, using one active physical module at a time and external lab instruments.
+See OPEP-DT-003 for model/experiment release rules and cross-domain priorities.

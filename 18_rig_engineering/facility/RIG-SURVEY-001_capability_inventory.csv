@@ -11,3 +11,10 @@ S09,Woodworking,Specific machine and official safety requirements,,,,USER_REPORT
 S10,CNC mill,Controller tooling postprocessor permitted materials and training,,,,USER_REPORTED_NOT_INSPECTED
 S11,Manual milling,Availability and permitted task to confirm,,,,NOT_CONFIRMED
 S12,Powered electrothermal lab,Written experiment scope supervisor SOP and emergency procedure,,,,NOT_CONFIRMED
+S13,Instrumented impact hammer,Force transducer range impulse bandwidth reference and staff scope,,,,NOT_CONFIRMED
+S14,Accelerometers,Axis sensitivity mass mounting resonance and actual conditioned input,,,,NOT_CONFIRMED
+S15,Simultaneous dynamic DAQ,Sample rates phase alignment anti-aliasing IEPE compatibility and references,,,,NOT_CONFIRMED
+S16,Acoustic measurement chain,Microphone sensitivity frequency response calibrator background noise and room permission,,,,NOT_CONFIRMED
+S17,Low-level excitation,Approved speaker or shaker fixture and noise or vibration limits,,,,NOT_CONFIRMED
+S18,Guarded fan and tachometer,Commercial fan guard and tach reference with synchronization,,,,NOT_CONFIRMED
+S19,Multiphysics software,COMSOL modules ANSYS licences and permitted usage or alternatives,,,,NOT_CONFIRMED

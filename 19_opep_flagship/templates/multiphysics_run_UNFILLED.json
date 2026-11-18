@@ -1,0 +1,22 @@
+{
+  "schema": "OPEP-MP-RUN-003-DRAFT",
+  "evidence_class": null,
+  "run_id": null,
+  "module_id": null,
+  "assembly_id": null,
+  "mount_event_id": null,
+  "hardware_revision": null,
+  "as_built_geometry_sha256": null,
+  "protocol_sha256": null,
+  "role": null,
+  "lock_ref": null,
+  "utc_origin": null,
+  "channels": [],
+  "raw_streams": [],
+  "instrument_reference_refs": [],
+  "environment_ref": null,
+  "abort_deviation_ref": null,
+  "model_version": null,
+  "model_prediction_sha256": null,
+  "review_ref": null
+}
