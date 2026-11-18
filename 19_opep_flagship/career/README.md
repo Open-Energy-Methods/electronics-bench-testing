@@ -32,3 +32,6 @@ the storage target or use separate permitted facility storage.
    offline exchange as described in the existing OPEP-DT-003 document.
 C09 assurance is continuous. C12 is optional and never used to claim code
 qualification. Each release can be published separately.
+
+## Adjacent work samples (005)
+See [six incremental work samples](OPEP-ADJ-005_adjacent_work_samples.md) and [shared-equipment request outline](OPEP-PROC-005_request_outline.md). Public role matrix expanded to 28 entries; no personal email history published.

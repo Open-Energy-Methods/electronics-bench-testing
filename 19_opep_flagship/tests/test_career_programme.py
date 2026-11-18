@@ -14,8 +14,8 @@ class CareerProgrammeTests(unittest.TestCase):
         c=rows(D/"OPEP-CAM-004_campaign_registry.csv")
         r=rows(D/"OPEP-JOB-004_public_role_matrix.csv")
         ids={x["id"] for x in c}
-        self.assertEqual(len(r),23)
-        self.assertEqual(len({x["id"] for x in r}),23)
+        self.assertEqual(len(r),28)
+        self.assertEqual(len({x["id"] for x in r}),28)
         self.assertEqual(len(c),12)
         self.assertEqual(len(ids),12)
         for x in r:

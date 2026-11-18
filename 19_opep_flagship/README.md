@@ -39,7 +39,7 @@ See [OPEP-PKG-002](OPEP-PKG-002_packaway_and_process_air.md) for the proposed si
 
 ## Career-derived engineering campaigns and equipment strategy
 
-[OPEP career/industrial competence package 004](career/README.md) maps 23 public
+[OPEP career/industrial competence package 004](career/README.md) maps 28 public
 job descriptions to 12 cross-module engineering campaigns, with an explicit
 structural-integrity/FEA and non-nuclear thermal-hydraulics scope, maker facility
 inventory and procurement review, and an unfilled design verification plan and
