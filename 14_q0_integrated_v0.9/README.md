@@ -46,6 +46,10 @@ The [G0–G6 future workplan and controlled R01/publication path](../15_executio
 
 The actual signed-in [EECS Student Workshop Canvas instructions](facility/EBT-G2-012_workshop_onboarding.md) require **Find Appointment** on [the course calendar](https://canvas.kth.se/calendar?include_contexts=course_32080), general safety introduction, post-introduction quiz, signed acknowledgement, and **separate machine-specific risk assessment and practical training** for the named machines. The course is visible but no booking, induction or task-specific machine approval has been verified. A [short EBT project brief](facility/EBT-G2-012_project_brief.md) and [unfilled staff-permission evidence record](facility/EBT-G2-012_access_record_UNFILLED.json) are prepared for the visit. This is mechanical-only onboarding, never an electrical test permit.
 
+## Workshop physical-intake update (EBT-G2-013, 19 November 2026)
+
+The researcher reports general EECS Student Workshop access. See the [facility-specific addendum](facility/EBT-G2-013_eecs_workshop_intake.md) and [unfilled visit checklist](facility/EBT-G2-013_workshop_intake_UNFILLED.csv). Published electronics benches make this a candidate powered site, not an authorization; explicit compliance with the no-live-work rule and staff permission remain required. Induction evidence and machine-specific permissions are unverified. All fabrication and power holds remain.
+
 ## Unpowered physical-intake checkpoint (Q0-010)
 
 The [catalog-anchored physical intake review](docs/EBT-Q0-010_unpowered_intake.md) and the two [unfilled actual-part](inspection/EBT-Q0-010_unfilled_component_receipt.json) and [instrument](inspection/EBT-Q0-010_unfilled_instrument_inventory.json) manifests capture real hardware evidence **only after actual receipt/inspection**. No part measurements or lab permission exist at present. The conditional 20 W case rating is not a Q0 setpoint.
